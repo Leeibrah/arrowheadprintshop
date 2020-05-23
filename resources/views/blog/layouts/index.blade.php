@@ -1,6 +1,6 @@
 @extends('blog.layouts.master')
 
-@section('page-header')
+@section('page-header-xxx')
   <header class="intro-header"
           style="background-image: url('{{ page_image($page_image) }}')">
     <div class="container">

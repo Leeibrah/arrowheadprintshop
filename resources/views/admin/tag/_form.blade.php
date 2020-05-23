@@ -30,7 +30,7 @@
   </div>
 </div>
 
-<div class="form-group">
+<!-- <div class="form-group">
   <label for="page_image" class="col-md-3 control-label">
     Page Image
   </label>
@@ -38,7 +38,7 @@
     <input type="text" class="form-control" name="page_image"
            id="page_image" value="{{ $page_image }}">
   </div>
-</div>
+</div> -->
 
 <div class="form-group">
   <label for="layout" class="col-md-3 control-label">
@@ -46,7 +46,7 @@
   </label>
   <div class="col-md-4">
     <input type="text" class="form-control" name="layout" id="layout"
-           value="{{ $layout }}">
+           value="pages.blog.index">
   </div>
 </div>
 

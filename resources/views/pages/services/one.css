@@ -1,0 +1,687 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Payday Loans
+ * @version 	1.0.0
+ * 
+ * Theme Secondary Color Schemes Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+/***************** Start Header Middle Color Scheme Rules ******************/
+
+	/* Start Header Middle Content Color */
+	.header_mid,
+	.header_mid textarea,
+	.header_mid select,
+	.header_mid option {
+		color:#878787;
+	}
+	/* Finish Header Middle Content Color */
+	
+	
+	/* Start Header Middle Primary Color */
+	.header_mid a {
+		color:#212121;
+	}
+	
+	.header_mid .button:hover, 
+	.header_mid input[type=submit]:hover, 
+	.header_mid input[type=button]:hover, 
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav:hover, 
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav.active, 
+	.cmsmasters_dynamic_cart .cmsmasters_dynamic_cart_button:hover, 
+	.cmsmasters_dynamic_cart:hover .cmsmasters_dynamic_cart_button {
+		background-color:#212121;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		#header .header_mid .search_wrap .search_bar_wrap .search_button button {
+			color:#212121;
+		}
+	}
+	/* Finish Header Middle Primary Color */
+	
+	
+	/* Start Header Middle Rollover Color */
+	.header_mid a:hover {
+		color:#3bb2b8;
+	}
+	
+	.header_mid .button, 
+	.header_mid input[type=submit], 
+	.header_mid input[type=button], 
+	.header_mid button,
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav, 
+	.cmsmasters_dynamic_cart .cmsmasters_dynamic_cart_button {
+		background-color:#3bb2b8;
+	}
+	
+	.header_mid textarea:focus,
+	.header_mid select:focus {
+		border-color:#3bb2b8;
+	}
+	/* Finish Header Middle Rollover Color */
+	
+	
+	/* Start Header Middle Background Color */
+	.header_mid .button, 
+	.header_mid input[type=submit], 
+	.header_mid input[type=button], 
+	.header_mid input[type=search], 
+	.header_mid button, 
+	.header_mid input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+	.header_mid .button:hover, 
+	.header_mid input[type=submit]:hover, 
+	.header_mid input[type=button]:hover, 
+	.header_mid button:hover, 
+	.header_mid .cmsmasters_social_icon, 
+	.header_mid .cmsmasters_social_icon:hover, 
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav, 
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav:hover, 
+	.header_mid .resp_mid_nav_wrap .resp_mid_nav.active, 
+	.cmsmasters_dynamic_cart .cmsmasters_dynamic_cart_button, 
+	.cmsmasters_dynamic_cart .cmsmasters_dynamic_cart_button:hover, 
+	.cmsmasters_dynamic_cart:hover .cmsmasters_dynamic_cart_button {
+		color:#ffffff;
+	}
+	
+	.header_mid input::-webkit-input-placeholder {
+		color:#ffffff;
+	}
+	
+	.header_mid input::-moz-placeholder {
+		color:#ffffff;
+	}
+	
+	.header_mid,
+	.header_mid textarea,
+	.header_mid select,
+	.header_mid option {
+		background-color:#ffffff;
+	}
+	
+	.header_mid input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]) {
+		background-color: transparent;
+	}
+	
+	/* Finish Header Middle Background Color */
+	
+	
+	/* Start Header Middle Background Color on Scroll */
+	.header_mid.header_mid_scroll {
+		background-color:#ffffff;
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		.header_mid {
+			background-color:#ffffff;
+		}
+	}
+	/* Finish Header Middle Background Color on Scroll */
+	
+	
+	/* Start Header Middle Borders Color */
+	.header_mid textarea,
+	.header_mid select,
+	.header_mid option {
+		border-color:#ffffff;
+	}
+	/* Finish Header Middle Borders Color */
+	
+	
+	/* Start Header Middle Custom Rules */
+	.header_mid ::selection {
+		background:#212121;
+		color:#ffffff;
+	}
+	
+	.header_mid ::-moz-selection {
+		background:#212121;
+		color:#ffffff;
+	}
+	/* Finish Header Middle Custom Rules */
+
+/***************** Finish Header Middle Color Scheme Rules ******************/
+
+
+
+/***************** Start Header Bottom Color Scheme Rules ******************/
+
+	/* Start Header Bottom Content Color */
+	.header_bot,
+	.header_bot input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+	.header_bot textarea,
+	.header_bot select,
+	.header_bot option {
+		color:#878787;
+	}
+	/* Finish Header Bottom Content Color */
+	
+	
+	/* Start Header Bottom Primary Color */
+	.header_bot a {
+		color:#212121;
+	}
+	
+	.header_bot .button:hover, 
+	.header_bot input[type=submit]:hover, 
+	.header_bot input[type=button]:hover, 
+	.header_bot button:hover, 
+	.header_bot .search_wrap .search_bar_wrap .search_button button:hover, 
+	.header_bot .search_wrap.search_opened .search_bar_wrap .search_button button {
+		background-color:#212121;
+	}
+	
+	.header_bot .resp_bot_nav_wrap .resp_bot_nav:hover, 
+	.header_bot .resp_bot_nav_wrap .resp_bot_nav.active {
+		color:#212121;
+	}
+	
+	/* Finish Header Bottom Primary Color */
+	
+	
+	/* Start Header Bottom Rollover Color */
+	.header_bot a:hover {
+		color:#3bb2b8;
+	}
+	
+	.header_bot .button, 
+	.header_bot input[type=submit], 
+	.header_bot input[type=button], 
+	.header_bot button,
+	.header_bot .search_wrap .search_bar_wrap .search_button button {
+		background-color:#3bb2b8;
+	}
+	
+	.header_bot .resp_bot_nav_wrap .resp_bot_nav {
+		color:#3bb2b8;
+	}
+	
+	.header_bot input:not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]):focus,
+	.header_bot textarea:focus,
+	.header_bot select:focus {
+		border-color:#3bb2b8;
+	}
+	/* Finish Header Bottom Rollover Color */
+	
+	
+	/* Start Header Bottom Background Color */
+	.header_bot .button, 
+	.header_bot input[type=submit], 
+	.header_bot input[type=button], 
+	.header_bot button, 
+	.header_bot .search_wrap .search_bar_wrap .search_button button {
+		color:#ffffff;
+	}
+	
+	.header_bot,
+	.header_bot input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+	.header_bot textarea,
+	.header_bot select,
+	.header_bot option {
+		background-color:#ffffff;
+	}
+	/* Finish Header Bottom Background Color */
+	
+	
+	/* Start Header Bottom Background Color on Scroll */
+	.header_bot.header_bot_scroll {
+		background-color:#ffffff;
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		.header_bot {
+			background-color:#ffffff;
+		}
+	}
+	/* Finish Header Bottom Background Color on Scroll */
+	
+	
+	/* Start Header Bottom Borders Color */
+	.header_bot .header_bot_outer, 
+	.header_bot input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+	.header_bot textarea,
+	.header_bot select,
+	.header_bot option {
+		border-color:#e9e9e9;
+	}
+	/* Finish Header Bottom Borders Color */
+	
+	
+	/* Start Header Bottom Custom Rules */
+	.header_bot ::selection {
+		background:#212121;
+		color:#ffffff;
+	}
+	
+	.header_bot ::-moz-selection {
+		background:#212121;
+		color:#ffffff;
+	}
+	/* Finish Header Bottom Custom Rules */
+
+/***************** Finish Header Bottom Color Scheme Rules ******************/
+
+
+
+/***************** Start Navigation Color Scheme Rules ******************/
+
+	/* Start Navigation Title Link Color */
+	.header_mid .search_wrap .search_bar_wrap .search_button button, 
+	ul.navigation > li > a {
+		color:#212121;
+	}
+	/* Finish Navigation Title Link Color */
+	
+	
+	/* Start Navigation Title Link Hover Color */
+	@media only screen and (min-width: 1025px) {
+		.header_mid .search_wrap .search_bar_wrap .search_button button:hover, 
+		ul.navigation > li > a:hover,
+		ul.navigation > li > a:hover .nav_subtitle,
+		ul.navigation > li:hover > a,
+		ul.navigation > li:hover > a .nav_subtitle {
+			color:#3bb2b8;
+		}
+	}
+	/* Finish Navigation Title Link Hover Color */
+	
+	
+	/* Start Navigation Title Link Current Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li.menu-item.current-menu-item > a, 
+		ul.navigation > li.menu-item.current-menu-item > a .nav_subtitle, 
+		ul.navigation > li.menu-item.current-menu-ancestor > a, 
+		ul.navigation > li.menu-item.current-menu-ancestor > a .nav_subtitle {
+			color:#3bb2b8;
+		}
+	}
+	
+	ul.navigation > li > a .nav_tag {
+		background-color:#3bb2b8;
+	}
+	/* Finish Navigation Title Link Current Color */
+	
+	
+	/* Start Navigation Title Link Subtitle Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li > a .nav_subtitle {
+			color:#212121;
+		}
+	}
+	/* Finish Navigation Title Link Subtitle Color */
+	
+	
+	/* Start Navigation Title Link Background Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li > a {
+			background-color:#ffffff;
+		}
+	}
+	
+	ul.navigation > li > a .nav_tag {
+		color:#ffffff;
+	}
+	/* Finish Navigation Title Link Background Color */
+	
+	
+	/* Start Navigation Title Link Hover Background Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li > a:hover,
+		ul.navigation > li:hover > a {
+			background-color:#ffffff;
+		}
+	}
+	/* Finish Navigation Title Link Hover Background Color */
+	
+	
+	/* Start Navigation Title Link Current Background Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li.menu-item.current-menu-item > a, 
+		ul.navigation > li.menu-item.current-menu-ancestor > a {
+			background-color:#ffffff;
+		}
+	}
+	/* Finish Navigation Title Link Current Background Color */
+	
+	
+	/* Start Navigation Title Link Border Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation > li,
+		.header_mid .search_wrap {
+			border-color:#ffffff;
+		}
+	}
+	/* Finish Navigation Title Link Border Color */
+	
+	
+	/* Start Navigation Dropdown Text Color */
+	ul.navigation > li > a .cmsmasters_resp_nav_toggle, 
+	.navigation li .menu-item-mega-description-container, 
+	.navigation li .menu-item-mega-description-container * {
+		color:#878787;
+	}
+	/* Finish Navigation Dropdown Tex Color */
+	
+	
+	/* Start Navigation Dropdown Background Color */
+	@media only screen and (max-width: 1024px) {
+		ul.navigation {
+			background-color:#f4f4f4;
+		}
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.navigation ul, 
+		ul.navigation .menu-item-mega-container {
+			background-color:#f4f4f4;
+		}
+		
+		ul.navigation > li > ul:after {
+			border-bottom-color:#f4f4f4;
+		}
+		
+		ul.navigation ul ul li:first-child:before {
+			border-right-color:#f4f4f4;
+			
+			border-left-color:#f4f4f4;
+		}
+	}
+	/* Finish Navigation Dropdown Background Color */
+	
+	
+	/* Start Navigation Dropdown Border Color */
+	@media only screen and (min-width: 1025px) {
+		ul.navigation ul, 
+		ul.navigation .menu-item-mega-container {
+			border-color:#f4f4f4;
+		}
+	}
+	/* Finish Navigation Dropdown Border Color */
+	
+	
+	/* Start Navigation Dropdown Link Color */
+	.navigation li a {
+		color:#525252;
+	}
+	/* Finish Navigation Dropdown Link Color */
+	
+	
+	/* Start Navigation Dropdown Link Hover Color */
+	.navigation li > a:hover,
+	.navigation li > a:hover .nav_subtitle,
+	.navigation li.current-menu-item > a, 
+	.navigation li.current-menu-item > a .nav_subtitle, 
+	.navigation > li.current-menu-item .cmsmasters_resp_nav_toggle, 
+	.navigation > li.current-menu-ancestor > a > .cmsmasters_resp_nav_toggle, 
+	.navigation > li > a:hover .cmsmasters_resp_nav_toggle, 
+	.navigation li.current-menu-ancestor > a, 
+	.navigation li.current-menu-ancestor > a .nav_subtitle  {
+		color:#ffffff;
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.navigation li > ul li:hover > a, 
+		ul.navigation li > ul li:hover > a .nav_subtitle {
+			color:#ffffff;
+		}
+	}
+	
+	.navigation li ul li a .nav_tag {
+		color:#ffffff;
+	}
+	
+	/* Finish Navigation Dropdown Link Hover Color */
+	
+	
+	/* Start Navigation Dropdown Link Subtitle Color */
+	.navigation li a .nav_subtitle {
+		color:#525252;
+	}
+	/* Finish Navigation Dropdown Link Subtitle Color */
+	
+	
+	/* Start Navigation Dropdown Link Hover Highlight Color */
+	.navigation li > a:hover,
+	.navigation li.current-menu-item > a, 
+	.navigation li.current-menu-ancestor > a {
+		background-color:#3bb2b8;
+	}
+	
+	.navigation li ul li a .nav_tag {
+		background-color:#3bb2b8;
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.navigation li > ul li:hover > a {
+			background-color:#3bb2b8;
+		}
+		
+		ul.navigation ul ul li.current-menu-item:before,
+		ul.navigation ul ul li:first-child:hover:before {
+			border-right-color:#3bb2b8;
+			
+			border-left-color:#3bb2b8;
+		}
+	}
+	/* Finish Navigation Dropdown Link Hover Highlight Color */
+	
+	
+	/* Start Navigation Dropdown Link Border Color */
+	.navigation li {
+		border-color:#f4f4f4;
+	}
+	/* Finish Navigation Dropdown Link Border Color */
+
+/***************** Finish Navigation Color Scheme Rules ******************/
+
+
+
+/***************** Start Header Top Color Scheme Rules ******************/
+
+	/* Start Header Top Content Color */
+	.header_top {
+		color:#ababab;
+	}
+	/* Finish Header Top Content Color */
+	
+	
+	/* Start Header Top Primary Color */
+	.header_top a, 
+	.header_top .responsive_top_nav {
+		color:#ababab;
+	}
+	
+	.header_top .cmsmasters_social_icon, 
+	.header_top .responsive_top_nav:hover, 
+	.header_top .responsive_top_nav.active {
+		background-color:#ababab;
+	}
+	/* Finish Header Top Primary Color */
+	
+	
+	/* Start Header Top Rollover Color */
+	.header_top .responsive_top_nav,
+	.header_top .responsive_top_nav:hover,
+	.header_top a:hover,
+	.header_top .header_top_but {
+		color:#ffffff;
+	}
+	
+	.header_top .cmsmasters_social_icon:hover {
+		background-color:#ffffff;
+	}
+	/* Finish Header Top Rollover Color */
+	
+	
+	/* Start Header Top Background Color */
+	.header_top  .cmsmasters_social_icon, 
+	.header_top  .cmsmasters_social_icon:hover {
+		color:#323232;
+	}
+	
+	.header_top {
+		background-color:#323232;
+	}
+	/* Finish Header Top Background Color */
+	
+	
+	/* Start Header Top Borders Color */
+	.header_top .header_top_but {
+		border-color:#323232;
+	}
+	/* Finish Header Top Borders Color */
+	
+	
+	/* Start Header Top Custom Rules */
+	.header_top ::selection {
+		background:#ababab;
+		color:#323232;
+	}
+	
+	.header_top ::-moz-selection {
+		background:#ababab;
+		color:#323232;
+	}
+	/* Finish Header Top Custom Rules */
+
+/***************** Finish Header Top Color Scheme Rules ******************/
+
+
+
+/***************** Start Header Top Navigation Color Scheme Rules ******************/
+
+	/* Start Header Top Navigation Title Link Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav > li > a {
+			color:#ffffff;
+		}
+	}
+	/* Finish Header Top Navigation Title Link Color */
+	
+	
+	/* Start Header Top Navigation Title Link Hover Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav > li > a:hover,
+		ul.top_line_nav > li:hover > a,
+		ul.top_line_nav > li.current-menu-item > a,
+		ul.top_line_nav > li.current-menu-ancestor > a {
+			color:#ffffff;
+		}
+	}
+	
+	/* Finish Header Top Navigation Title Link Hover Color */
+	
+	
+	/* Start Header Top Navigation Title Link Background Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav > li > a {
+			background-color:#3e467b;
+		}
+	}
+	
+	.header_top .responsive_top_nav {
+		background-color:#3e467b;
+	}
+	
+	/* Finish Header Top Navigation Title Link Background Color */
+	
+	
+	/* Start Header Top Navigation Title Link Hover Background Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav > li > a:hover,
+		ul.top_line_nav > li:hover > a,
+		ul.top_line_nav > li.current-menu-item > a,
+		ul.top_line_nav > li.current-menu-ancestor > a {
+			background-color:#3bb2b8;
+		}
+	}
+	
+	.header_top .responsive_top_nav:hover, 
+	.header_top .responsive_top_nav.active {
+		background-color:#3bb2b8;
+	}
+	
+	/* Finish Header Top Navigation Title Link Hover Background Color */
+	
+	
+	/* Start Header Top Navigation Title Link Border Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav > li {
+			border-color:#323232;
+		}
+	}
+	/* Finish Header Top Navigation Title Link Border Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Background Color */
+	@media only screen and (max-width: 1024px) {
+		ul.top_line_nav {
+			background-color:#f4f4f4;
+		}
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav ul {
+			background-color:#f4f4f4;
+		}
+	}
+	/* Finish Header Top Navigation Dropdown Background Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Border Color */
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav ul {
+			border-color:#f4f4f4;
+		}
+	}
+	/* Finish Header Top Navigation Dropdown Border Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Link Color */
+	.top_line_nav li a {
+		color:#525252;
+	}
+	/* Finish Header Top Navigation Dropdown Link Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Link Hover Color */
+	.top_line_nav li > a:hover,
+	.top_line_nav li.current-menu-item > a {
+		color:#ffffff;
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav ul li:hover > a, 
+		ul.top_line_nav ul li.current-menu-ancestor > a {
+			color:#ffffff;
+		}
+	}
+	/* Finish Header Top Navigation Dropdown Link Hover Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Link Hover Highlight Color */
+	.top_line_nav li > a:hover,
+	.top_line_nav li.current-menu-item > a {
+		background-color:#3bb2b8;
+	}
+	
+	@media only screen and (min-width: 1025px) {
+		ul.top_line_nav ul li:hover > a,
+		ul.top_line_nav ul li.current-menu-ancestor > a {
+			background-color:#3bb2b8;
+		}
+	}
+	/* Finish Header Top Navigation Dropdown Link Hover Highlight Color */
+	
+	
+	/* Start Header Top Navigation Dropdown Link Border Color */
+	.top_line_nav li {
+		border-color:#f4f4f4;
+	}
+	/* Finish Header Top Navigation Dropdown Link Border Color */
+
+/***************** Finish Header Top Navigation Color Scheme Rules ******************/
+

@@ -19,6 +19,7 @@ class SiteMap
 
         $siteMap = $this->buildSiteMap();
         Cache::add('site-map', $siteMap, 120);
+        
         return $siteMap;
     }
 

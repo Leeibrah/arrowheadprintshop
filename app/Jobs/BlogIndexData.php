@@ -48,6 +48,8 @@ class BlogIndexData extends Job implements SelfHandling
             ->orderBy('published_at', 'desc')
             ->simplePaginate(config('blog.posts_per_page'));
 
+        $tags = Tag::all();
+
         return [
             'title' => config('blog.title'),
             'subtitle' => config('blog.subtitle'),
@@ -55,7 +57,7 @@ class BlogIndexData extends Job implements SelfHandling
             'page_image' => config('blog.page_image'),
             'meta_description' => config('blog.description'),
             'reverse_direction' => false,
-            'tag' => null,
+            'tags' => $tags,
         ];
     }
 
