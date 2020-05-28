@@ -6,7 +6,7 @@
 		<section id="hero_in" class="products">
 			<div class="wrapper">
 				<div class="container">
-					<h1 class="fadeInUp" style="color: #FCC251"><span></span>Product Loans</h1>
+					<h1 class="fadeInUp" style="color: #00F076"><span></span>Product Loans</h1>
 				</div>
 			</div>
 		</section>
@@ -31,14 +31,16 @@
 						</h5>
 					</div>
 					<div class="col-lg-12">
-						<li>Interest Rate is 1% per day with minimum of 15 days.</li>
-						<li>Tenor 30 days.</li>
+						<li>Interest rate is 15% per month flat rate.</li>
+						<li>Tenor is between 1 month to 6 months.</li>
 
 						<br/>
 
 						<h6>Requirements</h6>
-						<li>3 months payslip with an avetage net pay of 3 times the loan request.</li>
+						<li>3 months payslip with an average net pay of 3 times the loan request.</li>
 						<li>Signed post dated cheques.</li>
+						<li>Guarantee by employer.</li>
+						<li>Stamped letter of employment confirmation.</li>
 						<li>Signed loan agreement.</li>
 					</div>
 
@@ -49,13 +51,17 @@
 						</h5>
 					</div>
 					<div class="col-lg-12">
-						<li>Interest Rate is 1% per day with minimum of 15 days.</li>
-						<li>Tenor 30 days.</li>
+						<li>Interest rate is 15% per month flat rate.</li>
+						<li>Tenor is between 1 month to 6 months.</li>
 
 						<br/>
 
 						<h6>Requirements</h6>
-						<li>Security of 3 times value of loan request. (Can also be stock of registered entity).</li>
+						<li>Original Vehicle log book.</li>
+						<li>Change of ownership on logbook to reflect co-ownership between Vinestalk and the borrower.</li>
+						<li>Original Titled deed.</li>
+						<li>Transfer of title to Vinestalk.</li>
+						<li>Recent valuation not more than 3 months old of either the vehicle or the property/land.</li>
 						<li>Signed loan agreement.</li>
 					</div>
 
