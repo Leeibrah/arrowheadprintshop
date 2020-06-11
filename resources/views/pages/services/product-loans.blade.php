@@ -65,7 +65,7 @@
 						<li>Signed loan agreement.</li>
 					</div>
 
-					<div class="col-lg-10">
+					<!-- <div class="col-lg-10">
 						<p class="text-center"><img src="img/services_7.jpg" alt="" class="img-fluid"></p>
 						<h5>
 							<b>3. Motorvehicle Logbook Loan</b>
@@ -81,7 +81,7 @@
 						<li>Logbook.</li>
 						<li>Change of ownership on ecitizen.</li>
 						<li>Signed loan agreement.</li>
-					</div>
+					</div> -->
 
 				</div>
 				<br><br>
