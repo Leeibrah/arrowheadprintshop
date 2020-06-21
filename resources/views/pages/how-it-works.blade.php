@@ -199,7 +199,7 @@
 						<div class="separator"></div>
 					</div>
 					<div class="pull-right wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms" style="margin-top: -5%;">
-						<a href="/enroll" class="theme-btn btn-style-two">Register Now</a>
+						<a href="/employee-enrollment" class="theme-btn btn-style-two">Register Now</a>
 					</div>
 				</div>
 			</div>

@@ -104,7 +104,7 @@
                     data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                     <!-- Link Box -->
                         <div class="link-box">
-                            <a href="/enroll" class="theme-btn btn-style-two">Register Today</a>
+                            <a href="/employee-enrollment" class="theme-btn btn-style-two">Register Today</a>
                             <!-- <a href="/contacts" class="theme-btn btn-style-three">Contact Us</a> -->
                         </div>
                     </div>
