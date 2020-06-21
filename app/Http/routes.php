@@ -2,20 +2,30 @@
 
 // Application routes...
 
-Route::get( '/',                            ['as' => 'home',                    'uses' => 'HomeController@index']);
-// Route::get( 'home',                      ['as' => 'home',                    'uses' => 'HomeController@index']);
-Route::get( 'welcome',                      ['as' => 'welcome',                 'uses' => 'HomeController@welcome']);
-    
-Route::get( 'about',                        ['as' => 'about',                   'uses' => 'HomeController@about']);
+Route::get( '/',                        ['as' => 'home',                    'uses' => 'HomeController@index']);
+// Route::get( 'home',                  ['as' => 'home',                    'uses' => 'HomeController@index']);
+Route::get( 'welcome',                  ['as' => 'welcome',                 'uses' => 'HomeController@welcome']);
 
-Route::group(['prefix' => 'services'], function() {
+Route::get( 'about',                    ['as' => 'about',                   'uses' => 'HomeController@about']);
+Route::get( 'app',                      ['as' => 'app',                     'uses' => 'HomeController@app']);
+Route::get( 'how-it-works',             ['as' => 'how-it-works',            'uses' => 'HomeController@howitworks']);
+Route::get( 'terms',                    ['as' => 'terms',                   'uses' => 'HomeController@termsandconditions']);
+Route::get( 'privacy',                  ['as' => 'privacy',                 'uses' => 'HomeController@privacypolicy']);
 
-    Route::get('/',                         ['as' => 'services',                'uses' => 'HomeController@services']);
-    Route::get('/product-loans',            ['as' => 'product-loans',           'uses' => 'HomeController@productLoans']);
-    Route::get('/financial-literacy',       ['as' => 'financial-literacy',      'uses' => 'HomeController@financialLiteracy']);
-    Route::get('/management-accounting',    ['as' => 'management-accounting',   'uses' => 'HomeController@managementAccounting']);
+Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',     'uses' => 'HomeController@employerEnrollment']);
+Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post','uses' => 'HomeController@postEmployerEnrollment']);
 
-});
+Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',     'uses' => 'HomeController@employeeEnrollment']);
+Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post','uses' => 'HomeController@postEmployeeEnrollment']);
+
+
+Route::get( 'contacts',                 ['as' => 'contacts',                'uses' => 'HomeController@contacts']);
+Route::post('contacts',                 ['as' => 'contactsPost',            'uses' => 'HomeController@postContacts']);
+
+Route::get('accept/{token}', 'InviteController@accept')->name('accept');
+
+
+Route::get('mail', 'HomeController@mail');
 
 Route::group(['prefix' => 'blog'], function() {
 
@@ -25,16 +35,16 @@ Route::group(['prefix' => 'blog'], function() {
 
 });
 
-Route::get( 'consulting',                   ['as' => 'consulting',              'uses' => 'HomeController@consulting']);
+// Route::get( 'consulting',                   ['as' => 'consulting',              'uses' => 'HomeController@consulting']);
     
-Route::get( 'contacts',                     ['as' => 'contacts',                'uses' => 'HomeController@contacts']);
+// Route::get( 'contacts',                     ['as' => 'contacts',                'uses' => 'HomeController@contacts']);
     
-Route::get( 'terms',                        ['as' => 'terms',                   'uses' => 'HomeController@termsandconditions']);
-Route::get( 'privacy',                      ['as' => 'privacy',                 'uses' => 'HomeController@privacypolicy']);
+// Route::get( 'terms',                        ['as' => 'terms',                   'uses' => 'HomeController@termsandconditions']);
+// Route::get( 'privacy',                      ['as' => 'privacy',                 'uses' => 'HomeController@privacypolicy']);
 
-Route::get('mail', 'HomeController@mail');
+// Route::get('mail', 'HomeController@mail');
 
-Route::get( 'sitemap',                      ['as' => 'sitemap',                 'uses' => 'HomeController@generateSitemap']);
+// Route::get( 'sitemap',                      ['as' => 'sitemap',                 'uses' => 'HomeController@generateSitemap']);
 
 // Blog pages
 // get('/blog', function () {
@@ -57,6 +67,10 @@ $router->group([
 ], function () {
     resource('admin/post', 'PostController', ['except' => 'show']);
     resource('admin/tag', 'TagController', ['except' => 'show']);
+
+    resource('admin/employee', 'EmployeeController', ['except' => 'show']);
+    resource('admin/employer', 'EmployerController', ['except' => 'show']);
+
     get('admin/upload', 'UploadController@index');
     post('admin/upload/file', 'UploadController@uploadFile');
     delete('admin/upload/file', 'UploadController@deleteFile');
@@ -68,3 +82,5 @@ $router->group([
 get('/auth/login', 'Auth\AuthController@getLogin');
 post('/auth/login', 'Auth\AuthController@postLogin');
 get('/auth/logout', 'Auth\AuthController@getLogout');
+
+get('/cemanet', 'HomeController@cemanet');

@@ -12,7 +12,7 @@ class AuthController extends Controller
     use AuthenticatesUsers;
 
     protected $redirectAfterLogout = '/auth/login';
-    protected $redirectTo = '/admin/post';
+    protected $redirectTo = '/admin/employer';
 
     /**
      * Create a new authentication controller instance.

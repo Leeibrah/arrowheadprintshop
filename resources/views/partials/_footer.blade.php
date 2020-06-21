@@ -1,51 +1,117 @@
-<footer class="revealed">
-    <div class="container margin_default">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 p-r-5">
-                <p><img src="img/vinestalk.png" width="192" height="42" data-retina="true" alt=""></p>
-                <p>
-                    Vinestalk Kenya Ltd is a Non-bank, Non-deposit taking financial services company.
-                </p>
-                <div class="follow_us">
-                    <ul>
-                        <li>Follow us</li>
-                        <li><a href="https://www.facebook.com/vinestalkfintech/"><i class="ti-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/vinestalkfintec" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-                        <!-- <li><a href="#"><i class="ti-google"></i></a></li> -->
-                        <!-- <li><a href="#"><i class="ti-pinterest"></i></a></li> -->
-                        <li><a href="https://www.instagram.com/vinestalkfintech"><i class="ti-instagram"></i></a></li>
-                    </ul>
+<footer class="main-footer" style="background-image:url(images/background/10.png)">
+    <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="row clearfix">
+                
+                <!--Column-->
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                            <div class="footer-widget about-widget">
+                                <div class="logo">
+                                    <a href="/"><img src="images/footer-logo.png" alt="" /></a>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        You need to be employed and have a payslip to be able to use Salo Hub.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Quick Links</h2>
+                                <ul class="footer-list">
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/how-it-works">How it Works</a></li>
+                                    <li><a href="/contacts">Contact Us</a></li>
+                                    <!-- <li><a href="#">Privacy Policy</a></li> -->
+                                    <li><a href="{!! route('terms') !!}">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 ml-lg-auto">
-                <h5>Useful links</h5>
-                <ul class="links">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contacts">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5>Contact with Us</h5>
-                <ul class="contacts">
-                    <li><i class="ti-mobile"></i> 0782750451 / 0748839541</li>
-                    <li><a href=""><i class="ti-email"></i> <span class="__cf_email__">info@vinestalk.co.ke</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <!--/row-->
-        <hr>
-        <div class="row">
-            <div class="col-md-8">
-                <ul id="additional_links">
-                    <li><a href="{!! route('terms') !!}">Terms and Conditions</a></li>
-                    <li><a href="{!! route('privacy') !!}">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <div id="copy">Vinestalk (K) Ltd &copy; {!! date("Y") !!}  All Right Reserved</div>
+                
+                 <!--Column-->
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <!-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget gallery-widget">
+                                <h2>Gallery</h2>
+                                <div class="widget-content">
+                                    <div class="images-outer clearfix">
+                                        <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>
+                                        <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-2.jpg" alt=""></a></figure>
+                                        <figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-3.jpg" alt=""></a></figure>
+                                        <figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-4.jpg" alt=""></a></figure>
+                                        <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-5.jpg" alt=""></a></figure>
+                                        <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget info-widget">
+                                <h2>Contact Info</h2>
+                                <ul class="info-list">
+                                    <li>Bishop Magua Centre</li>
+                                    <li>Nairobi, Kenya</li>
+                                    <!-- <li>+2(305) 587-3407</li> -->
+                                    <li>info@salohub.com</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget info-widget">
+                                <h2>Social Links</h2>
+                            
+                                <!-- Social Links -->
+                                <ul class="social-links">
+                                    <li class="facebook"><a href="https://www.facebook.com/salohub" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li class="instagram"><a href="https://www.instagram.com/salo_hub" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                                    <li class="twitter"><a href="https://www.twitter.com/salo_hub" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <div class="column col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright"><span class="theme_color">Salo Hub Limited</span> &copy; {!! date("Y") !!}  All Right Reserved</div>
+                </div>
+                <div class="column col-lg-6 col-md-12 col-sm-12">
+                    <ul class="footer-nav">
+                        <li><a href="/auth/login">Login</a></li>
+                        <li><a href="{!! route('terms') !!}">Terms of Service</a></li>
+                        <li><a href="{!! route('privacy') !!}">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
 </footer>

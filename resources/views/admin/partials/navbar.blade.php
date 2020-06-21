@@ -1,6 +1,12 @@
 <ul class="nav navbar-nav">
   <li><a href="/">Blog Home</a></li>
   @if (Auth::check())
+    <li @if (Request::is('admin/employer*')) class="active" @endif>
+      <a href="/admin/employer">Employers</a>
+    </li>
+    <li @if (Request::is('admin/employee*')) class="active" @endif>
+      <a href="/admin/employee">Employees</a>
+    </li>
     <li @if (Request::is('admin/post*')) class="active" @endif>
       <a href="/admin/post">Posts</a>
     </li>

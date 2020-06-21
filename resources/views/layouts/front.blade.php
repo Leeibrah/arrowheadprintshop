@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    @include('partials._meta')
+<meta charset="utf-8">
+<title>Salohub :-: Your Payday Solutions Partner</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
 
-    <title>{!! $page_title !!}</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-    <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/vendors.css" rel="stylesheet">
-    <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
-
-    <!-- SPECIFIC CSS -->
-    <link href="layerslider/css/layerslider.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
-        
-    <div id="page">
-        
-    <header class="header menu_2">
-        <div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
-        <div id="logo">
-            <a href="/"><img src="img/vinestalk.png" width="192" height="42" data-retina="true" alt=""></a>
-        </div>
-        <ul id="top_menu">
-            <!-- <li><a href="login.html" class="login">Login</a></li> -->
-            <!-- <li><a href="#" class="search-overlay-menu-btn">Search</a></li> -->
-            <!-- <li class="hidden_tablet"><a href="services.html" class="btn_1 rounded">Borrow Today</a></li> -->
-        </ul>
-        <!-- /top_menu -->
-        @include('partials._body_header')
-        
-        <!-- Search Menu -->
-        <div class="search-overlay-menu">
-            <span class="search-overlay-close"><span class="closebt"><i class="ti-close"></i></span></span>
-            <form id="searchform" method="get">
-                <input value="" name="q" type="search" placeholder="Search..." />
-                <button type="submit"><i class="icon_search"></i>
-                </button>
-            </form>
-        </div><!-- End Search Menu -->
-    </header>
-    <!-- /header -->
-    
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    @include('partials._body_header')
+
     @yield('content')
-
+    
     @include('partials._footer')
-    <!--/footer-->
-    </div>
-    <!-- page -->
     
-    <!-- COMMON SCRIPTS -->
-    <!-- <script data-cfasync="false" src="../cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script> -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="{{ asset ("/js/common_scripts.js") }}"></script>
-    <!-- <script src="js/common_scripts.js"></script> -->
-    <script src="js/main.js"></script>
-    <script src="assets/validate.js"></script>
+</div>
+<!--End pagewrapper-->
 
-    <!-- SPECIFIC SCRIPTS -->
-    <script src="layerslider/js/greensock.js"></script>
-    <script src="layerslider/js/layerslider.transitions.js"></script>
-    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
-    <script>
-        'use strict';
-        $('#layerslider').layerSlider({
-            autoStart: true,
-            navButtons: false,
-            navStartStop: false,
-            showCircleTimer: false,
-            responsive: true,
-            responsiveUnder: 1280,
-            layersContainer: 1200,
-            skinsPath: 'layerslider/skins/'
-                // Please make sure that you didn't forget to add a comma to the line endings
-                // except the last line!
-        });
-    </script>
-    
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Revolution Slider-->
+<script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="js/main-slider-script.js"></script>
+
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/script.js"></script>
+
+<!-- contacts -->
+<!-- <script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/script.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
+<script src="js/map-script.js"></script> -->
+
 </body>
 </html>

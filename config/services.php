@@ -19,20 +19,31 @@ return [
         'secret' => env('MAILGUN_SECRET'),
     ],
 
+    'sendgrid' => [
+        'api_key' => env('SENDGRID_API_KEY', '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')
+    ],
+
     'mandrill' => [
         'secret' => '',
     ],
 
     'ses' => [
-        'key'    => '',
+        'key' => '',
         'secret' => '',
         'region' => 'us-east-1',
     ],
 
     'stripe' => [
         'model'  => App\User::class,
-        'key'    => '',
+        'key' => '',
         'secret' => '',
     ],
+
+    'twilio' => [
+        'sid' => env('TWILIO_SID'),
+        'token' => env('TWILIO_TOKEN'),
+        'from' => env('TWILIO_FROM'),
+        'ssl_verify' => true, // Development switch to bypass API SSL certificate verfication
+    ]
 
 ];

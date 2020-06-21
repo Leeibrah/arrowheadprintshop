@@ -11,11 +11,13 @@ return [
     | sending of e-mail. You may specify which one you're using throughout
     | your application here. By default, Laravel is setup for SMTP mail.
     |
-    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
+    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill",
+    |            "ses", "sparkpost", "log"
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'sendgrid'),
+    // 'driver' => env('MAIL_DRIVER', 'sendmail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +30,8 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    // 'host' => env('MAIL_HOST', 'smpt.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +44,9 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    // 'port' => env('MAIL_PORT', 25),
+    'port' => env('MAIL_PORT', 587), //tls
+    // 'port' => env('MAIL_PORT', 465), //ssl
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +59,8 @@ return [
     |
     */
 
-    'from' => ['address' => env('MAIL_FROM'), 'name' => env('MAIL_NAME')],
+    // 'from' => ['address' => 'leeibrah@gmail.com', 'name' => 'Lee Ibrahim'],
+    'from' => ['address' => 'info@salohub.com', 'name' => 'Salo Hub'],
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +73,9 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    // 'encryption' => 'tls',
+    'encryption' => env('MAIL_ENCRYPTION', 'TLS'),
+    // 'encryption' => env('MAIL_ENCRYPTION', 'SSL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +88,8 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('MAIL_FROM_NAME','SaloHub'),
+    // 'username' => 'developer@diasporaremit.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +102,8 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('MAIL_PASSWORD', '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'),
+    // 'password' => 'Diaspora2017',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,17 +118,6 @@ return [
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Mail "Pretend"
-    |--------------------------------------------------------------------------
-    |
-    | When this option is enabled, e-mail will not actually be sent over the
-    | web and will instead be written to your application's logs files so
-    | you may inspect the message. This is great for local development.
-    |
-    */
-
-    'pretend' => false,
+    // 'pretend'  => false,
 
 ];

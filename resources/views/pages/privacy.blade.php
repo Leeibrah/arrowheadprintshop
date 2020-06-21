@@ -1,24 +1,36 @@
 @extends('layouts.front')
 
 @section('content')
-    
-    <main>
-        <section id="hero_in" class="general">
-            <div class="wrapper">
-                <div class="container">
-                    <h1 class="fadeInUp"><span></span>Privacy Policy</h1>
-                </div>
-            </div>
-        </section>
-        <!--/hero_in-->
 
-        <div class="container margin_default">
+	<!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/14.png);">
+    	<div class="auto-container">
+        	<h1>Privacy Policy</h1>
+			<div class="text">Salo Hub Privacy Policy</div>
+        </div>
+    </section>
+    
+    <!--Breadcrumb-->
+    <div class="breadcrumb-outer">
+    	<div class="auto-container">
+        	<ul class="bread-crumb text-center">
+            	<li><a href="index.html">Home</a> <span class="fa fa-angle-right"></span></li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </div>
+    <!--End Page Title-->
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <!-- Pattern Layer -->
+        <div class="auto-container">
 
             <div class="row">
                 <div class="col-xs-12">
                     <!-- <h1>Terms & Conditions</h1> -->
                     <p>
-                        This privacy statement describes how Vinestalk Limited collects and uses the personal information you provide to us on our website: www.vinestalk.co.ke. It also describes the choices available to you regarding our use of your personal information and how you can access and update this information. Vinestalk Limited operates the web site accessible from URL www.vinestalk.co.ke(“Website”) At Vinestalk, we dedicate ourselves to revolutionizing the way individual and businesses manage their financial affairs. We want to give the comfort and confidence so that we can serve your needs better. In that effort, we respect and protect the privacy of those who visit or use our Website. If you have questions or concerns regarding this policy, you should first contact us at info@vinestalk.co.ke
+                        This privacy statement describes how Salo Hub Limited collects and uses the personal information you provide to us on our website: www.salohub.com. It also describes the choices available to you regarding our use of your personal information and how you can access and update this information. Salo Hub Limited operates the web site accessible from URL www.salohub.com(“Website”) At Salo Hub, we dedicate ourselves to revolutionizing the way individual and businesses manage their financial affairs. We want to give the comfort and confidence so that we can serve your needs better. In that effort, we respect and protect the privacy of those who visit or use our Website. If you have questions or concerns regarding this policy, you should first contact us at info@salohub.com
                     </p>
 
                     <div class="panel-title">
@@ -46,7 +58,7 @@
                     </p>
 
                     <p>
-                        Subject to your consent or as otherwise permitted by law, we will share your personal information with third parties in ways that are described in the Vinestalk privacy statement. We do not sell your personal information to third parties. We may disclose your personal information to any Vinestalk Affiliate to effect, administer and fulfil transactions. These companies are authorized to use your personal information only as necessary to provide these services in order to help us to run or improve the running of our business or which help us to deliver products and services to you. We may also disclose your personal information for one of the following reasons;
+                        Subject to your consent or as otherwise permitted by law, we will share your personal information with third parties in ways that are described in the Salo Hub privacy statement. We do not sell your personal information to third parties. We may disclose your personal information to any Salo Hub Affiliate to effect, administer and fulfil transactions. These companies are authorized to use your personal information only as necessary to provide these services in order to help us to run or improve the running of our business or which help us to deliver products and services to you. We may also disclose your personal information for one of the following reasons;
                     </p>
 
                     <p>
@@ -60,7 +72,7 @@
                     </p>
 
                     <p>
-                        We may disclose Information about current and former customers to perform marketing, business analysis and advertising services to companies with whom we have contractual or joint marketing arrangements upon notice that you have provided unambiguous consent (opt-in) for the use of information for these purposes. If Vinestalk Limited is involved in a merger, acquisition, or sale of all or portion of its assets, you will be notified via email and/or prominent notice on our website of any material change in ownership or uses of personal information, as well as any choices you may have regarding your personal information.
+                        We may disclose Information about current and former customers to perform marketing, business analysis and advertising services to companies with whom we have contractual or joint marketing arrangements upon notice that you have provided unambiguous consent (opt-in) for the use of information for these purposes. If Salo Hub Limited is involved in a merger, acquisition, or sale of all or portion of its assets, you will be notified via email and/or prominent notice on our website of any material change in ownership or uses of personal information, as well as any choices you may have regarding your personal information.
                     </p>
 
                     <p>
@@ -72,11 +84,11 @@
                     </p>
 
                     <p>
-                        Our site includes links to other Websites whose privacy practices may differ from those of Vinestalk Limited. If you submit personal information to any of those sites, your information is governed by their privacy statements. We encourage you to carefully read the privacy statement of any Website you may intend to visit.
+                        Our site includes links to other Websites whose privacy practices may differ from those of Salo Hub Limited. If you submit personal information to any of those sites, your information is governed by their privacy statements. We encourage you to carefully read the privacy statement of any Website you may intend to visit.
                     </p>
 
                     <p>
-                        We endeavour to maintain physical, technical and procedural safeguards by following generally accepted industry standards and complying with applicable government laws and regulations to guard your information submitted to us, both during transmission and once we receive it. We also endeavour to restrict information access to our employees, agents and representatives who need to know it. Despite our efforts, and as your probably know, no method of transmission over the internet, or method of electronic storage, is fully secure, however. Therefore, whilst we try our best, we cannot guarantee its absolute security. We will retain your information for as long as your account with us is active or as needed to provide you with our services. If you wish to cancel your account or to request that we no longer use your information to provide you with our services, contact info@vinestalk.co.ke. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements in the relevant jurisdiction.
+                        We endeavour to maintain physical, technical and procedural safeguards by following generally accepted industry standards and complying with applicable government laws and regulations to guard your information submitted to us, both during transmission and once we receive it. We also endeavour to restrict information access to our employees, agents and representatives who need to know it. Despite our efforts, and as your probably know, no method of transmission over the internet, or method of electronic storage, is fully secure, however. Therefore, whilst we try our best, we cannot guarantee its absolute security. We will retain your information for as long as your account with us is active or as needed to provide you with our services. If you wish to cancel your account or to request that we no longer use your information to provide you with our services, contact info@salohub.com. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements in the relevant jurisdiction.
                     </p>
 
                     <p>
@@ -84,7 +96,7 @@
                     </p>
 
                     <p>
-                        You may request details of the information that we hold and request us to correct or erase any erroneous or out-of-date information, by contacting us at info@vinestalk.co.ke. to protect your privacy, we will also take reasonable steps to verify your identity before making or providing you with details or making the corrections.
+                        You may request details of the information that we hold and request us to correct or erase any erroneous or out-of-date information, by contacting us at info@salohub.com. to protect your privacy, we will also take reasonable steps to verify your identity before making or providing you with details or making the corrections.
                     </p>
 
                     <p>
@@ -93,13 +105,13 @@
 
                     <p>
                         Please note you can contact us about this privacy statement by writing or email us at the address or email below: <br/>
-                        Vinestalk Limited, South B, LA ENZI Plaza (sanasana); Email: info@vinestalk.co.ke
+                        Salo Hub Limited, Bishop Magua Centre; Email: info@salohub.com
                     </p>
                 </div>
             </div>
 
         </div>
-    </main>
+    </section>
 
 
 @endsection
