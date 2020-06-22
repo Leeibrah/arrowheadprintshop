@@ -451,7 +451,7 @@
                                     </div>
                                     <h3><a href="#">Awesome interest!</a></h3>
                                     <div class="text">
-                                        Only 7.5% per month                           
+                                        Only 10% per month                           
                                     </div>
                                 </div>
                             </div>
