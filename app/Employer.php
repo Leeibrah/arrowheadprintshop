@@ -26,6 +26,7 @@ class Employer extends Model
         'email', 
         'phone',
         'organization',
+        'sector',
         'location',
         'number',
         'status'

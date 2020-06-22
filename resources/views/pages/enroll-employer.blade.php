@@ -101,10 +101,10 @@
 										<div class="form-group">
 						                    <select name="number" class="select-css" required="">
 		            							<option value="None">Select Answer</option>
-		            							<option value="0 - 15">0 - 15 Employees</option>
-		            							<option value="16 - 35">16 - 35 Employees</option>
-		            							<option value="35 - 50">35 - 50 Employees</option>
-		            							<option value="50 - 100">50 - 100 Employees</option>
+		            							<option value="0 - 15 Employees">0 - 15 Employees</option>
+		            							<option value="16 - 35 Employees">16 - 35 Employees</option>
+		            							<option value="35 - 50 Employees">35 - 50 Employees</option>
+		            							<option value="50 - 100 Employees">50 - 100 Employees</option>
 					              				<option value="100 + Employees">100 + Employees</option>
 					            			</select>
 					                    </div>

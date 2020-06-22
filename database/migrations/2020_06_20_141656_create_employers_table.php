@@ -19,6 +19,7 @@ class CreateEmployersTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('organization');
+            $table->string('sector');
             $table->string('location');
             $table->string('number');
             $table->string('status');

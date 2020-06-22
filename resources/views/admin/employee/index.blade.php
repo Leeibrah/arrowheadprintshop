@@ -22,15 +22,13 @@
         <table id="employees-table" class="table table-striped table-bordered">
           <thead>
           <tr>
-            <!-- <th>Employee</th>
-            <th>Title</th> -->
             <th class="hidden-sm">Name</th>
             <th class="hidden-md">Email</th>
             <th class="hidden-md">Phone</th>
             <th class="hidden-md">Sector</th>
             <th class="hidden-sm">Salary</th>
             <th class="hidden-md">Amount</th>
-            <th class="hidden-md">Ready</th>
+            <th class="hidden-md">Organization Ready</th>
             <th class="hidden-sm">ID Number</th>
             <!-- <th data-sortable="false">Actions</th> -->
           </tr>
@@ -38,8 +36,8 @@
           <tbody>
           @foreach ($employees as $employee)
             <tr>
-              <td>{{ $employee->name }}</td>
-              <td>{{ $employee->email }}</td>
+              <td class="hidden-sm">{{ $employee->name }}</td>
+              <td class="hidden-sm">{{ $employee->email }}</td>
               <td class="hidden-sm">{{ $employee->phone }}</td>
               <td class="hidden-md">{{ $employee->sector }}</td>
               <td class="hidden-md">{{ $employee->salary }}</td>

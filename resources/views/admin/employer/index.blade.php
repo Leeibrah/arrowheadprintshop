@@ -22,24 +22,23 @@
         <table id="employers-table" class="table table-striped table-bordered">
           <thead>
           <tr>
-            <!-- <th>Employer</th>
-            <th>Title</th> -->
             <th class="hidden-sm">Name</th>
             <th class="hidden-md">Email</th>
             <th class="hidden-md">Phone</th>
             <th class="hidden-md">Organization</th>
+            <th class="hidden-md">Sector</th>
             <th class="hidden-sm">Location</th>
             <th class="hidden-md">Number</th>
-         
           </tr>
           </thead>
           <tbody>
           @foreach ($employers as $employer)
             <tr>
-              <td>{{ $employer->name }}</td>
-              <td>{{ $employer->email }}</td>
+              <td class="hidden-sm">{{ $employer->name }}</td>
+              <td class="hidden-sm">{{ $employer->email }}</td>
               <td class="hidden-sm">{{ $employer->phone }}</td>
               <td class="hidden-md">{{ $employer->organization }}</td>
+              <td class="hidden-md">{{ $employer->sector }}</td>
               <td class="hidden-md">{{ $employer->location }}</td>
               <td class="hidden-md">{{ $employer->number }}</td>
    

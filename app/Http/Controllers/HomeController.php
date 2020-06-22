@@ -153,6 +153,9 @@ class HomeController extends Controller
             Name of Organization?: ".$theOrganization.
             "</p>
             <p>
+            Which Sector is your organization working in?: ".$theSector.
+            "</p>
+            <p>
             Where is your Organization located?: ".$theLocation.
             "</p>
             <p>
@@ -173,22 +176,25 @@ class HomeController extends Controller
             ""
 
         );
+
+        $employer = Employer::create([
+                "name"          => $fromName,
+                "email"         => $fromEmail,
+                "phone"         => $fromPhone,
+                "organization"  => $theOrganization,
+                "sector"        => $theSector,
+                "location"      => $theLocation,
+                "number"        => $theNumber,
+                'status'        => 'ACTIVE'
+            ]);
+
+        
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         try {
             $response = $sendgrid->send($email);
             print $response->statusCode() . "\n";
             print_r($response->headers());
             print $response->body() . "\n";
-
-            $employer = Employer::create([
-                "name"          => $fromName,
-                "email"         => $fromEmail,
-                "phone"         => $fromPhone,
-                "organization"  => $theOrganization,
-                "location"      => $theLocation,
-                "number"        => $theNumber,
-                'status'        => 'ACTIVE'
-            ]);
 
         } catch (Exception $e) {
             echo 'Caught exception: '. $e->getMessage() ."\n";
