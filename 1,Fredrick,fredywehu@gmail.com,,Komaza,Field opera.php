@@ -1,3 +1,0 @@
-1,Fredrick,fredywehu@gmail.com,,Komaza,Field operation,Kilifi county,0 - 15 Employees,ACTIVE,2020-05-11 12:19,0000-00-00 00:00:00
-2,josephine sagina,sagina745@gmail.com,716586474,call centre international,custmer care agent,westlands,100 + Employees,ACTIVE,0000-00-00 00:00:00,0000-00-00 00:00:00
-3,Samuel thiriku karimi,samuelthiriku68@gmail.com,708907001,Naivas,Shop attendant,Nairobi ,50 -100 Employees,ACTIVE,0000-00-00 00:00:00,0000-00-00 00:00:00
