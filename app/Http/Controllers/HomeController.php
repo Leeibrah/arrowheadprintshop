@@ -188,7 +188,7 @@ class HomeController extends Controller
                 'status'        => 'ACTIVE'
             ]);
 
-        
+
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         try {
             $response = $sendgrid->send($email);
@@ -227,6 +227,10 @@ class HomeController extends Controller
 
         if ($request->has('sector')) {
             $theSector = $request['sector'];
+        }
+
+        if ($request->has('employer')) {
+            $theEmployer = $request['employer'];
         }
        
         if ($request->has('salary')) {
@@ -272,6 +276,9 @@ class HomeController extends Controller
             Which Sector are you currently working in?: ".$theSector.
             "</p>
             <p>
+            Name of Employer?: ".$theEmployer.
+            "</p>
+            <p>
             Are you a Salaried Employee with Payslip evidence?: ".$theSalary.
             "</p>
             <p>
@@ -298,6 +305,21 @@ class HomeController extends Controller
             ""
 
         );
+
+        $employee = Employee::create([
+                "name"      => $fromName,
+                "email"     => $fromEmail,
+                "phone"     => $fromPhone,
+                "sector"    => $theSector,
+                "employer"  => $theEmployer,
+                "salary"    => $theSalary,
+                "amount"    => $theAmount,
+                "ready"     => $theReady,
+                "id_number" => $theIdnumber,
+                'status'    => 'ACTIVE'
+            ]);
+
+
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         try {
             $response = $sendgrid->send($email);
@@ -306,17 +328,7 @@ class HomeController extends Controller
             print $response->body() . "\n";
 
 
-            $employee = Employee::create([
-                "name"      => $fromName,
-                "email"     => $fromEmail,
-                "phone"     => $fromPhone,
-                "sector"    => $theSector,
-                "salary"    => $theSalary,
-                "amount"    => $theAmount,
-                "ready"     => $theReady,
-                "id_number" => $theIdnumber,
-                'status'    => 'ACTIVE'
-            ]);
+            
 
 
         } catch (Exception $e) {

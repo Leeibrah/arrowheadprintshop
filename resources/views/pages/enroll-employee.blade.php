@@ -82,6 +82,11 @@
 									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="employer">Name of Employer?</label>
+										<input type="text" name="employer" id="employer" value="" placeholder="Enter your employer name" required="">
+									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<label for="salary">Are you a Salaried Employee with Payslip evidence?</label>
 										<div class="form-group">
 						                    <select name="salary" class="select-css" required="">

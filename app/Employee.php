@@ -26,6 +26,7 @@ class Employee extends Model
         'email', 
         'phone',
         'sector',
+        'employer',
         'salary',
         'amount',
         'ready',
