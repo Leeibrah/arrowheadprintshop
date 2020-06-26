@@ -414,7 +414,7 @@ class HomeController extends Controller
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("leeibrah@gmail.com", "Lee Gmail");
         $email->setSubject("Sending with Twilio SendGrid is Fun");
-        $email->addTo("admin@salohub.com", "Lee Ibrahim");
+        $email->addTo("info@salohub.com", "Lee Ibrahim");
         $email->addContent(
             "text/html", "
             <p>Hi Salohub</p>
