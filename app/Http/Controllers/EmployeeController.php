@@ -108,57 +108,57 @@ class EmployeeController extends Controller
         $toEmail = env('mail.system_receiver_email');
         // $toEmail = "leeibrah@gmail.com";
 
-        // $data = array('to' => $toEmail, 'from' => $fromEmail, 'phone'  => $fromPhone, 'name' => $fromName, 'subject' => $theSubject);
+        $data = array('to' => $toEmail, 'from' => $fromEmail, 'phone'  => $fromPhone, 'name' => $fromName, 'subject' => $theSubject);
 
-        // $email = new \SendGrid\Mail\Mail();
-        // $email->setFrom($fromEmail, $fromName);
-        // $email->setSubject($theSubject);
-        // $email->addTo($toEmail, "SaloHub Info");
-        // $email->addContent(
-        //     "text/html", "
-        //     <p>Hi Salohub,</p>
-        //     <p>
-        //         Please find my answers to the registration form.
-        //     </p>
-        //     <p>
-        //     Name: ".$fromName.
-        //     "</p>
-        //     <p>
-        //     Email address: ".$fromEmail.
-        //     "</p>
-        //     <p>
-        //     Which Sector are you currently working in?: ".$theSector.
-        //     "</p>
-        //     <p>
-        //     Name of Employer?: ".$theEmployer.
-        //     "</p>
-        //     <p>
-        //     Are you a Salaried Employee with Payslip evidence?: ".$theSalary.
-        //     "</p>
-        //     <p>
-        //     How much would you need monthly for your Salary advance?: ".$theAmount.
-        //     "</p>
-        //     <p>
-        //     Is your organization ready to sign up for Salary advances: ".$theReady.
-        //     "</p>
-        //     <p>
-        //     Kindy assist us with your ID number: ".$theIdnumber.
-        //     "</p>
-        //     <p>
-        //     Kindly assist us with your number: ".$fromPhone.
-        //     "</p>
-        //     <p>
-        //     Kind Regards,
-        //     <br>
-        //     "
-        //     .$fromName.
-        //     "
-        //     <br>
-        //     "
-        //     .$fromPhone.
-        //     ""
+        $email = new \SendGrid\Mail\Mail();
+        $email->setFrom($fromEmail, $fromName);
+        $email->setSubject($theSubject);
+        $email->addTo($toEmail, "SaloHub Info");
+        $email->addContent(
+            "text/html", "
+            <p>Hi Salohub,</p>
+            <p>
+                Please find my answers to the registration form.
+            </p>
+            <p>
+            Name: ".$fromName.
+            "</p>
+            <p>
+            Email address: ".$fromEmail.
+            "</p>
+            <p>
+            Which Sector are you currently working in?: ".$theSector.
+            "</p>
+            <p>
+            Name of Employer?: ".$theEmployer.
+            "</p>
+            <p>
+            Are you a Salaried Employee with Payslip evidence?: ".$theSalary.
+            "</p>
+            <p>
+            How much would you need monthly for your Salary advance?: ".$theAmount.
+            "</p>
+            <p>
+            Is your organization ready to sign up for Salary advances: ".$theReady.
+            "</p>
+            <p>
+            Kindy assist us with your ID number: ".$theIdnumber.
+            "</p>
+            <p>
+            Kindly assist us with your number: ".$fromPhone.
+            "</p>
+            <p>
+            Kind Regards,
+            <br>
+            "
+            .$fromName.
+            "
+            <br>
+            "
+            .$fromPhone.
+            ""
 
-        // );
+        );
 
         $employee = Employee::create([
                 "name"      	=> $fromName,
@@ -176,20 +176,20 @@ class EmployeeController extends Controller
             ]);
 
 
-        // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-        // try {
-        //     $response = $sendgrid->send($email);
-        //     print $response->statusCode() . "\n";
-        //     print_r($response->headers());
-        //     print $response->body() . "\n";
+        $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+        try {
+            $response = $sendgrid->send($email);
+            print $response->statusCode() . "\n";
+            print_r($response->headers());
+            print $response->body() . "\n";
 
 
             
 
 
-        // } catch (Exception $e) {
-        //     echo 'Caught exception: '. $e->getMessage() ."\n";
-        // }
+        } catch (Exception $e) {
+            echo 'Caught exception: '. $e->getMessage() ."\n";
+        }
         
         // return redirect(route('contacts'))->with('message', 'Message send Successfully. We will get back to you. Thank You.');
         return Redirect::to('employee-enrollment')->with('success', 'Message send to '. $toEmail .' successfully. We will get back to you. Thank You.');
