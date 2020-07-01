@@ -2,25 +2,25 @@
 
 // Application routes...
 
-Route::get( '/',                        ['as' => 'home',                    'uses' => 'HomeController@index']);
-// Route::get( 'home',                  ['as' => 'home',                    'uses' => 'HomeController@index']);
-Route::get( 'welcome',                  ['as' => 'welcome',                 'uses' => 'HomeController@welcome']);
+Route::get( '/',                        ['as' => 'home',                            'uses' => 'HomeController@index']);
+// Route::get( 'home',                  ['as' => 'home',                            'uses' => 'HomeController@index']);
+Route::get( 'welcome',                  ['as' => 'welcome',                         'uses' => 'HomeController@welcome']);
 
-Route::get( 'about',                    ['as' => 'about',                   'uses' => 'HomeController@about']);
-Route::get( 'app',                      ['as' => 'app',                     'uses' => 'HomeController@app']);
-Route::get( 'how-it-works',             ['as' => 'how-it-works',            'uses' => 'HomeController@howitworks']);
-Route::get( 'terms',                    ['as' => 'terms',                   'uses' => 'HomeController@termsandconditions']);
-Route::get( 'privacy',                  ['as' => 'privacy',                 'uses' => 'HomeController@privacypolicy']);
+Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
+Route::get( 'app',                      ['as' => 'app',                             'uses' => 'HomeController@app']);
+Route::get( 'how-it-works',             ['as' => 'how-it-works',                    'uses' => 'HomeController@howitworks']);
+Route::get( 'terms',                    ['as' => 'terms',                           'uses' => 'HomeController@termsandconditions']);
+Route::get( 'privacy',                  ['as' => 'privacy',                         'uses' => 'HomeController@privacypolicy']);
 
-Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',     'uses' => 'HomeController@employerEnrollment']);
-Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post','uses' => 'HomeController@postEmployerEnrollment']);
+Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'HomeController@employerEnrollment']);
+Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'HomeController@postEmployerEnrollment']);
 
-Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',     'uses' => 'HomeController@employeeEnrollment']);
-Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post','uses' => 'HomeController@postEmployeeEnrollment']);
+Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',             'uses' => 'EmployeeController@enrollment']);
+Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',        'uses' => 'EmployeeController@postEnrollment']);
 
 
-Route::get( 'contacts',                 ['as' => 'contacts',                'uses' => 'HomeController@contacts']);
-Route::post('contacts',                 ['as' => 'contactsPost',            'uses' => 'HomeController@postContacts']);
+Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
+Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
 
 Route::get('accept/{token}', 'InviteController@accept')->name('accept');
 

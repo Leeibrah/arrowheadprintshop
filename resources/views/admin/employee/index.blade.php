@@ -32,6 +32,8 @@
             <th class="hidden-md">Amount</th>
             <th class="hidden-md">Organization Ready</th>
             <th class="hidden-sm">ID Number</th>
+            <th class="hidden-sm">ID Card Document</th>
+            <th class="hidden-sm">Payslip Document</th>
             
             <!-- <th data-sortable="false">Actions</th> -->
           </tr>
@@ -49,6 +51,8 @@
               <td class="hidden-md">{{ $employee->amount }}</td>
               <td class="hidden-md">{{ $employee->ready }}</td>
               <td class="hidden-md">{{ $employee->id_number }}</td>
+              <td class="hidden-md">{{ $employee->id_card_doc }}</td>
+              <td class="hidden-md">{{ $employee->pay_slip_doc }}</td>
 
               <!-- <td>
                 <a href="/admin/employee/{{ $employee->id }}/edit"

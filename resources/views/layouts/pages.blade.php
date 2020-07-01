@@ -21,6 +21,10 @@
 
 <body>
 
+<div class="box-body">
+        @include('partials._errors')
+</div>
+
 <div class="page-wrapper">
     <!-- Preloader -->
     <div class="preloader"></div>

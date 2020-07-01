@@ -61,7 +61,8 @@
 						<div class="contact-form">
 								
 							<!--Contact Form-->
-							<form method="post" action="{!! route('employee-enrollment-post') !!}" id="contact-form">
+							<!-- <form method="post" action="{!! route('employee-enrollment-post') !!}" id="contact-form"> -->
+							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'files' => true]) !!}
 							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 								{!! csrf_field() !!}
 								<div class="row clearfix">
@@ -133,13 +134,25 @@
 										<label for="phone">Kindly assist us with your number</label>
 										<input type="text" name="phone" id="phone" value="" placeholder="Enter your Mobile Phone Number" required="">
 									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="phone">Upload you copy of ID: </label>
+										<input type="file" name="id_document" id="id_document" value="" placeholder="Upload your ID Document" required="">
+									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="file">Upload a copy of your latest payslip: </label>
+										<input type="file" name="payslip_document" id="payslip_document" value="" placeholder="Upload your Payslip Document" required="">
+									</div>
+									
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit Now</button>
 									</div>
 									
 								</div>
-							</form>
+							<!-- </form> -->
+							{!! Form::close() !!}
 						</div>
 						
 					</div>
