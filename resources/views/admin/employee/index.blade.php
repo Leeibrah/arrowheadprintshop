@@ -35,7 +35,7 @@
             <th class="hidden-sm">ID Card Document</th>
             <th class="hidden-sm">Payslip Document</th>
             
-            <!-- <th data-sortable="false">Actions</th> -->
+            <th data-sortable="false">Actions</th>
           </tr>
           </thead>
           <tbody>
@@ -53,13 +53,11 @@
               <td class="hidden-md">{{ $employee->id_number }}</td>
               <td class="hidden-md">{{ $employee->id_card_doc }}</td>
               <td class="hidden-md">{{ $employee->pay_slip_doc }}</td>
-
-              <!-- <td>
-                <a href="/admin/employee/{{ $employee->id }}/edit"
-                   class="btn btn-xs btn-info">
-                  <i class="fa fa-edit"></i> Edit
+              <td>
+                <a href="/admin/employee/{{ $employee->id }}" class="btn btn-xs btn-warning">
+                    <i class="fa fa-eye"></i> View
                 </a>
-              </td> -->
+              <td>
             </tr>
           @endforeach
           </tbody>

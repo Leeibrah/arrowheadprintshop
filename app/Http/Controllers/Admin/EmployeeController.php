@@ -42,6 +42,18 @@ class EmployeeController extends Controller
     }
 
     /**
+     * Show the form
+     *
+     * @return View
+     */
+    public function show($id)
+    {
+        $employee = Employee::find($id);
+
+        return view('admin.employee.show', compact('employee'));
+    }
+
+    /**
      * Show the Employee edit form
      *
      * @param  int  $id

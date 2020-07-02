@@ -20,7 +20,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        return view('blog.contact');
+        // return view('blog.contact');
     }
 
     /**

@@ -19,6 +19,8 @@ Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',         
 Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',        'uses' => 'EmployeeController@postEnrollment']);
 
 
+
+
 Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
 Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
 
@@ -69,6 +71,8 @@ $router->group([
     resource('admin/tag', 'TagController', ['except' => 'show']);
 
     resource('admin/employee', 'EmployeeController', ['except' => 'show']);
+    get('admin/employee/{id}', 'EmployeeController@show');
+
     resource('admin/employer', 'EmployerController', ['except' => 'show']);
 
     get('admin/upload', 'UploadController@index');
@@ -82,5 +86,3 @@ $router->group([
 get('/auth/login', 'Auth\AuthController@getLogin');
 post('/auth/login', 'Auth\AuthController@postLogin');
 get('/auth/logout', 'Auth\AuthController@getLogout');
-
-get('/cemanet', 'HomeController@cemanet');
