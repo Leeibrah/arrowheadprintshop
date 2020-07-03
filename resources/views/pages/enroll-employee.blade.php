@@ -3,25 +3,27 @@
 @section('content')
 
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/15.png);>
+    <!-- <section class="page-title">
     	<div class="auto-container">
-        	<!-- <h1></h1>
+        	<h1></h1>
 			<div class="text">
 				This Form will help us know more about you & your organization for our scoring & grading purposes
-			</div> -->
+			</div>
         </div>
-    </section>
+    </section> -->
     
     <!--Breadcrumb-->
-    <div class="breadcrumb-outer">
+    <!-- <div class="breadcrumb-outer">
     	<div class="auto-container">
         	<ul class="bread-crumb text-center">
             	<li><a href="index.html">Home</a> <span class="fa fa-angle-right"></span></li>
                 <li>Register for a Salary Advance</li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!--End Page Title-->
+
+    <hr>
 
     @if ($message = Session::get('success'))
     <div class="alert alert-success alert-block">
@@ -38,14 +40,14 @@
     @endif
 	
 	<!-- Contact Page Section -->
-	<section class="contact-page-section">
+	<section class="contact-page-section" style="padding-top: 50px;">
 		<div class="auto-container">
 			<div class="row clearfix">
 							
 				<div class="form-column col-lg-3">
 				</div>
 				<!-- Form Column -->
-				<div class="form-column col-lg-6 col-md-6 col-sm-6">
+				<div class="form-column col-lg-9 col-md-9 col-sm-9" style="margin-left: 10%;">
 					<div class="inner-colum">
 						<!-- Sec Title -->
 						<div class="sec-title">

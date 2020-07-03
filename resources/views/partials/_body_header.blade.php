@@ -30,7 +30,7 @@
                 <ul class="social-links">
                     <!-- <li class="google"><a href="#"><span class="fab fa-google-plus-g"></span></a></li> -->
                     <li class="facebook"><a href="https://www.facebook.com/salohub" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                    <li class="twitter"><a href="https://twitter.com/salo_hub" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                    <li class="twitter"><a href="https://www.twitter.com/salo_hub" target="_blank"><span class="fab fa-twitter"></span></a></li>
                     <li class="instagram"><a href="https://www.instagram.com/salo_hub/" target="_blank"><span class="fab fa-instagram"></span></a></li>
                     <!-- <li class="vimeo"><a href="#"><span class="fab fa-vimeo-v"></span></a></li> -->
                 </ul>
