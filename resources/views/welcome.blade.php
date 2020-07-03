@@ -206,7 +206,7 @@
                     data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                     <!-- Link Box -->
                         <div class="link-box">
-                            <a href="/enroll" class="theme-btn btn-style-two">Register Today</a>
+                            <a href="/employee-enrollment" class="theme-btn btn-style-two">Register Today</a>
                             <!-- <a href="/contacts" class="theme-btn btn-style-three">Contact Us</a> -->
                         </div>
                     </div>
@@ -244,7 +244,7 @@
                             <div class="icon-box">
                                 <span class="icon flaticon-app-development"></span>
                             </div>
-                            <h3><a href="services-2.html">Everywhere</a></h3>
+                            <h3><a href="{!! route('how-it-works') !!}">Everywhere</a></h3>
                             <div class="text">Whenever you are, Instant to your mobile phone.</div>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                             <div class="icon-box">
                                 <span class="icon flaticon-web"></span>
                             </div>
-                            <h3><a href="services-2.html">Bank Directly</a></h3>
+                            <h3><a href="{!! route('how-it-works') !!}">Bank Directly</a></h3>
                             <div class="text">Direct to your Bank and your card instantly.</div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                             <div class="icon-box">
                                 <span class="icon flaticon-megaphone"></span>
                             </div>
-                            <h3><a href="services-2.html">Fast & Secure</a></h3>
+                            <h3><a href="{!! route('how-it-works') !!}">Fast & Secure</a></h3>
                             <div class="text">Always fast and in a timely and efficient way.</div>
                         </div>
                     </div>
@@ -288,7 +288,7 @@
                         <!--Video Box-->
                         <div class="video-box">
                             <figure class="image">
-                                <img src="images/resource/video-image-1.png" alt="">
+                                <img src="images/resource/video-image-2.png" alt="">
                             </figure>
                             <!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><i class="play-now flaticon-play-button"></i></a> -->
                         </div>
@@ -345,7 +345,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU ARE 18 OR OLDER</a></h3>
+                        <h3>YOU ARE 18 OR OLDER</h3>
                         <div class="text">The minimun age to use our service is 18.</div>
                     </div>
                 </div>
@@ -355,7 +355,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU ARE A KENYAN RESIDENT</a></h3>
+                        <h3>YOU ARE A KENYAN RESIDENT</h3>
                         <div class="text">Must be a current resident of the Republic of Kenya.</div>
                     </div>
                 </div>
@@ -365,7 +365,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU HAVE A BANK ACCOUNT AND MPESA</a></h3>
+                        <h3>YOU HAVE A BANK ACCOUNT AND MPESA</h3>
                         <div class="text">You need an active salary bank account and an active mpesa account.</div>
                     </div>
                 </div>
@@ -375,7 +375,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU ARE HONEST AND TRUSTWORTHY</a></h3>
+                        <h3>YOU ARE HONEST AND TRUSTWORTHY</h3>
                         <div class="text">You deffinitely have to be a nice person.</div>
                     </div>
                 </div>
@@ -385,7 +385,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU HAVE A EMPLOYERS CONTRACT</a></h3>
+                        <h3>YOU HAVE A EMPLOYERS CONTRACT</h3>
                         <div class="text">Must be a current employee of the company.</div>
                     </div>
                 </div>
@@ -395,7 +395,7 @@
                         <div class="icon-box">
                             <div class="icon flaticon-tick"></div>
                         </div>
-                        <h3><a href="services-1.html">YOU HAVE A REGULAR INCOME</a></h3>
+                        <h3>YOU HAVE A REGULAR INCOME</h3>
                         <div class="text">You must have an income every month whether it be benefits or a job.</div>
                     </div>
                 </div>
@@ -405,7 +405,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-art-and-design"></span>
                         </div>
-                        <h3><a href="services-1.html">UI Design</a></h3>
+                        <h3>UI Design</h3>
                         <div class="text">Lorem ipsum dolor sit amet adipelit sed.</div>
                     </div>
                 </div>
@@ -490,7 +490,7 @@
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image">
-                            <img src="images/resource/service-main.png" alt="" />
+                            <img src="images/resource/service-new.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -526,7 +526,7 @@
                                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="image">
-                                            <img src="images/resource/testimonial-1.png" alt="" />
+                                            <img src="images/resource/testimonial-3.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -534,8 +534,8 @@
                                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="content">
-                                            <div class="text">My salary gave me more value by borrowing against it. Side hussle iko sawa.</div>
-                                            <div class="author">Grace Momanyi</div>
+                                            <div class="text">You are the best. I am proud of your friendly rates.</div>
+                                            <div class="author">Josephat Okonda</div>
                                         </div>
                                     </div>
                                 </div>
@@ -551,7 +551,7 @@
                                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="image">
-                                            <img src="images/resource/testimonial-2.png" alt="" />
+                                            <img src="images/resource/testimonial-4.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -559,8 +559,8 @@
                                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="content">
-                                            <div class="text">I took a loan against my salary for my wife's business, two income streams perfect. Asante SaloHub.</div>
-                                            <div class="author">Abel Kimtai</div>
+                                            <div class="text">Thanks alot for the service. Mumenitoa kwa shimo kabisa.<div>
+                                            <div class="author">Lubia</div>
                                         </div>
                                     </div>
                                 </div>
@@ -595,7 +595,7 @@
                             <div class="content">
                                 <div class="icon flaticon-calendar-1"></div>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="0.5">0</span>+
+                                    <span class="count-text" data-speed="2500" data-stop="1">0</span>+
                                 </div>
                                 <h4 class="counter-title">Years Experience</h4>
                             </div>
@@ -608,7 +608,7 @@
                             <div class="content">
                                 <div class="icon flaticon-target-1"></div>
                                 <div class="count-outer count-box alternate">
-                                    <span class="count-text" data-speed="3000" data-stop="200">0</span>+
+                                    <span class="count-text" data-speed="3000" data-stop="300">0</span>+
                                 </div>
                                 <h4 class="counter-title">Loans Given</h4>
                             </div>
@@ -621,7 +621,7 @@
                             <div class="content">
                                 <div class="icon flaticon-avatar"></div>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="4000" data-stop="200">0</span>+
+                                    <span class="count-text" data-speed="4000" data-stop="275">0</span>+
                                 </div>
                                 <h4 class="counter-title">Happy Coustomers</h4>
                             </div>

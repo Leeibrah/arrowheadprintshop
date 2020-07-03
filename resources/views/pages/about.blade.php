@@ -20,29 +20,51 @@
         </div>
     </div>
     <!--End Page Title-->
+
+    <!-- Services Section Two -->
+	<section class="services-section-two" style="background-image:url(images/background/3.png)">
+		<div class="auto-container">
+			<div class="sec-title centered light">
+				<h2>About Us</h2>
+				<div class="separator"></div>
+			</div>
+			<div class="row clearfix">
+				
+				<!-- Services Block Two -->
+				<div style="color: #fff; font-size: 17px">
+					We are one of the tech-savvy salary advanced companies in Kenya. We serve our customers with high professionalism and we go with them all the way.
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section Two -->
 	
 	<!-- Counter Section -->
 	<section class="counter-section-two">
 		<div class="auto-container">
+			<div class="sec-title">
+				<h2>Word from the CEO</h2>
+				<div class="separator"></div>
+			</div>
+
 			<div class="row clearfix">
 				
 				<!-- Title Column -->
 				<div class="title-column col-lg-5 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<!-- Sec Title -->
-						<div class="sec-title">
-							<h2>Word from the CEO</h2>
-							<div class="separator"></div>
-						</div>
-						<div class="text">
-							<p>
-								We are one of the tech-savvy salary advanced companies in Kenya. We serve our customers with high professionalism and we go with them all the way.
-							</p>
-							<!-- <p>
-								Totam rem aperiam eaque ipsa quae illo invenenim ipsam volup tatem quia voluptas sit aspernatur.
-							</p> -->
-						</div>
-						<a href="contact.html" class="theme-btn btn-style-four">Contact Us</a>
+						
+						<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+		                        <!--Video Box-->
+		                        <div class="video-box">
+		                            <figure class="image">
+		                                <img src="images/resource/welcome-letter.png" alt="">
+		                            </figure>
+		                            <!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><i class="play-now flaticon-play-button"></i></a> -->
+		                        </div>
+		                    </div>
+						
 					</div>
 				</div>
 				
@@ -67,7 +89,7 @@
 											<div class="inner">
 												<div class="content">
 													<div class="count-outer count-box">
-														<span class="count-text" data-speed="2500" data-stop="0.5">0</span>
+														<span class="count-text" data-speed="2500" data-stop="1">0</span>
 													</div>
 													<h4 class="counter-title">Years Experience</h4>
 												</div>
@@ -79,7 +101,7 @@
 											<div class="inner">
 												<div class="content">
 													<div class="count-outer count-box">
-														<span class="count-text" data-speed="3000" data-stop="200">0</span>
+														<span class="count-text" data-speed="3000" data-stop="352">0</span>
 													</div>
 													<h4 class="counter-title">Loans Given</h4>
 												</div>
@@ -91,7 +113,7 @@
 											<div class="inner">
 												<div class="content">
 													<div class="count-outer count-box">
-														<span class="count-text" data-speed="4000" data-stop="200">0</span>
+														<span class="count-text" data-speed="4000" data-stop="270">0</span>
 													</div>
 													<h4 class="counter-title">Happy Coustomers</h4>
 												</div>
@@ -124,63 +146,7 @@
 	</section>
 	<!-- End Counter Section -->
 	
-	<!-- Services Section Two -->
-	<section class="services-section-two" style="background-image:url(images/background/3.png)">
-		<div class="auto-container">
-			<div class="sec-title centered light">
-				<h2>Our Services</h2>
-				<div class="separator"></div>
-			</div>
-			<div class="row clearfix">
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="icon-box">
-							<span class="icon flaticon-growth"></span>
-						</div>
-						<h3><a href="services-1.html">Business Strategy</a></h3>
-						<div class="text">Customer first business strategy.</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-						<div class="icon-box">
-							<span class="icon flaticon-atomic"></span>
-						</div>
-						<h3><a href="services-1.html">Data Science</a></h3>
-						<div class="text">We analyse our clients data thoroughly.</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-						<div class="icon-box">
-							<span class="icon flaticon-art-and-design"></span>
-						</div>
-						<h3><a href="services-1.html">Fast Loans</a></h3>
-						<div class="text">We deliver our loans within 15 Minutes.</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-						<div class="icon-box">
-							<span class="icon flaticon-talk"></span>
-						</div>
-						<h3><a href="services-1.html">Marketing</a></h3>
-						<div class="text">We target any employed person.</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Services Section Two -->
+	
 	
 	<!-- Team Section Three -->
 	<!-- <section class="team-section-three">

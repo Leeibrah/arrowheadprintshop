@@ -85,6 +85,14 @@ class HomeController extends Controller
         return view('pages.privacy', compact('page_title', 'page_description'));
     }
 
+    public function enroll()
+    {
+        $page_title = 'Enroll Page';
+        $page_description = "This is the Enroll page";
+
+        return view('pages.enroll', compact('page_title', 'page_description'));
+    }
+
     public function employerEnrollment()
     {
         $page_title = 'Employee Enrollment Page';

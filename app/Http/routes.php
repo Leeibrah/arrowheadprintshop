@@ -12,6 +12,8 @@ Route::get( 'how-it-works',             ['as' => 'how-it-works',                
 Route::get( 'terms',                    ['as' => 'terms',                           'uses' => 'HomeController@termsandconditions']);
 Route::get( 'privacy',                  ['as' => 'privacy',                         'uses' => 'HomeController@privacypolicy']);
 
+Route::get( 'enroll',                   ['as' => 'enroll',                          'uses' => 'HomeController@enroll']);
+
 Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'HomeController@employerEnrollment']);
 Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'HomeController@postEmployerEnrollment']);
 
