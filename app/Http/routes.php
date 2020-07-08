@@ -12,19 +12,18 @@ Route::get( 'how-it-works',             ['as' => 'how-it-works',                
 Route::get( 'terms',                    ['as' => 'terms',                           'uses' => 'HomeController@termsandconditions']);
 Route::get( 'privacy',                  ['as' => 'privacy',                         'uses' => 'HomeController@privacypolicy']);
 
+
+Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
+Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
+
 Route::get( 'enroll',                   ['as' => 'enroll',                          'uses' => 'HomeController@enroll']);
 
-Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'HomeController@employerEnrollment']);
-Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'HomeController@postEmployerEnrollment']);
+Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'EmployerController@enrollment']);
+Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'EmployerController@postEnrollment']);
 
 Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',             'uses' => 'EmployeeController@enrollment']);
 Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',        'uses' => 'EmployeeController@postEnrollment']);
 
-
-
-
-Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
-Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
 
 Route::get('accept/{token}', 'InviteController@accept')->name('accept');
 

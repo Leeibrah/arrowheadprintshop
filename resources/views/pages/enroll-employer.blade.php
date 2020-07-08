@@ -2,6 +2,14 @@
 
 @section('content')
 
+
+	<!--Page Title-->
+    <!-- <section class="page-title">
+    	<div class="auto-container">
+        	
+        </div>
+    </section> -->
+
 	<hr>
 
     @if ($message = Session::get('success'))
@@ -17,7 +25,7 @@
             <strong>{{ $message }}</strong>
     </div>
     @endif
-	
+
 	<!-- Contact Page Section -->
 	<section class="contact-page-section" style="padding-top: 50px;">
 		<div class="auto-container">
