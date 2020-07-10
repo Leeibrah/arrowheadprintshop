@@ -22,6 +22,7 @@
         <table id="employers-table" class="table table-striped table-bordered">
           <thead>
           <tr>
+            <th class="hidden-sm">Created Date</th>
             <th class="hidden-sm">Name</th>
             <th class="hidden-md">Email</th>
             <th class="hidden-md">Phone</th>
@@ -34,6 +35,7 @@
           <tbody>
           @foreach ($employers as $employer)
             <tr>
+              <td class="hidden-sm">{{ $employer->created_at->todatestring() }}</td>
               <td class="hidden-sm">{{ $employer->name }}</td>
               <td class="hidden-sm">{{ $employer->email }}</td>
               <td class="hidden-sm">{{ $employer->phone }}</td>
