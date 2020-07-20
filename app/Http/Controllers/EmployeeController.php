@@ -39,11 +39,17 @@ class EmployeeController extends Controller
     public function postEnrollment(Request $request)
     {
 
-        $input = Input::all();
-
-        // dd($request['id_document']);
 
         $name = "N/A";
+
+        $user = Employee::where('email', '=', $request['email'])->first();
+        if ($user != null) {
+           // user doesn't exist
+
+            $error = 'Employee is already registered in our systems. If you did a mistake in your registration please reach us through email.';
+            // return redirect()->back()->withErrors($error);
+            return redirect()->back()->with('error', $error);
+        }
 
         if ($request->has('name')) {
             $fromName = $request['name'];
@@ -75,6 +81,7 @@ class EmployeeController extends Controller
         if ($request->has('phone')) {
             $fromPhone = $request['phone'];
         }
+
         if (Input::hasFile('id_document')) {
 
             $destinationPath = public_path().'/uploads/document/id'; // upload path
@@ -84,10 +91,11 @@ class EmployeeController extends Controller
 
         }else{
 
-            $error = 'Please, Upload your ID Card';
+            $error = 'Please, Upload your ID Card and make sure it is smaller than 2MB or 2000KB';
             // return redirect()->back()->withErrors($error);
             return redirect()->back()->with('error', $error);
         }
+
         if (Input::hasFile('payslip_document')) {
 
             $destinationPath = public_path().'/uploads/document/payslip'; // upload path

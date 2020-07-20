@@ -64,7 +64,7 @@
 								
 							<!--Contact Form-->
 							<!-- <form method="post" action="{!! route('employee-enrollment-post') !!}" id="contact-form"> -->
-							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'files' => true]) !!}
+							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true]) !!}
 							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 								{!! csrf_field() !!}
 								<div class="row clearfix">
@@ -138,12 +138,12 @@
 									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="phone">Upload you copy of ID: </label>
+										<label for="phone">Upload you copy of ID (Size should be less than 2MB): </label>
 										<input type="file" name="id_document" id="id_document" value="" placeholder="Upload your ID Document" required="">
 									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="file">Upload a copy of your latest payslip: </label>
+										<label for="file">Upload a copy of your latest payslip (Size should be less than 2MB): </label>
 										<input type="file" name="payslip_document" id="payslip_document" value="" placeholder="Upload your Payslip Document" required="">
 									</div>
 									

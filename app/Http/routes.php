@@ -25,7 +25,6 @@ Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',         
 Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',        'uses' => 'EmployeeController@postEnrollment']);
 
 
-Route::get('accept/{token}', 'InviteController@accept')->name('accept');
 
 
 Route::get('mail', 'HomeController@mail');
