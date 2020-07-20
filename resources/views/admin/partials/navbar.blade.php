@@ -7,6 +7,9 @@
     <li @if (Request::is('admin/employee*')) class="active" @endif>
       <a href="/admin/employee">Employees</a>
     </li>
+    <li @if (Request::is('admin/reports*')) class="active" @endif>
+      <a href="/admin/reports/employees">Employees Reports</a>
+    </li>
     <li @if (Request::is('admin/post*')) class="active" @endif>
       <a href="/admin/post">Posts</a>
     </li>

@@ -31,9 +31,9 @@ class Employee extends Model
         'amount',
         'ready',
         'id_number',
-        'status',
         'id_card_doc',
-        'pay_slip_doc'
+        'pay_slip_doc',
+        'status'
     ];
 
 }

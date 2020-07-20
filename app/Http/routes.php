@@ -67,20 +67,29 @@ get('admin', function () {
 $router->group([
     'namespace' => 'Admin',
     'middleware' => 'auth',
+    'prefix'    => 'admin',
 ], function () {
-    resource('admin/post', 'PostController', ['except' => 'show']);
-    resource('admin/tag', 'TagController', ['except' => 'show']);
+    resource('post', 'PostController', ['except' => 'show']);
+    resource('tag', 'TagController', ['except' => 'show']);
 
-    resource('admin/employee', 'EmployeeController', ['except' => 'show']);
-    get('admin/employee/{id}', 'EmployeeController@show');
+    resource('employee', 'EmployeeController', ['except' => 'show']);
+    get('employee/{id}', 'EmployeeController@show');
 
-    resource('admin/employer', 'EmployerController', ['except' => 'show']);
+    get('employer', 'EmployerController@index');
 
-    get('admin/upload', 'UploadController@index');
-    post('admin/upload/file', 'UploadController@uploadFile');
-    delete('admin/upload/file', 'UploadController@deleteFile');
-    post('admin/upload/folder', 'UploadController@createFolder');
-    delete('admin/upload/folder', 'UploadController@deleteFolder');
+    get('upload', 'UploadController@index');
+    post('upload/file', 'UploadController@uploadFile');
+    delete('upload/file', 'UploadController@deleteFile');
+    post('upload/folder', 'UploadController@createFolder');
+    delete('upload/folder', 'UploadController@deleteFolder');
+
+    Route::group(['prefix' => 'reports'], function()
+        {
+            // Reports users routes
+            Route::get( 'employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@getemployees']);
+            Route::post('employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@postemployees']);
+
+        });
 });
 
 // Logging in and out
