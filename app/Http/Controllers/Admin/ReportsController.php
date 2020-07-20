@@ -76,23 +76,23 @@ class ReportsController extends Controller {
       print trans('Employees Reports', ['from' => $start_date, 'to' => $end_date]);
       print "\n";
       
-      print "Name | Email | Phone | Sector | Employer | Salary | Amount | Organization Ready | ID Number | ID Document | Payslip Document | Status | Joined \n";
+      print "Name, Email, Phone, Sector, Employer, Salary, Amount, Organization Ready, ID Number, ID Document, Payslip Document, Status, Joined \n";
       
       foreach ($employees as $key => $employee) {
         
-        print $employee->name . '|';
-        print $employee->email . '|';
-        print $employee->phone . '|';
-        print $employee->sector . '|';
-        print $employee->employer . '|';
-        print $employee->salary . '|';
-        print $employee->amount . '|';
-        print $employee->ready . '|';
-        print $employee->id_number . '|';
-        print $employee->id_card_doc . '|';
-        print $employee->pay_slip_doc . '|';
-        print $employee->status . '|';
-        print $employee->created_at . '|';
+        print $employee->name . ',';
+        print $employee->email . ',';
+        print $employee->phone . ',';
+        print $employee->sector . ',';
+        print $employee->employer . ',';
+        print $employee->salary . ',';
+        print $employee->amount . ',';
+        print $employee->ready . ',';
+        print $employee->id_number . ',';
+        print $employee->id_card_doc . ',';
+        print $employee->pay_slip_doc . ',';
+        print $employee->status . ',';
+        print $employee->created_at . ',';
         print "\n";
         
       }

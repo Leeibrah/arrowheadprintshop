@@ -105,10 +105,10 @@
 										<div class="form-group">
 						                    <select name="amount" class="select-css" required="">
 		            							<option value="None">Select Answer</option>
-		            							<option value="KES 1,000 - 10,000">1,000 - 10,000</option>
-		            							<option value="KES 10,000 - 20,000">10,000 - 20,000</option>
-		            							<option value="KES 20,000 - 30,000">20,000 - 30,000</option>
-		            							<option value="KES 31,000 and above">31,000 and above</option>
+		            							<option value="1000 - 10000">KES 1,000 - 10,000</option>
+		            							<option value="10000 - 20000">KES 10,000 - 20,000</option>
+		            							<option value="20000 - 30000">KES 20,000 - 30,000</option>
+		            							<option value="31000 and above">KES 31,000 and above</option>
 					              
 					            			</select>
 					                    </div>
