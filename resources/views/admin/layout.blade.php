@@ -7,15 +7,9 @@
 
   <title>{{ config('blog.title') }} Admin</title>
 
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
   <link href="/assets/css/admin.css" rel="stylesheet">
-  <!-- <script src="/assets/bootstrap/css/bootstrap.css"></script> -->
-  <!-- <link href="/assets/datepicker/datepicker.css" rel="stylesheet"> -->
-  <link href="/assets/pickadate/themes/classic.date.css" rel="stylesheet">
 
-  @yield('styles')
+  @yield('css')
 
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -44,19 +38,9 @@
 
 @yield('content')
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.2.4/riot+compiler.min.js"></script>
-
 <script src="/assets/js/admin.js"></script>
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/datepicker/datepicker.js"></script>
-<!-- <script src="/assets/pickadate/picker.date.js"></script> -->
 
-
-@yield('js')
+@yield('scripts')
 
 </body>
 </html>

@@ -23,8 +23,8 @@ class ReportsController extends Controller {
   // Users Reports
   public function getEmployees(){
 
-    $page_title = trans('admin/reports/general.page.employees.title');
-    $page_description = trans('admin/reports/general.page.employees.description');
+    $page_title = 'Employees Reports';
+    $page_description = "Showing all Employees Reports";
     
     $start_date = date("Y-m-d", strtotime(request()->input("start_date")));
     $end_date = date("Y-m-d", strtotime(request()->input("end_date")));
