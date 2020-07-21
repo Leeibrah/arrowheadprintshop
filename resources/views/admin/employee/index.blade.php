@@ -98,5 +98,11 @@
 @stop
 
 @section('scripts')
-  
+
+  <script>
+      $(function() {
+        $("#employees-table").DataTable({
+        });
+      });
+    </script>
 @stop
