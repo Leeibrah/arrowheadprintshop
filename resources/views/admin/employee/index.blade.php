@@ -19,6 +19,9 @@
           <thead>
             <tr>
                 <th>
+                  Joined
+                </th>
+                <th>
                   Name
                 </th>
                 <th>
@@ -54,9 +57,7 @@
                 <th>
                   Status
                 </th>
-                <th>
-                  Joined
-                </th>
+                
                 <th data-sortable="false">
                    Action
                 </th>
@@ -65,6 +66,7 @@
           <tbody>
           @foreach ($employees as $employee)
             <tr>
+                <td>{{ $employee->created_at->format('d/m/Y') }}</td>
                 <td>{{ $employee->name }}</td>
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->phone }}</td>
@@ -80,7 +82,6 @@
                 <td>{{ $employee->id_card_doc }}</td>
                 <td>{{ $employee->pay_slip_doc }}</td>
                 <td>{{ $employee->status }}</td>
-                <td>{{ $employee->created_at }}</td>
                 <td>
                   <a href="/admin/employee/{{ $employee->id }}" class="btn btn-xs btn-warning">
                       <i class="fa fa-eye"></i> View
