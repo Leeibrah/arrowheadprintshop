@@ -66,7 +66,7 @@
           <tbody>
           @foreach ($employees as $employee)
             <tr>
-                <td>{{ $employee->created_at->format('d/m/Y') }}</td>
+                <td>{{ $employee->created_at->format('d-m-Y') }}</td>
                 <td>{{ $employee->name }}</td>
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->phone }}</td>
