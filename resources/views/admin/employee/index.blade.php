@@ -19,6 +19,9 @@
           <thead>
             <tr>
                 <th>
+                  ID
+                </th>
+                <th>
                   Joined
                 </th>
                 <th>
@@ -66,6 +69,7 @@
           <tbody>
           @foreach ($employees as $employee)
             <tr>
+                <td>{{ $employee->id }}</td>
                 <td>{{ $employee->created_at->format('d/m/Y') }}</td>
                 <td>{{ $employee->name }}</td>
                 <td>{{ $employee->email }}</td>
@@ -99,9 +103,11 @@
 
 @section('scripts')
 
-  <script>
+
+    <script>
       $(function() {
         $("#employees-table").DataTable({
+          order: [[0, "desc"]]
         });
       });
     </script>
