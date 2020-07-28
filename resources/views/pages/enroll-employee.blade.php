@@ -64,7 +64,7 @@
 								
 							<!--Contact Form-->
 							<!-- <form method="post" action="{!! route('employee-enrollment-post') !!}" id="contact-form"> -->
-							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true]) !!}
+							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true, 'id' => 'uploadForm']) !!}
 							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 								{!! csrf_field() !!}
 								<div class="row clearfix">
@@ -171,13 +171,24 @@
 				                    </div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit Now</button>
+										<button class="theme-btn btn-style-two" type="submit" name="submit-form" onclick="upload_image();">Submit Now</button>
 									</div>
+
+									<!-- <div id="loader-icon" style="display:none;"><img src="/images/LoaderIcon.gif" /></div> -->
+									<!-- <div id="progress-div"><div id="progress-bar"></div></div>
+									<div id="targetLayer"></div> -->
 									
 								</div>
 							<!-- </form> -->
 							{!! Form::close() !!}
 						</div>
+
+						<div class='progress' id="progress_div">
+						<div class='bar' id='bar1'></div>
+						<div class='percent' id='percent1'>0%</div>
+						</div>
+						<div id='output_image'>
+						
 						
 					</div>
 				</div>
@@ -189,4 +200,12 @@
 	</section>
 	<!-- End Contact Page Section -->
 	
+@endsection
+
+
+@section('js')
+	
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+	<script src="/js/upload_progress.js" type="text/javascript"></script>
 @endsection

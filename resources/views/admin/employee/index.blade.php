@@ -52,6 +52,15 @@
                   ID Number
                 </th>
                 <th>
+                  KRA PIN
+                </th>
+                <th>
+                  NSSF Number
+                </th>
+                <th>
+                  NHIF Number
+                </th>
+                <th>
                   ID Card Document
                 </th>
                 <th>
@@ -82,6 +91,9 @@
                 <td>{{ $employee->amount }}</td>
                 <td>{{ $employee->ready }}</td>
                 <td>{{ $employee->id_number }}</td>
+                <td>{{ $employee->kra_pin }}</td>
+                <td>{{ $employee->nssf }}</td>
+                <td>{{ $employee->nhif }}</td>
 
                 <td>{{ $employee->id_card_doc }}</td>
                 <td>{{ $employee->pay_slip_doc }}</td>

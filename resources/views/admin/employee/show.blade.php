@@ -93,6 +93,33 @@
 
 						<div class="form-group">
 						  <label for="meta_description" class="col-md-3 control-label">
+						    KRA PIN
+						  </label>
+						  <div class="col-md-8">
+						    <p class="form-control-static">{{ $employee->kra_pin }}</p>
+						  </div>
+						</div>
+
+						<div class="form-group">
+						  <label for="meta_description" class="col-md-3 control-label">
+						    NSSF Number
+						  </label>
+						  <div class="col-md-8">
+						    <p class="form-control-static">{{ $employee->nssf }}</p>
+						  </div>
+						</div>
+
+						<div class="form-group">
+						  <label for="meta_description" class="col-md-3 control-label">
+						    NHIF Number
+						  </label>
+						  <div class="col-md-8">
+						    <p class="form-control-static">{{ $employee->nhif }}</p>
+						  </div>
+						</div>
+
+						<div class="form-group">
+						  <label for="meta_description" class="col-md-3 control-label">
 						    ID Document
 						  </label>
 						  <div class="col-md-8">
