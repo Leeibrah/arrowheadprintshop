@@ -130,6 +130,21 @@
 										<label for="idnumber">Kindy assist us with your ID number</label>
 										<input type="text" name="idnumber" id="idnumber" value="" placeholder="Enter your ID Number" required="">
 									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="krapin">Kindy assist us with your KRA PIN</label>
+										<input type="text" name="krapin" id="krapin" value="" placeholder="Enter your KRA PIN" required="">
+									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="nssf">Kindy assist us with your NSSF number</label>
+										<input type="text" name="nssf" id="nssf" value="" placeholder="Enter your NSSF Number" required="">
+									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="nhif">Kindy assist us with your NHIF number</label>
+										<input type="text" name="nhif" id="nhif" value="" placeholder="Enter your NHIF Number" required="">
+									</div>
 									
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
@@ -147,6 +162,13 @@
 										<input type="file" name="payslip_document" id="payslip_document" value="" placeholder="Upload your Payslip Document" required="">
 									</div>
 									
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+			                            <span class="button-checkbox">
+			                                <!-- <button type="button" class="btn" data-color="info" tabindex="7" value="0" name="agreement">I Agree</button> -->
+			                                <input type="checkbox" name="checkbox" id="checkbox" value="1">
+			                            </span>
+			                            I agree to Salohub's <a href="{!! route('terms') !!}">Terms and Conditions</a> and <a href="{!! route('privacy') !!}">Privacy Policy</a> by filling this form.
+				                    </div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit Now</button>

@@ -42,6 +42,14 @@ class EmployeeController extends Controller
 
         $name = "N/A";
 
+        if( $request->has('checkbox')) {
+
+        }else{
+            $error = 'Please agree to the Terms and Conditions by ticking the checkbox at the end of the form.';
+            // return redirect()->back()->withErrors($error);
+            return redirect()->back()->with('error', $error);
+        }
+
         $user = Employee::where('email', '=', $request['email'])->first();
         if ($user != null) {
            // user doesn't exist
@@ -57,15 +65,12 @@ class EmployeeController extends Controller
         if ($request->has('email')) {
             $fromEmail = $request['email'];
         }
-
         if ($request->has('sector')) {
             $theSector = $request['sector'];
         }
-
         if ($request->has('employer')) {
             $theEmployer = $request['employer'];
         }
-       
         if ($request->has('salary')) {
             $theSalary = $request['salary'];
         }
@@ -77,6 +82,15 @@ class EmployeeController extends Controller
         }
         if ($request->has('idnumber')) {
             $theIdnumber = $request['idnumber'];
+        }
+        if ($request->has('krapin')) {
+            $thekrapin = $request['krapin'];
+        }
+        if ($request->has('nssf')) {
+            $thenssf = $request['nssf'];
+        }
+        if ($request->has('nhif')) {
+            $thenhif = $request['nhif'];
         }
         if ($request->has('phone')) {
             $fromPhone = $request['phone'];
@@ -178,6 +192,9 @@ class EmployeeController extends Controller
                 "amount"    	=> $theAmount,
                 "ready"     	=> $theReady,
                 "id_number" 	=> $theIdnumber,
+                "kra_pin"       => $thekrapin,
+                "nssf"          => $thenssf,
+                "nhif"          => $thenhif,
                 "id_card_doc"	=> $idFileName,
                 "pay_slip_doc"	=> $payslipFileName,
                 'status'    	=> 'ACTIVE'

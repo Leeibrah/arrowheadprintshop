@@ -100,6 +100,14 @@
 									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+			                            <span class="button-checkbox">
+			                                <!-- <button type="button" class="btn" data-color="info" tabindex="7" value="0" name="agreement">I Agree</button> -->
+			                                <input type="checkbox" name="checkbox" id="checkbox" value="1">
+			                            </span>
+			                            I agree to Salohub's <a href="{!! route('terms') !!}">Terms and Conditions</a> and <a href="{!! route('privacy') !!}">Privacy Policy</a> by filling this form.
+				                    </div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit Now</button>
 									</div>
 									

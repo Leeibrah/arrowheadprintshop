@@ -43,6 +43,14 @@ class EmployerController extends Controller
 
         $name = "N/A";
 
+        if( $request->has('checkbox')) {
+
+        }else{
+            $error = 'Please agree to the Terms and Conditions by ticking the checkbox at the end of the form.';
+            // return redirect()->back()->withErrors($error);
+            return redirect()->back()->with('error', $error);
+        }
+
         if ($request->has('name')) {
             $fromName = $request['name'];
         }
