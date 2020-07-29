@@ -22,6 +22,7 @@
         <table id="employers-table" class="table table-striped table-bordered">
           <thead>
           <tr>
+            <th>ID</th>
             <th>Created Date</th>
             <th>Name</th>
             <th>Email</th>
@@ -35,6 +36,7 @@
           <tbody>
           @foreach ($employers as $employer)
             <tr>
+              <td>{{ $employer->id }}</td>
               <td>{{ $employer->created_at->todatestring() }}</td>
               <td>{{ $employer->name }}</td>
               <td>{{ $employer->email }}</td>
@@ -61,9 +63,10 @@
 
 @section('scripts')
   <script>
-    $(function() {
-      $("#employers-table").DataTable({
+      $(function() {
+        $("#employees-table").DataTable({
+          order: [[0, "desc"]]
+        });
       });
-    });
-  </script>
+    </script>
 @stop

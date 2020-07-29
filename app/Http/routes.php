@@ -85,8 +85,11 @@ $router->group([
     Route::group(['prefix' => 'reports'], function()
         {
             // Reports users routes
-            Route::get( 'employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@getemployees']);
-            Route::post('employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@postemployees']);
+            Route::get( 'employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@getEmployees']);
+            Route::post('employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@postEmployees']);
+
+            Route::get( 'employers',            ['as' => 'admin.reports.employers',             'uses' => 'ReportsController@getEmployers']);
+            Route::post('employers',            ['as' => 'admin.reports.employers',             'uses' => 'ReportsController@postEmployers']);
 
         });
 });

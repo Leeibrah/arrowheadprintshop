@@ -12,6 +12,7 @@ use Exception;
 
 
 use App\Employee;
+use App\Employer;
 
 use App\User;
 
@@ -20,7 +21,7 @@ use Flash;
 
 class ReportsController extends Controller {
 
-  // Users Reports
+  // Employees Reports
   public function getEmployees(){
 
     $page_title = 'Employees Reports';
@@ -100,6 +101,89 @@ class ReportsController extends Controller {
       
     } else{
        return view('admin.reports.employees.index', compact('curated','start_date', 'end_date', 'employees', 'orderCount', 'page_title', 'page_description'));
+    }
+ }
+
+ // Employees Reports
+  public function getEmployers(){
+
+    $page_title = 'Employers Reports';
+    $page_description = "Showing all Employers Reports";
+    
+    $start_date = date("Y-m-d", strtotime(request()->input("start_date")));
+    $end_date = date("Y-m-d", strtotime(request()->input("end_date")));
+    
+    $employers = Employer::paginate(10);
+
+    // dd($employers);
+    
+    $curated = false;
+    
+    $employerCount =  Employer::count();
+
+    if (session()->has('message')){
+
+      Session::flash('noResults', 'Sorry, we found 0 results');
+    }
+
+    // dd($Employers);
+
+
+    return view('admin.reports.employers.index', compact('curated', 'start_date', 'end_date', 'employers', 'employerCount', 'page_title', 'page_description'));
+  }
+
+  public function postEmployers() {
+    
+    $start_date = date("Y-m-d", strtotime(request()->input("start_date")));
+    $end_date = date("Y-m-d", strtotime(request()->input("end_date")));
+
+    $page_title = "Employers Reports";
+    $page_description = "Showing reports for: $start_date to $end_date" ;
+
+    $download = request()->input("download");
+    
+    $curated = true;
+    
+    $employers = Employer::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->paginate(100);
+
+    $employerCount =  Employer::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->count();
+
+    if (session()->has('message')){
+      Session::flash('noResults', 'Sorry, we found 0 results');
+    }
+
+    if($download){
+      @header("Content-disposition: attachment; filename=Employers-Report.csv");
+      @header("Content-type: application/octetstream");
+      ini_set('memory_limit', '128M');
+      
+      print trans('Employers Reports', ['from' => $start_date, 'to' => $end_date]);
+      print "\n";
+      
+      print "Name, Email, Phone, Sector, Employer, Salary, Amount, Organization Ready, ID Number, ID Document, Payslip Document, Status, Joined \n";
+      
+      foreach ($employers as $key => $employer) {
+        
+        print $employer->name . ',';
+        print $employer->email . ',';
+        print $employer->phone . ',';
+        print $employer->sector . ',';
+        print $employer->employer . ',';
+        print $employer->salary . ',';
+        print $employer->amount . ',';
+        print $employer->ready . ',';
+        print $employer->id_number . ',';
+        print $employer->id_card_doc . ',';
+        print $employer->pay_slip_doc . ',';
+        print $employer->status . ',';
+        print $employer->created_at . ',';
+        print "\n";
+        
+      }
+      exit();
+      
+    } else{
+       return view('admin.reports.employers.index', compact('curated','start_date', 'end_date', 'employers', 'orderCount', 'page_title', 'page_description'));
     }
  }
   
