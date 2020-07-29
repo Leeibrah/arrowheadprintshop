@@ -160,21 +160,17 @@ class ReportsController extends Controller {
       print trans('Employers Reports', ['from' => $start_date, 'to' => $end_date]);
       print "\n";
       
-      print "Name, Email, Phone, Sector, Employer, Salary, Amount, Organization Ready, ID Number, ID Document, Payslip Document, Status, Joined \n";
+      print "Name, Email, Phone, Organisation, Sector, Location, Number, Status, Joined \n";
       
       foreach ($employers as $key => $employer) {
         
         print $employer->name . ',';
         print $employer->email . ',';
         print $employer->phone . ',';
+        print $employer->organization . ',';
         print $employer->sector . ',';
-        print $employer->employer . ',';
-        print $employer->salary . ',';
-        print $employer->amount . ',';
-        print $employer->ready . ',';
-        print $employer->id_number . ',';
-        print $employer->id_card_doc . ',';
-        print $employer->pay_slip_doc . ',';
+        print $employer->location . ',';
+        print $employer->number . ',';
         print $employer->status . ',';
         print $employer->created_at . ',';
         print "\n";
