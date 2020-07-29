@@ -16,7 +16,7 @@ class EmployerController extends Controller
      */
     public function index()
     {
-        $employers = Employer::all();
+        $employers = Employer::orderBy('id', 'DESC')->get();
 
         // dd($employers);
 

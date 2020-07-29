@@ -22,27 +22,27 @@
         <table id="employers-table" class="table table-striped table-bordered">
           <thead>
           <tr>
-            <th class="hidden-sm">Created Date</th>
-            <th class="hidden-sm">Name</th>
-            <th class="hidden-sm">Email</th>
-            <th class="hidden-sm">Phone</th>
-            <th class="hidden-sm">Organization</th>
-            <th class="hidden-sm">Sector</th>
-            <th class="hidden-sm">Location</th>
-            <th class="hidden-sm">Number</th>
+            <th>Created Date</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Organization</th>
+            <th>Sector</th>
+            <th>Location</th>
+            <th>Number</th>
           </tr>
           </thead>
           <tbody>
           @foreach ($employers as $employer)
             <tr>
-              <td class="hidden-sm">{{ $employer->created_at->todatestring() }}</td>
-              <td class="hidden-sm">{{ $employer->name }}</td>
-              <td class="hidden-sm">{{ $employer->email }}</td>
-              <td class="hidden-sm">{{ $employer->phone }}</td>
-              <td class="hidden-sm">{{ $employer->organization }}</td>
-              <td class="hidden-sm">{{ $employer->sector }}</td>
-              <td class="hidden-sm">{{ $employer->location }}</td>
-              <td class="hidden-sm">{{ $employer->number }}</td>
+              <td>{{ $employer->created_at->todatestring() }}</td>
+              <td>{{ $employer->name }}</td>
+              <td>{{ $employer->email }}</td>
+              <td>{{ $employer->phone }}</td>
+              <td>{{ $employer->organization }}</td>
+              <td>{{ $employer->sector }}</td>
+              <td>{{ $employer->location }}</td>
+              <td>{{ $employer->number }}</td>
    
               <!-- <td>
                 <a href="/admin/employer/{{ $employer->id }}/edit"
