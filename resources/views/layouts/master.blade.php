@@ -7,6 +7,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="UTF-8">
     <title>{{ Setting::get('app.short_name') }} | {{ $page_title or "Page Title" }}</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174547718-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174547718-1');
+    </script>
+
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Set a meta reference to the CSRF token for use in AJAX request -->
