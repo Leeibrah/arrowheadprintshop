@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \SendGrid\Mail\Mail as Mail;
 
+use Illuminate\Support\Facades\Request as SegmentRequest;
+
 use Redirect;
 use Setting;
 use Flash;
@@ -28,15 +30,207 @@ class EmployeeController extends Controller
      *
      * @return Redirect
      */
-    public function enrollment()
+    public function personal()
     {
         $page_title = 'Employee Enrollment Page';
         $page_description = "This is the Employee Enrollment page";
 
-        return view('pages.enroll-employee', compact('page_title', 'page_description'));
+        return view('pages.personal', compact('page_title', 'page_description'));
     }
 
-    public function postEnrollment(Request $request)
+    public function postPersonal(Request $request)
+    {
+
+
+        $name = "N/A";
+
+        if (Employee::where('email', '=', Input::get('email'))->count() > 0) {
+           // user doesn't exist
+
+            return redirect(route('employment', $employee->id));
+            
+        }
+
+        if ($request->has('name')) {
+            $fromName = $request['name'];
+        }
+        if ($request->has('email')) {
+            $fromEmail = $request['email'];
+        }
+        if ($request->has('phone')) {
+            $fromPhone = $request['phone'];
+        }
+
+        $employee = Employee::create([
+            "name"          => $fromName,
+            "email"         => $fromEmail,
+            "phone"         => $fromPhone,
+            'status'        => 'ACTIVE'
+        ]);
+
+        return redirect(route('employment', $employee->id));
+        
+        
+    }
+
+    public function employment($id)
+    {
+        $page_title = 'Employee Enrollment Page';
+        $page_description = "This is the Employee Enrollment page";
+
+
+        return view('pages.employment', compact('page_title', 'page_description', 'id'));
+        // return redirect(route('employment', $employee->id));
+    }
+
+    public function postEmployment(Request $request)
+    {
+
+        $id = SegmentRequest::segment(2);
+
+
+        $employee = Employee::where('id', '=', $id)->first();
+
+        if ($request->has('sector')) {
+            $fromsector = $request['sector'];
+        }
+        if ($request->has('employer')) {
+            $fromemployer = $request['employer'];
+        }
+        if ($request->has('salary')) {
+            $fromsalary = $request['salary'];
+        }
+        if ($request->has('amount')) {
+            $fromamount = $request['amount'];
+        }
+        if ($request->has('ready')) {
+            $fromready = $request['ready'];
+        }
+      
+
+        if($employee->employer == NULL){
+            $user = Employee::where('id', $id)
+            ->update([
+                'sector' => $fromsector,
+                'employer' => $fromemployer,
+                'salary' => $fromsalary,
+                'amount' => $fromamount,
+                'ready' => $fromready
+
+            ]);
+
+            return redirect(route('identification', $employee->id));
+        }
+        
+        
+        return redirect(route('identification', $employee->id));
+    }
+
+    public function identification($id)
+    {
+        $page_title = 'Employee Enrollment Page';
+        $page_description = "This is the Employee Enrollment page";
+
+
+        return view('pages.identification', compact('page_title', 'page_description', 'id'));
+    }
+
+    public function postIdentification(Request $request)
+    {
+
+        $id = SegmentRequest::segment(2);
+
+
+        $employee = Employee::where('id', '=', $id)->first();
+
+        if ($request->has('idnumber')) {
+            $theIdnumber = $request['idnumber'];
+        }
+        if ($request->has('krapin')) {
+            $thekrapin = $request['krapin'];
+        }
+        if ($request->has('nssf')) {
+            $thenssf = $request['nssf'];
+        }
+        if ($request->has('nhif')) {
+            $thenhif = $request['nhif'];
+        }
+      
+
+        if($employee->id_number == NULL){
+            $user = Employee::where('id', $id)
+            ->update([
+                'id_number' => $theIdnumber,
+                'kra_pin' => $thekrapin,
+                'nssf' => $thenssf,
+                'nhif' => $thenhif
+            ]);
+
+            return redirect(route('documentation', $employee->id));
+        }
+        
+        
+        return redirect(route('documentation', $employee->id));
+    }
+
+    public function documentation($id)
+    {
+        $page_title = 'Employee Enrollment Page';
+        $page_description = "This is the Employee Enrollment page";
+
+
+        return view('pages.documentation', compact('page_title', 'page_description', 'id'));
+    }
+
+    public function postDocumentation(Request $request)
+    {
+
+        $id = SegmentRequest::segment(2);
+
+
+        $employee = Employee::where('id', '=', $id)->first();
+        $fromName = $employee->name;
+
+        if (Input::hasFile('id_document')) {
+
+            $destinationPath = public_path().'/uploads/document/id'; // upload path
+            $extension = Input::file('id_document')->getClientOriginalExtension(); // getting id_document extension
+            $idFileName = $fromName.'-ID-'.rand(111,999).'.'.$extension; // renaming id_document
+            Input::file('id_document')->move($destinationPath, $idFileName); // uploading file to given path
+
+        }else{
+
+            $error = 'Please, Upload your ID Card and make sure it is smaller than 2MB or 2000KB';
+            // return redirect()->back()->withErrors($error);
+            return redirect()->back()->with('error', $error);
+        }
+
+        if (Input::hasFile('payslip_document')) {
+
+            $destinationPath = public_path().'/uploads/document/payslip'; // upload path
+            $extension = Input::file('payslip_document')->getClientOriginalExtension(); // getting payslip_document extension
+            $payslipFileName = $fromName.'-Payslip-'.rand(111,999).'.'.$extension; // renaming payslip_document
+            Input::file('payslip_document')->move($destinationPath, $payslipFileName); // uploading file to given path
+
+        }
+        else{
+
+            $error = 'Please, Upload your Payslip';
+            return redirect()->back()->with('error', $error);
+        }
+      
+
+        $user = Employee::where('id', $id)
+        ->update([
+            "id_card_doc"   => $idFileName,
+            "pay_slip_doc"  => $payslipFileName,
+        ]);
+
+        // return redirect(route('personal', $employee->id));
+        return Redirect::to('personal')->with('success', 'Thank You for registering. Our Team will get in touch.');
+    }
+
+    public function postEnrollment_pre(Request $request)
     {
 
 
@@ -65,6 +259,9 @@ class EmployeeController extends Controller
         if ($request->has('email')) {
             $fromEmail = $request['email'];
         }
+        if ($request->has('phone')) {
+            $fromPhone = $request['phone'];
+        }
         if ($request->has('sector')) {
             $theSector = $request['sector'];
         }
@@ -92,9 +289,7 @@ class EmployeeController extends Controller
         if ($request->has('nhif')) {
             $thenhif = $request['nhif'];
         }
-        if ($request->has('phone')) {
-            $fromPhone = $request['phone'];
-        }
+        
 
         if (Input::hasFile('id_document')) {
 
@@ -217,6 +412,6 @@ class EmployeeController extends Controller
         }
         
         // return redirect(route('contacts'))->with('message', 'Message send Successfully. We will get back to you. Thank You.');
-        return Redirect::to('employee-enrollment')->with('success', 'Message send to '. $toEmail .' successfully. We will get back to you. Thank You.');
+        return Redirect::to('employee-enrollment')->with('success', 'Message sent to '. $toEmail .' successfully. We will get back to you. Thank You.');
     }
 }

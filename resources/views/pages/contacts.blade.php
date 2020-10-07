@@ -47,7 +47,7 @@
 						<ul>
 							<li><span>Address</span>Bishop Magua Centre <br> Nairobi, Kenya</li>
 							<li><span>Email</span>info@salohub.com</li>
-							<!-- <li><span>Phone</span>(+081) 325 665 9487</li> -->
+							<li><span>Phone</span>(+254) 734 579 329</li>
 						</ul>
 					</div>
 				</div>

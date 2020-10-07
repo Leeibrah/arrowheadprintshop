@@ -21,8 +21,17 @@ Route::get( 'enroll',                   ['as' => 'enroll',                      
 Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'EmployerController@enrollment']);
 Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'EmployerController@postEnrollment']);
 
-Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',             'uses' => 'EmployeeController@enrollment']);
-Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',        'uses' => 'EmployeeController@postEnrollment']);
+Route::get( 'personal',                 ['as' => 'personal',                        'uses' => 'EmployeeController@personal']);
+Route::post('personal',                 ['as' => 'personal-post',                   'uses' => 'EmployeeController@postPersonal']);
+
+Route::get( 'employment/{id}',          ['as' => 'employment',                      'uses' => 'EmployeeController@employment']);
+Route::post('employment/{id}',          ['as' => 'employment-post',                 'uses' => 'EmployeeController@postEmployment']);
+
+Route::get( 'identification/{id}',      ['as' => 'identification',                  'uses' => 'EmployeeController@identification']);
+Route::post('identification/{id}',      ['as' => 'identification-post',             'uses' => 'EmployeeController@postIdentification']);
+
+Route::get( 'documentation/{id}',       ['as' => 'documentation',                   'uses' => 'EmployeeController@documentation']);
+Route::post('documentation/{id}',       ['as' => 'documentation-post',              'uses' => 'EmployeeController@postDocumentation']);
 
 
 

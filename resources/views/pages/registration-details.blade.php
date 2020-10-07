@@ -1,85 +1,4 @@
-@extends('layouts.pages')
-
-@section('content')
-
-	<!--Page Title-->
-    <!-- <section class="page-title">
-    	<div class="auto-container">
-        	<h1></h1>
-			<div class="text">
-				This Form will help us know more about you & your organization for our scoring & grading purposes
-			</div>
-        </div>
-    </section> -->
-    
-    <!--Breadcrumb-->
-    <!-- <div class="breadcrumb-outer">
-    	<div class="auto-container">
-        	<ul class="bread-crumb text-center">
-            	<li><a href="index.html">Home</a> <span class="fa fa-angle-right"></span></li>
-                <li>Register for a Salary Advance</li>
-            </ul>
-        </div>
-    </div> -->
-    <!--End Page Title-->
-
-    <hr>
-
-    @if ($message = Session::get('success'))
-    <div class="alert alert-success alert-block">
-        <button type="button" class="close" data-dismiss="alert">×</button> 
-            <strong>{{ $message }}</strong>
-    </div>
-    @endif
-
-    @if ($message = Session::get('error'))
-    <div class="alert alert-danger alert-block">
-        <button type="button" class="close" data-dismiss="alert">×</button> 
-            <strong>{{ $message }}</strong>
-    </div>
-    @endif
-	
-	<!-- Contact Page Section -->
-	<section class="contact-page-section" style="padding-top: 50px;">
-		<div class="auto-container">
-			<div class="row clearfix">
-							
-				<div class="form-column col-lg-3">
-				</div>
-				<!-- Form Column -->
-				<div class="form-column col-lg-9 col-md-9 col-sm-9" style="margin-left: 10%;">
-					<div class="inner-colum">
-						<!-- Sec Title -->
-						<div class="sec-title">
-							<h2>Employee Enrollment Registration</h2>
-							<div class="separator"></div>
-							<br/>
-							<div>
-								This Form will help us know more about you & your organization for our scoring & grading purposes
-							</div>
-						</div>
-						
-						<!-- Contact Form -->
-						<div class="contact-form">
-								
-							<!--Contact Form-->
-							<!-- <form method="post" action="{!! route('employee-enrollment-post') !!}" id="contact-form"> -->
-							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true, 'id' => 'uploadForm']) !!}
-							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
-								{!! csrf_field() !!}
-								<div class="row clearfix">
-								
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="name">Full Name</label>
-										<input type="text" name="name" id="name" value="" placeholder="Enter your Full Name" required="">
-									</div>
-									
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="email">Email Address</label>
-										<input type="email" name="email" id="email" value="" placeholder="Enter your Email" required="">
-									</div>
-									
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<label for="sector">Which Sector are you currently working in?</label>
 										<input type="text" name="sector" id="sector" value="" placeholder="Enter your work sector" required="">
 									</div>
@@ -147,10 +66,7 @@
 									</div>
 									
 
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="phone">Kindly assist us with your number</label>
-										<input type="text" name="phone" id="phone" value="" placeholder="Enter your Mobile Phone Number" required="">
-									</div>
+									
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<label for="phone">Upload you copy of ID (Size should be less than 2MB): </label>
@@ -169,43 +85,3 @@
 			                            </span>
 			                            I agree to Salohub's <a href="{!! route('terms') !!}">Terms and Conditions</a> and <a href="{!! route('privacy') !!}">Privacy Policy</a> by filling this form.
 				                    </div>
-									
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button class="theme-btn btn-style-two" type="submit" name="submit-form" onclick="upload_image();">Submit Now</button>
-									</div>
-
-									<!-- <div id="loader-icon" style="display:none;"><img src="/images/LoaderIcon.gif" /></div> -->
-									<!-- <div id="progress-div"><div id="progress-bar"></div></div>
-									<div id="targetLayer"></div> -->
-									
-								</div>
-							<!-- </form> -->
-							{!! Form::close() !!}
-						</div>
-
-						<div class='progress' id="progress_div">
-						<div class='bar' id='bar1'></div>
-						<div class='percent' id='percent1'>0%</div>
-						</div>
-						<div id='output_image'>
-						
-						
-					</div>
-				</div>
-				<div class="form-column col-lg-3">
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Page Section -->
-	
-@endsection
-
-
-@section('js')
-	
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-
-	<script src="/js/upload_progress.js" type="text/javascript"></script>
-@endsection

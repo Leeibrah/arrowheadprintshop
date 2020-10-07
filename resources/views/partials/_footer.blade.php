@@ -68,7 +68,7 @@
                                 <ul class="info-list">
                                     <li>Bishop Magua Centre</li>
                                     <li>Nairobi, Kenya</li>
-                                    <!-- <li>+2(305) 587-3407</li> -->
+                                    <li>0734 579 329</li>
                                     <li>info@salohub.com</li>
                                 </ul>
                             </div>
