@@ -3142,6 +3142,11 @@ form
 	margin-bottom:30px;
 }
 
+.form-group label{
+	color: #161C42;
+	font-weight: bold;
+}
+
 .support-form .form-group input[type="text"],
 .support-form .form-group input[type="tel"],
 .support-form .form-group input[type="email"],
@@ -8610,6 +8615,7 @@ form
 .contact-form textarea.error{
 	border-color:#ff0000 !important;	
 }
+
 
 .contact-form label.error{
 	display:block;

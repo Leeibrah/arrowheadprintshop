@@ -44,7 +44,7 @@
                 <!-- Button box -->
                 <div class="btn-box">
                     <a href="{!! route('employer-enrollment') !!}" class="theme-btn btn-style-one">Employer Enrollment</a>
-                    <a href="{!! route('personal') !!}" class="theme-btn btn-style-one">Employee Enrollment</a>
+                    <a href="{!! route('employee-enrollment') !!}" class="theme-btn btn-style-one">Employee Enrollment</a>
                 </div>
             </div>
         </div>

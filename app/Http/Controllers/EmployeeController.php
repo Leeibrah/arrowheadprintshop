@@ -46,6 +46,7 @@ class EmployeeController extends Controller
 
         if (Employee::where('email', '=', Input::get('email'))->count() > 0) {
            // user doesn't exist
+            $employee = Employee::where('email', '=', $request->email)->first();
 
             return redirect(route('employment', $employee->id));
             
@@ -227,7 +228,7 @@ class EmployeeController extends Controller
         ]);
 
         // return redirect(route('personal', $employee->id));
-        return Redirect::to('personal')->with('success', 'Thank You for registering. Our Team will get in touch.');
+        return Redirect::to('employee-enrollment')->with('success', 'Thank You for registering. Our Team will get in touch.');
     }
 
     public function postEnrollment_pre(Request $request)
@@ -412,6 +413,6 @@ class EmployeeController extends Controller
         }
         
         // return redirect(route('contacts'))->with('message', 'Message send Successfully. We will get back to you. Thank You.');
-        return Redirect::to('employee-enrollment')->with('success', 'Message sent to '. $toEmail .' successfully. We will get back to you. Thank You.');
+        return Redirect::to('personal')->with('success', 'Message sent to '. $toEmail .' successfully. We will get back to you. Thank You.');
     }
 }

@@ -60,7 +60,7 @@
 						<div class="contact-form">
 								
 							<!--Contact Form-->
-							{!! Form::model(new \App\Employee, ['route' => ['personal-post'], 'enctype' => 'multipart/form-data', 'file' => true, 'id' => 'uploadForm']) !!}
+							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true, 'id' => 'uploadForm']) !!}
 							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 								{!! csrf_field() !!}
 								<div class="row clearfix">
