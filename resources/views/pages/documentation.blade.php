@@ -1,5 +1,44 @@
 @extends('layouts.pages')
 
+
+@section('css')
+	
+	<style type="text/css">
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.loader {
+		  display: none;
+		  top: 100%;
+		  left: 50%;
+		  position: absolute;
+		  transform: translate(-50%, -50%);
+		}
+
+		.loading {
+		  border: 2px solid #ccc;
+		  width: 60px;
+		  height: 60px;
+		  border-radius: 50%;
+		  border-top-color: #1ecd97;
+		  border-left-color: #1ecd97;
+		  animation: spin 1s infinite ease-in;
+		}
+
+		@keyframes spin {
+		  0% {
+		    transform: rotate(0deg);
+		  }
+
+		  100% {
+		    transform: rotate(360deg);
+		  }
+		}
+	</style>
+@endsection
+
 @section('content')
 
 	<!--Page Title-->
@@ -75,24 +114,18 @@
 									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Finish</button>
+										<button class="theme-btn btn-style-two" type="submit" name="submit-form" onclick="spinner()">Finish</button>
+										<div class="loader">
+										  <div class="loading">
+										  </div>
+										  <b>Loading..... Be Patient it might take a while to upload the documents.</b>
+										</div>
 									</div>
 								</div>
 							<!-- </form> -->
 							{!! Form::close() !!}
-						</div>
-
-						<div class='progress' id="progress_div">
-						<div class='bar' id='bar1'></div>
-						<div class='percent' id='percent1'>0%</div>
-						</div>
-						<div id='output_image'>
-						
-						
+						</div>					
 					</div>
-				</div>
-				<div class="form-column col-lg-3">
-				</div>
 				
 			</div>
 		</div>
@@ -107,4 +140,10 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 
 	<script src="/js/upload_progress.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	    function spinner() {
+	        document.getElementsByClassName("loader")[0].style.display = "block";
+	    }
+	</script>    
 @endsection
