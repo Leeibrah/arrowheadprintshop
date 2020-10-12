@@ -29,10 +29,10 @@ class ReportsController extends Controller {
     
     $start_date = date("Y-m-d", strtotime(request()->input("start_date")));
     $end_date = date("Y-m-d", strtotime(request()->input("end_date")));
-    
-    $employees = Employee::paginate(10);
 
-    // dd($employees);
+    // dd($end_date);
+    
+    $employees = Employee::orderBy('id', 'DESC')->paginate(10);
     
     $curated = false;
     
@@ -54,6 +54,8 @@ class ReportsController extends Controller {
     $start_date = date("Y-m-d", strtotime(request()->input("start_date")));
     $end_date = date("Y-m-d", strtotime(request()->input("end_date")));
 
+    
+
     $page_title = "Employees Reports";
     $page_description = "Showing reports for: $start_date to $end_date" ;
 
@@ -61,8 +63,7 @@ class ReportsController extends Controller {
     
     $curated = true;
     
-    $employees = Employee::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->paginate(100);
-
+    $employees =  Employee::whereRaw("(created_at >= ? AND created_at <= ?)", [$start_date." 00:00:00", $end_date." 23:59:59"])->paginate(100);
     $employeeCount =  Employee::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->count();
 
     if (session()->has('message')){
@@ -77,10 +78,12 @@ class ReportsController extends Controller {
       print trans('Employees Reports', ['from' => $start_date, 'to' => $end_date]);
       print "\n";
       
-      print "Name, Email, Phone, Sector, Employer, Salary, Amount, Organization Ready, ID Number, ID Document, Payslip Document, Status, Joined \n";
+      print "ID, Joined, Name, Email, Phone, Sector, Employer, Salary, Amount, Organization Ready, ID Number, ID Document, Payslip Document, Status \n";
       
       foreach ($employees as $key => $employee) {
         
+        print $employee->id . ',';
+        print $employee->created_at . ',';
         print $employee->name . ',';
         print $employee->email . ',';
         print $employee->phone . ',';
@@ -93,7 +96,6 @@ class ReportsController extends Controller {
         print $employee->id_card_doc . ',';
         print $employee->pay_slip_doc . ',';
         print $employee->status . ',';
-        print $employee->created_at . ',';
         print "\n";
         
       }
@@ -144,7 +146,7 @@ class ReportsController extends Controller {
     
     $curated = true;
     
-    $employers = Employer::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->paginate(100);
+    $employers =  Employee::whereRaw("(created_at >= ? AND created_at <= ?)", [$start_date." 00:00:00", $end_date." 23:59:59"])->paginate(100);
 
     $employerCount =  Employer::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->count();
 

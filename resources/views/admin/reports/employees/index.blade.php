@@ -107,6 +107,12 @@
                           <thead>
                               <tr>
                                   <th>
+                                    ID
+                                  </th>
+                                  <th>
+                                    Joined
+                                  </th>
+                                  <th>
                                     Name
                                   </th>
                                   <th>
@@ -142,31 +148,28 @@
                                   <th>
                                     Status
                                   </th>
-                                  <th>
-                                    Joined
-                                  </th>
+                                  
                               </tr>
                           </thead>
                        
                           <tbody>
                               @foreach($employees as $employee)
                                   <tr>
+                                      <td>{{ $employee->id }}</td>
+                                      <td>{{ $employee->created_at }}</td>
                                       <td>{{ $employee->name }}</td>
                                       <td>{{ $employee->email }}</td>
                                       <td>{{ $employee->phone }}</td>
-
                                       <td>{{ $employee->sector }}</td>
                                       <td>{{ $employee->employer }}</td>
                                       <td>{{ $employee->salary }}</td>
-
                                       <td>{{ $employee->amount }}</td>
                                       <td>{{ $employee->ready }}</td>
                                       <td>{{ $employee->id_number }}</td>
-
                                       <td>{{ $employee->id_card_doc }}</td>
                                       <td>{{ $employee->pay_slip_doc }}</td>
                                       <td>{{ $employee->status }}</td>
-                                      <td>{{ $employee->created_at }}</td>
+                                      
                                       
                                   </tr>
                               @endforeach
