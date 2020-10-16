@@ -74,6 +74,11 @@
 										<label for="phone">Kindly assist us with your number</label>
 										<input type="text" name="phone" id="phone" value="" placeholder="Enter your Mobile Phone Number" required="">
 									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<label for="id_number">Kindly assist us with your National ID Number</label>
+										<input type="text" name="id_number" id="id_number" value="" placeholder="Enter your ID Number" required="">
+									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<label for="email">Email Address</label>

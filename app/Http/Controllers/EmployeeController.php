@@ -10,6 +10,7 @@ use Redirect;
 use Setting;
 use Flash;
 use Input;
+use Validator;
 
 use App\Employee;
 
@@ -44,33 +45,48 @@ class EmployeeController extends Controller
 
         $name = "N/A";
 
-        if (Employee::where('email', '=', Input::get('email'))->count() > 0) {
-           // user doesn't exist
-            $employee = Employee::where('email', '=', $request->email)->first();
-
-            return redirect(route('employment', $employee->id));
-            
-        }
-
-        if ($request->has('name')) {
-            $fromName = $request['name'];
-        }
-        if ($request->has('email')) {
-            $fromEmail = $request['email'];
-        }
-        if ($request->has('phone')) {
-            $fromPhone = $request['phone'];
-        }
-
-        $employee = Employee::create([
-            "name"          => $fromName,
-            "email"         => $fromEmail,
-            "phone"         => $fromPhone,
-            'status'        => 'ACTIVE'
+        $validator = Validator::make($request->all(), [
+          'id_number'=>'required|min:7|max:8'
         ]);
 
-        return redirect(route('employment', $employee->id));
-        
+        if ($validator->fails()) {
+          // return redirect('employee-enrollment')
+            return redirect()->back()
+                   ->withErrors($validator)
+                   ->withInput();
+        }else{
+
+            if (Employee::where('email', '=', Input::get('email'))->count() > 0) {
+               // user doesn't exist
+                $employee = Employee::where('email', '=', $request->email)->first();
+
+                return redirect(route('employment', $employee->id));
+                
+            }
+
+            if ($request->has('name')) {
+                $fromName = $request['name'];
+            }
+            if ($request->has('id_number')) {
+                $fromID = $request['id_number'];
+            }
+            if ($request->has('email')) {
+                $fromEmail = $request['email'];
+            }
+            if ($request->has('phone')) {
+                $fromPhone = $request['phone'];
+            }
+
+            $employee = Employee::create([
+                "name"          => $fromName,
+                "id_number"     => $fromID,
+                "email"         => $fromEmail,
+                "phone"         => $fromPhone,
+                'status'        => 'ACTIVE'
+            ]);
+
+            return redirect(route('employment', $employee->id));
+        }
         
     }
 
@@ -139,14 +155,13 @@ class EmployeeController extends Controller
     public function postIdentification(Request $request)
     {
 
+        // dd($request->all());
+
         $id = SegmentRequest::segment(2);
 
 
         $employee = Employee::where('id', '=', $id)->first();
 
-        if ($request->has('idnumber')) {
-            $theIdnumber = $request['idnumber'];
-        }
         if ($request->has('krapin')) {
             $thekrapin = $request['krapin'];
         }
@@ -161,7 +176,6 @@ class EmployeeController extends Controller
         if($employee->id_number == NULL){
             $user = Employee::where('id', $id)
             ->update([
-                'id_number' => $theIdnumber,
                 'kra_pin' => $thekrapin,
                 'nssf' => $thenssf,
                 'nhif' => $thenhif

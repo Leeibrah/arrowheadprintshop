@@ -63,11 +63,6 @@
 							{!! Form::open(['route' => ['identification-post', $id]]) !!}
 								{!! csrf_field() !!}
 								<div class="row clearfix">
-								
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="idnumber">Kindy assist us with your ID number</label>
-										<input type="text" name="idnumber" id="idnumber" value="" placeholder="Enter your ID Number" required="">
-									</div>
 
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<label for="krapin">Kindy assist us with your KRA PIN</label>

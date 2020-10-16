@@ -175,9 +175,7 @@
                               @endforeach
                           </tbody>
                       </table>
-                      <div class="pull-right padding">
-                          {!! $employees->render() !!}
-                      </div>
+                      
                   </div> <!-- table-responsive -->
 
               </div><!-- /.box-body -->

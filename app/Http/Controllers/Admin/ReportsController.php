@@ -32,7 +32,7 @@ class ReportsController extends Controller {
 
     // dd($end_date);
     
-    $employees = Employee::orderBy('id', 'DESC')->paginate(10);
+    $employees = Employee::orderBy('id', 'DESC')->get();
     
     $curated = false;
     
@@ -63,7 +63,7 @@ class ReportsController extends Controller {
     
     $curated = true;
     
-    $employees =  Employee::whereRaw("(created_at >= ? AND created_at <= ?)", [$start_date." 00:00:00", $end_date." 23:59:59"])->paginate(100);
+    $employees =  Employee::whereRaw("(created_at >= ? AND created_at <= ?)", [$start_date." 00:00:00", $end_date." 23:59:59"])->get();
     $employeeCount =  Employee::where("created_at", ">=",$start_date)->where("created_at", "<=", $end_date)->count();
 
     if (session()->has('message')){
