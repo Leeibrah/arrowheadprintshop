@@ -61,53 +61,47 @@
 								
 							<!--Contact Form-->
 							{!! Form::model(new \App\Employee, ['route' => ['employee-enrollment-post'], 'enctype' => 'multipart/form-data', 'file' => true, 'id' => 'uploadForm']) !!}
-							<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 								{!! csrf_field() !!}
-								<div class="row clearfix">
 								
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="name">Full Name</label>
-										<input type="text" name="name" id="name" value="" placeholder="Enter your Full Name" required="">
-									</div>
-
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="phone">Kindly assist us with your number</label>
-										<input type="text" name="phone" id="phone" value="" placeholder="Enter your Mobile Phone Number" required="">
-									</div>
-
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="id_number">Kindly assist us with your National ID Number</label>
-										<input type="text" name="id_number" id="id_number" value="" placeholder="Enter your ID Number" required="">
-									</div>
-									
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<label for="email">Email Address</label>
-										<input type="email" name="email" id="email" value="" placeholder="Enter your Email" required="">
-									</div>
-									
-									
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button class="theme-btn btn-style-two" type="submit" name="submit-form">Next</button>
-									</div>
-
-									<!-- <div id="loader-icon" style="display:none;"><img src="/images/LoaderIcon.gif" /></div> -->
-									<!-- <div id="progress-div"><div id="progress-bar"></div></div>
-									<div id="targetLayer"></div> -->
-									
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<label for="name">Full Name</label>
+									<input type="text" name="name" id="name" value="" placeholder="Enter your Full Name" required="">
 								</div>
-							<!-- </form> -->
+
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<label for="phone">Kindly assist us with your number</label>
+									<input type="text" name="phone" id="phone" value="" placeholder="Enter your Mobile Phone Number" required="">
+								</div>
+
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<label for="id_number">Kindly assist us with your National ID Number</label>
+									<input type="text" name="id_number" id="id_number" value="" placeholder="Enter your ID Number" required="">
+								</div>
+								
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<label for="email">Email Address</label>
+									<input type="email" name="email" id="email" value="" placeholder="Enter your Email" required="">
+								</div>
+								
+								
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<button class="theme-btn btn-style-two" type="submit" name="submit-form">Next</button>
+								</div>
 							{!! Form::close() !!}
 						</div>
 
-						<div class='progress' id="progress_div">
-						<div class='bar' id='bar1'></div>
-						<div class='percent' id='percent1'>0%</div>
-						</div>
-						<div id='output_image'>
-						
-						
+					</div>
+
+					<div class='progress' id="progress_div">
+					<div class='bar' id='bar1'></div>
+					<div class='percent' id='percent1'>0%</div>
+					</div>
+
+					<div id='output_image'>
+
 					</div>
 				</div>
+
 				<div class="form-column col-lg-3">
 				</div>
 				

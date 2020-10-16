@@ -159,9 +159,6 @@ class EmployeeController extends Controller
 
         $id = SegmentRequest::segment(2);
 
-
-        $employee = Employee::where('id', '=', $id)->first();
-
         if ($request->has('krapin')) {
             $thekrapin = $request['krapin'];
         }
@@ -173,19 +170,14 @@ class EmployeeController extends Controller
         }
       
 
-        if($employee->id_number == NULL){
-            $user = Employee::where('id', $id)
-            ->update([
-                'kra_pin' => $thekrapin,
-                'nssf' => $thenssf,
-                'nhif' => $thenhif
-            ]);
+        $user = Employee::where('id', $id)
+        ->update([
+            'kra_pin' => $thekrapin,
+            'nssf' => $thenssf,
+            'nhif' => $thenhif
+        ]);
 
-            return redirect(route('documentation', $employee->id));
-        }
-        
-        
-        return redirect(route('documentation', $employee->id));
+        return redirect(route('documentation', $id));
     }
 
     public function documentation($id)
