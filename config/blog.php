@@ -2,8 +2,8 @@
 return [
     'name' => "Salohub Ltd",
     'title' => "Salohub",
-    'subtitle' => 'Your Payday Solutions Partner',
-    'description' => 'Your Payday Solutions Partner',
+    'subtitle' => 'Home of Salary Solutions',
+    'description' => 'Home of Salary Solutions',
     'author' => 'Lee Ibrahim',
     'page_image' => 'home-bg.jpg',
     'posts_per_page' => 10,

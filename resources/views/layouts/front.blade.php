@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Salohub :-: Your Payday Solutions Partner</title>
+<title>Salohub :: Home of salary solutions</title>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174547718-1"></script>
