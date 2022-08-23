@@ -1,266 +1,208 @@
 @extends('layouts.front')
 
 @section('content')
-
-	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/14.png);">
-    	<div class="auto-container">
-        	<h1>About Us</h1>
-			<div class="text">About SaloHub.</div>
-        </div>
-    </section>
-    
-    <!--Breadcrumb-->
-    <div class="breadcrumb-outer">
-    	<div class="auto-container">
-        	<ul class="bread-crumb text-center">
-            	<li><a href="index.html">Home</a> <span class="fa fa-angle-right"></span></li>
-                <li>About Us</li>
-            </ul>
-        </div>
-    </div>
-    <!--End Page Title-->
-
-    <!-- Services Section Two -->
-	<section class="services-section-two" style="background-image:url(images/background/3.png)">
-		<div class="auto-container">
-			<div class="sec-title centered light">
-				<h2>About Us</h2>
-				<div class="separator"></div>
-			</div>
-			<div class="row clearfix">
-				
-				<!-- Services Block Two -->
-				<div style="color: #fff; font-size: 17px">
-					We are one of the tech-savvy salary advanced companies in Kenya. We serve our customers with high professionalism and we go with them all the way.
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Services Section Two -->
 	
-	<!-- Counter Section -->
-	<section class="counter-section-two">
-		<div class="auto-container">
-			<div class="sec-title">
-				<h2>Word from the CEO</h2>
-				<div class="separator"></div>
-			</div>
-
-			<div class="row clearfix">
-				
-				<!-- Title Column -->
-				<div class="title-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<!-- Sec Title -->
-						
-						<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-		                        <!--Video Box-->
-		                        <div class="video-box">
-		                            <figure class="image">
-		                                <img src="images/resource/welcome-letter.png" alt="">
-		                            </figure>
-		                            <!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><i class="play-now flaticon-play-button"></i></a> -->
-		                        </div>
-		                    </div>
-						
-					</div>
+	<!-- PAGE TITLE WRAPPER-->
+	<div class="page-title-wrapper">
+		<!-- CONTAINER -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="300">
+					<!-- BREADCRUMB -->
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">ABOUT US</li>
+					</ol>
+					<!-- PAGE TITLE -->
+					<h1 class="page-title bottom-line">Who We Are</h1>
 				</div>
-				
-				<!-- Counter Column -->
-				<div class="counter-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="row clearfix">
+			</div>
+		</div>	<!-- /.CONTAINER -->	
+	</div><!-- /.PAGE TITLE WRAPPER-->
+	
+	<!-- PAGE CONTENT -->
+	<div class="page-content">
+		<!-- CONTAINER -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- TITLE -->
 							
-							<div class="image-column col-lg-8 col-md-7 col-sm-12">
-								<div class="image">
-									<img src="images/gallery/ceo.png" alt="" />
-								</div>
-							</div>
-							
-							<div class="column col-lg-4 col-md-5 col-sm-12">
-								<div class="counter-inner-column">
-									
-									<div class="fact-counter style-two">
-									
-										<!--Column-->
-										<div class="column counter-column">
-											<div class="inner">
-												<div class="content">
-													<div class="count-outer count-box">
-														<span class="count-text" data-speed="2500" data-stop="1">0</span>
-													</div>
-													<h4 class="counter-title">Years Experience</h4>
-												</div>
-											</div>
-										</div>
+							<!-- <h6 class="typo-light text-color">								
+								Tillage Business Solutions is a Limited liability partnership, with the business trading its guns to possible scaling-up to the East African regions in the near future.
+							</h6> -->
 
-										<!--Column-->
-										<div class="column counter-column">
-											<div class="inner">
-												<div class="content">
-													<div class="count-outer count-box">
-														<span class="count-text" data-speed="3000" data-stop="352">0</span>
-													</div>
-													<h4 class="counter-title">Loans Given</h4>
-												</div>
-											</div>
-										</div>
-
-										<!--Column-->
-										<div class="column counter-column">
-											<div class="inner">
-												<div class="content">
-													<div class="count-outer count-box">
-														<span class="count-text" data-speed="4000" data-stop="270">0</span>
-													</div>
-													<h4 class="counter-title">Happy Coustomers</h4>
-												</div>
-											</div>
-										</div>
-										
-										<!--Column-->
-										<div class="column counter-column">
-											<div class="inner">
-												<div class="content">
-													<div class="count-outer count-box">
-														<span class="count-text" data-speed="3000" data-stop="1">1</span>
-													</div>
-													<h4 class="counter-title">Award Won</h4>
-												</div>
-											</div>
-										</div>
-
-									</div>
-							
-								</div>
-							</div>
+							<h4 class="sub-title">Our vision</h4>
+							<p>
+								Our vision is to be regarded as long-term trusted advisers who make a difference to our clients, our teams and our communities by providing high-calibre audit, accounting, 
+								tax and advisory services in a personal and professional way. 
+							</p>
+							<p>
+								Whether serving public sector organizations, owner managed businesses, private companies / individuals and public companies, 
+								indeed our mission is to provide our clients with professional services of the highest quality to help them meet the challengesthey face every day.
+							</p>
 							
 						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Counter Section -->
-	
-	
-	
-	<!-- Team Section Three -->
-	<!-- <section class="team-section-three">
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				
-				<div class="title-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						
-						<div class="sec-title">
-							<h2>Our Famous <br> Team Members</h2>
-							<div class="separator"></div>
-						</div>
-						<div class="text">
-							<p>Excepteur sint occaecat cupidatat proident sunt culpa officia desernt mollit anim. est laborum sed perspiciatis.unde omnis natus error sit volupt atem. accusantium dolore lauda ntium. totam rem aperiam.</p>
-							<p>Inventore veritatis quasi architebeatae. vitae dict sunt explicabo nemo enim ipsam voluptatem. quia voluptassit aspernatur.</p>
-						</div>
-						<a href="contact.html" class="theme-btn btn-style-four">Contact Us</a>
-					</div>
-				</div>
-				
-				<div class="blocks-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<div class="row clearfix">
-							
-							<div class="team-block-three col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="image">
-										<img src="images/resource/team-6.jpg" alt="" />
-									</div>
-									<div class="lower-content">
-										<div class="content">
-											<h3><a href="#">Kirstin Hagen</a></h3>
-											<div class="designation">Designer</div>
-											<div class="social-box">
-												<a href="#" class="fab fa-google-plus-g"></a>
-												<a href="#" class="fab fa-twitter"></a>
-												<a href="#" class="fab fa-linkedin-in"></a>
-												<a href="#" class="fab fa-pinterest-p"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="team-block-three col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-									<div class="image">
-										<img src="images/resource/team-7.jpg" alt="" />
-									</div>
-									<div class="lower-content">
-										<div class="content">
-											<h3><a href="#">Kirstin Hagen</a></h3>
-											<div class="designation">Designer</div>
-											<div class="social-box">
-												<a href="#" class="fab fa-google-plus-g"></a>
-												<a href="#" class="fab fa-twitter"></a>
-												<a href="#" class="fab fa-linkedin-in"></a>
-												<a href="#" class="fab fa-pinterest-p"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="team-block-three col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="image">
-										<img src="images/resource/team-8.jpg" alt="" />
-									</div>
-									<div class="lower-content">
-										<div class="content">
-											<h3><a href="#">Kirstin Hagen</a></h3>
-											<div class="designation">Designer</div>
-											<div class="social-box">
-												<a href="#" class="fab fa-google-plus-g"></a>
-												<a href="#" class="fab fa-twitter"></a>
-												<a href="#" class="fab fa-linkedin-in"></a>
-												<a href="#" class="fab fa-pinterest-p"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="team-block-three col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-									<div class="image">
-										<img src="images/resource/team-9.jpg" alt="" />
-									</div>
-									<div class="lower-content">
-										<div class="content">
-											<h3><a href="#">Kirstin Hagen</a></h3>
-											<div class="designation">Designer</div>
-											<div class="social-box">
-												<a href="#" class="fab fa-google-plus-g"></a>
-												<a href="#" class="fab fa-twitter"></a>
-												<a href="#" class="fab fa-linkedin-in"></a>
-												<a href="#" class="fab fa-pinterest-p"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section> -->
-	<!-- End Team Section Three -->
 
+						<div class="col-md-12">
+							
+							<h4 class="sub-title">Our Objective</h4>
+							<p>
+								To consider the future and guide our clients into making the right strategic decisions. 
+							</p>
+							<p>
+								To provide Subcontracting & Outsourcing Services for none core activities in the following areas:-
+							</p>
+							<ul class="icon-list">
+								<li>
+									Accounting & Outsourcing
+								</li>
+								<li>
+									Tax
+								</li>
+								<li>
+									Payroll
+								</li>
+								<li>
+									Audit
+								</li>
+								<li>
+									Advisory
+								</li>
+								<li>
+									Corporate Secretarial
+								</li>
+								<li>
+									Corporate Training
+								</li>
+								<li>
+									System Review and Implementation
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- TITLE -->
+							<h4 class="sub-title">Some facts about us</h4>
+						</div>
+						<div class="col-md-4">
+							<div class="pic-shape">
+								<img class="img-responsive shadow-block" src="images/about/facts.png" alt="about">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-6">
+									<!-- COUNTER WRAPPER -->
+									<div class="counter-wrapper clearfix">
+										<!-- COUNTER NUMBER -->
+										<h3 data-count="1" class="number-counter text-color">2</h3>
+										<!-- COUNTER TITLE -->
+										<h4 class="counter-title">Awards Won</h4>
+										<!-- COUNTER DESC -->
+										<p>Best Financial Inclusion Award</p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<!-- COUNTER WRAPPER -->
+									<div class="counter-wrapper clearfix">
+										<!-- COUNTER NUMBER -->
+										<h3 data-count="8" class="number-counter text-color">120</h3>
+										<!-- COUNTER TITLE -->
+										<h4 class="counter-title">Satisfied Clients</h4>
+										<!-- COUNTER DESC -->
+										<p>Number of satisfied clients we have worked with.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<!-- COUNTER WRAPPER -->
+									<div class="counter-wrapper clearfix">
+										<!-- COUNTER NUMBER -->
+										<h3 data-count="6" class="number-counter text-color">6</h3>
+										<!-- COUNTER TITLE -->
+										<h4 class="counter-title">Service Packages</h4>
+										<!-- COUNTER DESC -->
+										<p>We currently have 6 service packages for you.</p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<!-- COUNTER WRAPPER -->
+									<div class="counter-wrapper clearfix">
+										<!-- COUNTER NUMBER -->
+										<h3 data-count="22" class="number-counter text-color">150</h3>
+										<!-- COUNTER TITLE -->
+										<h4 class="counter-title">Projects Completed</h4>
+										<!-- COUNTER DESC -->
+										<p>Number of projects completed since we started.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					
+				</div>
+				<!-- SIDEBAR -->
+				<div class="sidebar col-md-3">
+					<!-- MENU WIDGET -->
+					@include('partials._about_menu')
+					<!-- /. MENU WIDGET -->
+					
+					<!-- CONTACT WIDGET -->
+					<div class="widget contact-widget">
+						<!-- WIDGET TITLE -->
+						<h6 class="widget-title">Need our help?</h6>
+						<p>Please do not hesitate to get back to us at the time of your convinience. We are on call 24/7.</p>
+						<a href="{!! route('contacts') !!}" class="btn btn-default">Contact us</a>
+					</div><!-- /. WIDGET -->
+					
+					<!-- TESTIMONIAL WIDGET -->
+					<div class="widget testimonial-widget">
+						<!-- TESTI WRAPPER -->
+						<div class="testimonial-wrapper testimonial-md">
+							<!-- TESTI CMT -->
+							<div class="testimonial-cmt grey-bg">
+								<p>
+									Tillage keeps me informed and on track. They explains when I don’t understand. And I love the holistic approach Tillage provides. 
+									They understands my financial goals as a whole, treats me with the utmost respect, and takes our lives and finances seriously.  I know I am in good hands.”
+								</p>
+								<div class="cmt-arrow"></div>
+							</div>
+							<!-- TESTI DETAILS -->
+							<div class="media">
+								<div class="media-left testi-img-block">
+									<a href="#">
+										<!-- IMG -->
+										<img class="media-object img-circle" src="images/about/lee-ibrahim.png" alt="lee-img">
+									</a>
+								</div>
+								<div class="media-body testi-details-block">
+									<!-- NAME -->
+									<p class="testi-name typo-black">Lee Ibrahim</p>
+									<!-- DESC -->
+									<p class="testi-designation">Founder and CEO of <span><a href="https://resavi.com" target="_blank" style="color: #E14343">Resavi.com</a></span></p>
+								</div>
+							</div><!-- /. SERVICES SLIDE -->
+						</div><!-- /. TESTI WRAPPER -->
+					</div><!-- /. TESTIMONIAL WIDGET -->
+					
+					<!-- BROCHURES WIDGET -->
+					<!-- <div class="widget brochures-widget">
+						<h6 class="widget-title">Brochures</h6>
+						<ul>
+							<li><a href="#"><span class="text-color">finance-magazine</span>.pdf<span class="pull-right file-type fa fa-file-pdf-o"></span></a></li>
+							<li><a href="#"><span class="text-color">investment-guide</span>.doc<span class="pull-right file-type fa fa-file-word-o"></span></a></li>
+						</ul>
+					</div> -->
+					<!-- /. BROCHURES WIDGET -->
+					
+				</div><!-- /. SIDEBAR -->
+			</div>		
+		</div>	<!-- /.CONTAINER -->
+	</div><!-- /. PAGE CONTENT -->
 
 @endsection

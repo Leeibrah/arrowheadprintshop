@@ -6,52 +6,83 @@
 
 @section('content')
 
-	<main>
-		<section id="hero_in" class="general">
-			<div class="wrapper">
-				<div class="container">
-					<h1 class="fadeInUp"><span></span>Blog</h1>
-				</div>
-			</div>
-		</section>
-		<!--/hero_in-->
+	<!-- PAGE TITLE WRAPPER-->
+	<div class="page-title-wrapper">
+	    <!-- CONTAINER -->
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="300">
+	                <!-- BREADCRUMB -->
+	                <ol class="breadcrumb">
+	                    <li>
+	                        <a href="#">Home</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Blog</a>
+	                    </li>
+	                    <li class="active">{!! $post->title !!}</li>
+	                </ol>
+	                <!-- PAGE TITLE -->
+	                <h1 class="page-title bottom-line">
+	                	{!! $post->title !!}
+	                </h1>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- /.CONTAINER -->
+	</div>
+	<!-- /.PAGE TITLE WRAPPER-->
 
-		<div class="container margin_default">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="bloglist singlepost">
-						
-						<h1>{{ $post->title }}</h1>
-						
-						<!-- /post meta -->
-						<div class="post-content">
-							<p>
-										<!-- <img alt="" class="img-fluid" src="img/blog/found-it.png"> -->
-								<img class="img-fluid" src="{{ page_image($post->page_image) }}" width="100%" alt="Image"/>
-							</p>
-							<div class="dropcaps">
+	<!-- PAGE CONTENT -->
+	<div class="page-content">
+	    <!-- CONTAINER -->
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-9">
+	                <!-- ARTICLE -->
+	                <article class="post post-single hv-wrapper">
+	                    <!-- POST THUMB -->
+	                    <div class="post-thumbnail">
+	                        <img src="{!! page_image($post->page_image) !!}" class="img-responsive" alt="post-img">
+	                    </div>
+	                    <!-- POST DATE -->
+	                    <p class="post-date">
+	                    	{!! $post->published_at->format('F j, Y') !!}
+	                    </p>
+	                    <!-- POST TITLE -->
+	                    <h4 class="post-title">
+	                    	{!! $post->title !!}
+	                    </h4>
+	                    <!-- POST DESC -->
+	                    <div class="post-content clearfix">
+	                        {!! $post->content_html !!}
+	                    </div>
+	                    <!-- READ MORE LINK -->
+	                </article>
+	                <!-- /. ARTICLE -->
 
-								{!! $post->content_html !!}
-								
-							</div>
+	            	<!-- AUTHOR WRAPPER -->
+							<div class="author-wrapper media">
+														
+								<div class="media-body author-content">
+									<h6>
+										Post by: {!! $post->author !!}
+									</h6>
+									<p>
+										Department: {!! $post->department !!}
+									</p>
+								</div>
+							</div><!-- /. AUTHOR WRAPPER -->
 
-							<p>
+	            </div>
+	            <!-- SIDEBAR -->
+				{{-- @include('partials._blog_sidebar') --}}
+	            <!-- /. SIDEBAR -->
 
-							</p>
-						</div>
-						<!-- /post -->
-					</div>
-					<!-- /single-post -->
-
-					
-				</div>
-				<!-- /col -->
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-
-	</main>
+	        </div>
+	    </div>
+	    <!-- /.CONTAINER -->
+	</div>
+	<!-- /. PAGE CONTENT -->
 
 @endsection

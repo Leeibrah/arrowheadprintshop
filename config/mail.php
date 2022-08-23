@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'sendgrid'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
     // 'driver' => env('MAIL_DRIVER', 'sendmail'),
 
     /*
@@ -30,8 +30,8 @@ return [
     |
     */
 
-    // 'host' => env('MAIL_HOST', 'smpt.gmail.com'),
-    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
+    'host' => env('MAIL_HOST', 'smpt.gmail.com'),
+    // 'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -60,7 +60,7 @@ return [
     */
 
     // 'from' => ['address' => 'leeibrah@gmail.com', 'name' => 'Lee Ibrahim'],
-    'from' => ['address' => 'info@salohub.com', 'name' => 'Salo Hub'],
+    'from' => ['address' => 'nightoutkenya@gmail.com', 'name' => 'Tillage'],
 
     /*
     |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_FROM_NAME','SaloHub'),
+    'username' => env('MAIL_FROM_NAME','nightoutkenya@gmail.com'),
     // 'username' => 'developer@diasporaremit.com',
 
     /*
@@ -102,7 +102,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD', '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'),
+    'password' => env('MAIL_PASSWORD', 'desparado'),
     // 'password' => 'Diaspora2017',
 
     /*

@@ -1,651 +1,837 @@
-@extends('layouts.front')
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medixa Digital - Digital Marketing Agency</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Magnific Popup Css -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slick-Slide-Css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
 
-@section('content')
+<body>
 
-    <!--Main Slider-->
-    <section class="main-slider style-one">
-        
-        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
-            <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
-                <ul>
-                    
-                    <li data-transition="parallaxvertical" data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/1.jpg" data-title="Slide Title">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/1.jpg">
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['-150','-100','-150','0']"
-                    data-voffset="['-50','-50','-50','-10']"
-                    data-x="['left','left','left','left']"
-                    data-y="['top','top','top','top']"
-                    data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="icon-box"><img src="images/main-slider/icon-one.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-basealign="slide"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['100','100','100','100']"
-                    data-voffset="['160','160','160','160']"
-                    data-x="['left','left','left','left']"
-                    data-y="['bottom','middle','middle','middle']"
-                    data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="icon-box"><img src="images/main-slider/icon-two.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['-50','-50','-50','0']"
-                    data-voffset="['-40','-40','0','-40']"
-                    data-x="['right','right','right','right']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-frames='[{"delay":3500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="image-box"><img src="images/main-slider/content-image-5.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption" 
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-width="['650','650','650','450']"
-                    data-whitespace="normal"
-                    data-hoffset="['15','15','15','15']"
-                    data-voffset="['-100','-70','-50','-50']"
-                    data-x="['left','left','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-textalign="['top','top','top','top']"
-                    data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h2>Home of salary<br> Solutions</h2>
-                    </div>
-                    
-                    <div class="tp-caption tp-resizeme" 
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-whitespace="normal"
-                    data-width="['650','650','650','450']"
-                    data-hoffset="['15','15','15','15']"
-                    data-voffset="['-10','20','20','20']"
-                    data-x="['left','left','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-textalign="['top','top','top','top']"
-                    data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                    <!-- Link Box -->
-                        <div class="link-box">
-                            <a href="/employee-enrollment" class="theme-btn btn-style-two">Register Today</a>
-                            <!-- <a href="/contacts" class="theme-btn btn-style-three">Contact Us</a> -->
+    <!-- Header Section -->
+    <header class="header_aria">
+        <nav class="navbar navbar-expand-lg fixed-top bg-transfarent">
+            <div class="container custom_container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/mdigital-white-logo.png" width="40%" alt>
+                    <img src="images/mdigital-logo.png" width="40%" alt>
+                </a>
+                <div class="search d-lg-none">
+                    <a class="search-btn" href="javascript:void(0);"><i class="fas fa-search"></i></a>
+                    <form action="#" method="get" class="search-form">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Search...">
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
                         </div>
+                    </form>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->
+                    </ul>
+                    <div class="search d-lg-block">
+                        <a class="search-btn" href="javascript:void(0);"><i class="fas fa-search"></i></a>
+                        <form action="#" method="get" class="search-form">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search...">
+                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
                     </div>
-                    
-                    </li>
-                    
-                    <li data-transition="parallaxvertical" data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/1.jpg" data-title="Slide Title">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/1.jpg">
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['-150','-100','-150','-150']"
-                    data-voffset="['-50','-50','-50','-50']"
-                    data-x="['left','left','left','left']"
-                    data-y="['top','top','top','top']"
-                    data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="icon-box"><img src="images/main-slider/icon-one.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-basealign="slide"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['100','100','100','100']"
-                    data-voffset="['160','160','160','160']"
-                    data-x="['left','left','left','left']"
-                    data-y="['bottom','middle','middle','middle']"
-                    data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="icon-box"><img src="images/main-slider/icon-two.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="shape"
-                    data-height="auto"
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-hoffset="['-50','-50','-50','0']"
-                    data-voffset="['-40','-40','0','-40']"
-                    data-x="['right','right','right','right']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-frames='[{"delay":3500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <figure class="image-box"><img src="images/main-slider/content-image-2.png" alt=""></figure>
-                    </div>
-                    
-                    <div class="tp-caption" 
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-width="['650','650','650','450']"
-                    data-whitespace="normal"
-                    data-hoffset="['15','15','15','15']"
-                    data-voffset="['-100','-70','-50','-50']"
-                    data-x="['left','left','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-textalign="['top','top','top','top']"
-                    data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h2>Home of salary<br> Solutions</h2>
-                    </div>
-                    
-                    <div class="tp-caption tp-resizeme" 
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-whitespace="normal"
-                    data-width="['650','650','650','450']"
-                    data-hoffset="['15','15','15','15']"
-                    data-voffset="['-10','20','20','20']"
-                    data-x="['left','left','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-textalign="['top','top','top','top']"
-                    data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                    <!-- Link Box -->
-                        <div class="link-box">
-                            <a href="/employee-enrollment" class="theme-btn btn-style-two">Register Today</a>
-                            <!-- <a href="/contacts" class="theme-btn btn-style-three">Contact Us</a> -->
-                        </div>
-                    </div>
-                    
-                    </li>
-                    
-                    
-                    
-                </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--End Main Slider-->
-    
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="auto-container">
-            <div class="inner-container wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="background-image:url(images/background/2.jpg)">
-                <div class="row clearfix">
-                    
-                    <!-- Services Block -->
-                    <!-- <div class="services-block col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <span class="icon flaticon-triad-of-three-circles-strokes"></span>
-                            </div>
-                            <h3><a href="services-2.html">Web Design</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet adipelit sed eiusmtempor. encid dolore.</div>
-                        </div>
-                    </div> -->
-                    
-                    <!-- Services Block -->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <span class="icon flaticon-app-development"></span>
-                            </div>
-                            <h3><a href="{!! route('how-it-works') !!}">Everywhere</a></h3>
-                            <div class="text">Whenever you are, Instant to your mobile phone.</div>
+        </nav>
+    </header>
+    <!-- Header Section -->
+
+    <!-- Hero Section -->
+    <section class="hero_aria">
+        <div class="container custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero_content wow fadeInUp" data-wow-delay="0.1s">
+                        <span class=" sub_title">Medixa Digital Marketing Agency</span>
+                        <h1>Build a kick-ass brand & skyrocket your revenue with the leaders in marketing</h1>
+                        <!-- <p>Medixa Digital is a world class performance-driven technology, digital strategy, design and digital marketing firm based in Kenya.</p> -->
+                        <div class="button_aria">
+                            <a href="#" class="min_btn">Contact us</a>
+                            <!-- <a href="https://www.instagram.com/p/Chfr2FGK-2Z/" class="play_btn"><i class="fa-solid fa-play"></i></a> -->
                         </div>
                     </div>
-                    
-                    <!-- Services Block -->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <span class="icon flaticon-web"></span>
-                            </div>
-                            <h3><a href="{!! route('how-it-works') !!}">Bank Directly</a></h3>
-                            <div class="text">Direct to your Bank and your card instantly.</div>
-                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section_img" id="scene">
+                        <img data-depth="0.2" src="images/hero.png" alt>
                     </div>
-                    
-                    <!-- Services Block -->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <span class="icon flaticon-megaphone"></span>
-                            </div>
-                            <h3><a href="{!! route('how-it-works') !!}">Fast & Secure</a></h3>
-                            <div class="text">Always fast and in a timely and efficient way.</div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Services Section -->
-    
-    <!-- Video Section -->
-    <section class="video-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-                
-                <!-- Video Column -->
-                <div class="video-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!--Video Box-->
-                        <div class="video-box">
-                            <figure class="image">
-                                <img src="images/resource/video-image-2.png" alt="">
-                            </figure>
-                            <!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><i class="play-now flaticon-play-button"></i></a> -->
+    <!-- Hero Section -->
+
+    <!-- Work Section -->
+    <section class="work_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="sub_title">Process</span>
+                        <h2>How we work</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="work_items wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="work_item text-center">
+                            <img src="fonts/work.svg" alt>
+                            <h6>User Research</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="work_item text-center">
+                            <img src="fonts/work_2.svg" alt>
+                            <h6>Developed App</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="work_item text-center">
+                            <img src="fonts/work_3.svg" alt>
+                            <h6>Testing Project</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="work_item text-center">
+                            <img src="fonts/work_4.svg" alt>
+                            <h6>Update Result</h6>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>Get Sorted Today</h2>
-                            <div class="separator"></div>
-                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
 
-                        <div>
-                            <h3>Fill an Application Form</h3>
-                        </div>
-
-                        <br>
-
-                        <div class="text">
+    <!-- Seo Section -->
+    <section class="seo_aria">
+        <div class="container custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section_img wow fadeInLeft" data-wow-delay="0.1s">
+                        <img src="images/seo.png" alt>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section_title">
+                            <span class="sub_title">Get the best</span>
+                            <h2>Web Design</h2>
 
                             <p>
-                                Make a request on our website and wait for response to e-mail within 15-30 minutes from the time of the request during business hours.                     
+                                If you want to attract new clients as well as keep those you already have, 
+                                it’s important that your website is up-to-date. The web has changed so much in the last decade, 
+                                so you need to have a website that is constantly changing and current. 
+
+                                With all of these new social media sites and apps popping up daily, 
+                                it’s important for your site to not only be attractive but also easy-to-navigate. 
+                                <br />
+                                At Medixa Ventures, we build websites with customizations tailored to your specific 
+                                goals with smooth interactions and a responsive design for the best user experience.
+                            </p>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seo Section -->
+
+    <!-- Client Section -->
+    <section class="client_aria">
+        <div class="container custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="logo_slider">
+                        <img src="images/logo/landmark-logo.png" alt>
+                        <img src="images/logo/medixa-logo.png" alt>
+                        <img src="images/logo/resavi-logo.png" alt>
+                        <img src="images/logo/tillage-logo.png" alt>
+                        <img src="images/logo/stawika-logo.png" alt>
+                        
+                        <img src="images/logo/kombgreen-logo.png" alt>
+                        <img src="images/logo/kings-logo.png" alt>
+                        <img src="images/logo/mdigital-logo.png" alt>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section -->
+
+    <!-- Counter Section -->
+    <section class="counter_aria text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container custom_container">
+            <div class="items">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item">
+                            <span class="counter">12</span><i class="fa-solid fa-plus"></i>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item">
+                            <span class="counter">26</span><i class="fa-solid fa-plus"></i>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item">
+                            <span class="counter">6</span><i class="fa-solid fa-plus"></i>
+                            <p>Medixa Team</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item">
+                            <span class="counter">8</span><i class="fa-solid fa-plus"></i>
+                            <p>Referrals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section -->
+
+    <!-- Service Section -->
+    <section class="service_aria wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <span class="sub_title">Our Services</span>
+                        <h2>Services We Provide</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab_style">
+                        <ul class="nav nav-tabs justify-content-center text-center" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="eng-customers-tab" data-bs-toggle="tab" data-bs-target="#eng-customers" type="button" role="tab" aria-controls="eng-customers" aria-selected="true">
+                                    <img src="fonts/service_5.svg" alt>
+                                    <span>Digital Marketing</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="security-managment-tab" data-bs-toggle="tab" data-bs-target="#security-managment" type="button" role="tab" aria-controls="security-managment" aria-selected="false">
+                                    <img src="fonts/service.svg" alt>
+                                    <span>Web Design</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="email-marketing-tab" data-bs-toggle="tab" data-bs-target="#email-marketing" type="button" role="tab" aria-controls="email-marketing" aria-selected="false">
+                                    <img src="fonts/service_2.svg" alt>
+                                    <span>Videography</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="user-administration-tab" data-bs-toggle="tab" data-bs-target="#user-administration" type="button" role="tab" aria-controls="user-administration" aria-selected="false">
+                                    <img src="fonts/service_4.svg" alt>
+                                    <span>SEO and PPC</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="team-accounts-tab" data-bs-toggle="tab" data-bs-target="#team-accounts" type="button" role="tab" aria-controls="team-accounts" aria-selected="false">
+                                    <img src="fonts/service_3.svg" alt>
+                                    <span>Influencer Marketing</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="eng-customers" role="tabpanel" aria-labelledby="eng-customers-tab">
+                                <div class="min_tab_content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="section_img text-center">
+                                                <img src="images/tab.png" alt>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="content">
+                                                <div class="section_title">
+                                                    <h2>Digital Marketing</h2>
+                                                </div>
+                                                <p>
+                                                    Social Media has changed how brands communicate with their audiences forever. 
+                                                    Whether your business is a B2B or B2C brand, social media is a powerful way to 
+                                                    build brand awareness, build a positive image, and drive lead generation. 
+                                                    We specialize in strategic social media campaigns that focus on building and protecting 
+                                                    a positive brand image, creating loyalty among fans, and driving new leads for your business. 
+                                                    <br/><br/>
+                                                    Our full suite of social media management services include:
+                                                    •   Social Strategy Development
+                                                    •   Social Media Consulting
+                                                    •   Social Media Advertising
+                                                    •   Community Engagement
+                                                    •   Creation of Content Calendar
+
+                                                </p>
+                                                <!-- <a href="service.html" class="min_btn">Click Here</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="security-managment" role="tabpanel" aria-labelledby="security-managment-tab">
+                                <div class="min_tab_content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="section_img text-center">
+                                                <img src="images/tab_2.png" alt>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="content">
+                                                <div class="section_title">
+                                                    <h2>Web Design</h2>
+                                                </div>
+                                                <p>
+                                                    Your website is the center of your digital presence. It’s one of the few places on the 
+                                                    internet where you can deliver your brand’s message free of distortion or distraction. 
+                                                    Medixa’s web development services are perfect for brands at any stage.
+                                                    Our web development team can help you build your brand's website from the ground up. 
+                                                    We specialize in building websites that tell a unique brand story while meeting the 
+                                                    expectations of today's most discerning consumers.
+                                                    <br/> <br/>
+                                                    If your website is already built but doesn't meet expectations, we can develop a case 
+                                                    study and work with you to improve site architecture, design, and responsiveness as 
+                                                    this comes under website maintenance. 
+
+                                                </p>
+                                                <!-- <a href="service.html" class="min_btn">Click Here</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="email-marketing">
+                                <div class="min_tab_content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="section_img text-center">
+                                                <img src="images/tab_3.png" alt>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="content">
+                                                <div class="section_title">
+                                                    <h2>Videography</h2>
+                                                </div>
+                                                <p>
+                                                    Content is the king of today’s marketing environment. The most successful brands in the world 
+                                                    have developed detailed content strategies that help them inspire, entertain, and educate their 
+                                                    target audiences. <br/><br/>
+                                                    At Medixa Ventures we specialize in helping our clients plan, produce, and promote content 
+                                                    that drives audience engagement and conversions. Our full suite of content services includes:
+                                                    •   Digital Content Strategy
+                                                    •   Content Production
+                                                    •   Video Production
+                                                    •   Graphic Design
+                                                    •   Multi-language Content 
+                                                    Whether you're producing blog posts, images, or videos, Medixa Ventures can be trusted to 
+                                                    support your content marketing efforts.
+
+                                                </p>
+                                                <!-- <a href="service.html" class="min_btn">Click Here</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="user-administration">
+                                <div class="min_tab_content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="section_img text-center">
+                                                <img src="images/tab_4.png" alt>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="content">
+                                                <div class="section_title">
+                                                    <h2>Search Engine Optimazation and Pay Per Click</h2>
+                                                </div>
+                                                <p>
+                                                    Billions of web browsing sessions begin with a search query every day. 
+                                                    With more than a billion websites competing for the top spot in search results, 
+                                                    it can be difficult to drive traffic to your site from search engines. 
+                                                    <br/><br/>
+                                                    At Medixa Ventures we specialize in an innovative approach to SEO that uses white-hat 
+                                                    tactics to put your website at the top of your target audience's searches. 
+                                                    <br/><br/>
+                                                    More than 60% of website traffic starts with a search engine query. 
+                                                    Pay-Per-Click (PPC) puts your brand at the top of search results for queries 
+                                                    relevant to your brand and audience. This valuable advertising can provide an 
+                                                    immediate source of targeted traffic to your website, driving conversions and 
+                                                    contributing to revenue growth.
+                                                </p>
+                                                <!-- <a href="service.html" class="min_btn">Click Here</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="team-accounts">
+                                <div class="min_tab_content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="section_img text-center">
+                                                <img src="images/tab_5.png" alt>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="content">
+                                                <div class="section_title">
+                                                    <h2>Influencer Marketing</h2>
+                                                </div>
+                                                <p>
+                                                    Content creation is evolving and the world is looking for new ways to attract customers. 
+                                                    This is why Medixa Ventures has gone a step further to bring to you marketing through the 
+                                                    very athletes we love and adore in our communities and the sports fraternity at large.
+                                                    We manage Mike Mokamba the Kenyan 200 Meters champion. We could use our athlete to help in the 
+                                                    marketing of Nea by Nature products not only in Kenya but also to target markets outside the country. 
+                                                    <br/><br/>
+                                                    This will help to expand and diversify the audience and reach new potential customers.
+                                                    Our full suite of content services under athlete marketing includes:
+                                                    •   Billboard Advertisement
+                                                    •   Vehicle Branding
+                                                    •   Banners Designs
+                                                    •   Brand Awareness
+                                                    •   Sponsorship Opportunities
+                                                    •   Customer Data Analytics
+                                                    •   Marketing Agency relations
+                                                    •   Brand Discovery Process
+
+                                                    For more information about this package please get back to us and we will share more on the content 
+                                                    rights ownership and opportunities which can be garnered from this package.
+
+                                                </p>
+                                                <!-- <a href="service.html" class="min_btn">Click Here</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section -->
+
+
+
+    <!-- Case Studies Section -->
+    <!--
+    <section class="case_studies_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="sub_title">Case Studies</span>
+                        <h2>Our Recent Works</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="post_items text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_post">
+                            <img src="images/case_studies.png" alt>
+                            <h4><a href="service.html">Security Managment</a></h4>
+                            <p><a href>Marketing</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_post">
+                            <img src="images/case_studies_2.png" alt>
+                            <h4><a href="service.html">Security Managment</a></h4>
+                            <p><a href>Marketing</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_post">
+                            <img src="images/case_studies_3.png" alt>
+                            <h4><a href="service.html">Security Managment</a></h4>
+                            <p><a href>Marketing</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Case Studies Section -->
+
+    <!-- Testimonial Section -->
+    <section class="testimonial_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title">
+                        <span class="sub_title text-white">What our customers say</span>
+                        <h2 class="text-white">Our Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_aria">
+                <div class="slider_item">
+                    <div class="aurthor_info">
+                        <!-- <img src="images/testimonial_people_3.webp" alt> -->
+                        <h6>Sharon Chepchumba <span>CEO, Ideon Limited</span></h6>
+                    </div>
+                    <p>
+                        “Simplicity is key. This is what Medixa does best, while offering all services needed for effective business growth”
+                    </p>
+                </div>
+                <div class="slider_item">
+                    <div class="aurthor_info">
+                        <!-- <img src="images/testimonial_people_2.webp" alt> -->
+                        <h6>Dr. Fredrick Osoro<span>Manager, Shavaughn Healthcare</span></h6>
+                    </div>
+                    <p>
+                        “Medixa not only provides all the ideas required for the sales team but also it is very useful in onboarding new customers for our products”
+                    </p>
+                </div>
+                <div class="slider_item">
+                    <div class="aurthor_info">
+                        <!-- <img src="images/testimonial_people_3.webp" alt> -->
+                        <h6>Clement Edward<span>Managing Partner, Tillage</span></h6>
+                    </div>
+                    <p>
+                        "Working with Medixa Digital was a best investments for us. The team researched our industry and built a custom website in less than 3 weeks.""
+                    </p>
+                </div>
+                <div class="slider_item">
+                    <div class="aurthor_info">
+                        <!-- <img src="images/testimonial_people_2.webp" alt> -->
+                        <h6>Felix Mutua <span>VP, Resavi</span></h6>
+                    </div>
+                    <p>
+                        "They've solved every technical challenge that we've thrown at them. They make it seem effortless and take the mystery out of the mix.""
+                    </p>
+                </div>
+                <div class="slider_item">
+                    <div class="aurthor_info">
+                        <!-- <img src="images/testimonial_people_3.webp" alt> -->
+                        <h6>Mark Otieno <span>Director, Landmark Views</span></h6>
+                    </div>
+                    <p>
+                        "I brought the team in to work on several of my client social media platforms and I've been impressed with their work every step of the way.""
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section -->
+
+    <!-- Price Section -->
+    <!--
+    <section class="price_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="sub_title">Best Pricing</span>
+                        <h2>Our Pricing Plans</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="priceing_plan text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="price_top">
+                                <h5>Basic Package</h5>
+                                <p>Personal use</p>
+                                <img src="images/price.png" alt>
+                                <div class="price">
+                                    <span class="price_before">$</span>
+                                    <span class="amount">49</span>
+                                    <span class="period ">/month</span>
+                                </div>
+                            </div>
+                            <div class="price_bottom">
+                                <ul class="price_list list-unstyled">
+                                    <li>Product Recommendation</li>
+                                    <li>Advanced Cart</li>
+                                    <li>Facebook and Google Ads</li>
+                                    <li>Order Nofications</li>
+                                    <li>Landing Pages</li>
+                                </ul>
+                                <a href="pricing.html" class="min_btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="price_top">
+                                <h5>Standard Package</h5>
+                                <p>Team use</p>
+                                <img src="images/price_3.png" alt>
+                                <div class="price">
+                                    <span class="price_before">$</span>
+                                    <span class="amount">69</span>
+                                    <span class="period ">/month</span>
+                                </div>
+                            </div>
+                            <div class="price_bottom">
+                                <ul class="price_list list-unstyled">
+                                    <li>Product Recommendation</li>
+                                    <li>Advanced Cart</li>
+                                    <li>Facebook and Google Ads</li>
+                                    <li>Order Nofications</li>
+                                    <li>Landing Pages</li>
+                                </ul>
+                                <a href="pricing.html" class="min_btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item wow fadeInRight" data-wow-delay="0.1s">
+                            <div class="price_top">
+                                <h5>Premium Package</h5>
+                                <p>Personal use</p>
+                                <img src="images/price.png" alt>
+                                <div class="price">
+                                    <span class="price_before">$</span>
+                                    <span class="amount">99</span>
+                                    <span class="period ">/month</span>
+                                </div>
+                            </div>
+                            <div class="price_bottom">
+                                <ul class="price_list list-unstyled">
+                                    <li>Product Recommendation</li>
+                                    <li>Advanced Cart</li>
+                                    <li>Facebook and Google Ads</li>
+                                    <li>Order Nofications</li>
+                                    <li>Landing Pages</li>
+                                </ul>
+                                <a href="pricing.html" class="min_btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Price Section -->
+
+    <!-- Blog Section -->
+    <!--
+    <section class="blog_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="sub_title">News info</span>
+                        <h2>Our Latest Media</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="blog_post_aria">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_blog">
+                            <div class="blog_top">
+                                <a href="blog-single.html" class="blog_thumb">
+                                    <img src="images/blog.png" alt>
+                                </a>
+                                <a href="blog-single.html" class="category">Travel</a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="blog-single.html">Using Backlighting to Enhan Your Images</a></h3>
+                                <div class="blog_bottom">
+                                    <p class="author"><a href="blog-single.html">By Filip Justić</a></p>
+                                    <p class="date">21 Aug, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_blog">
+                            <div class="blog_top">
+                                <a href="blog-single.html" class="blog_thumb">
+                                    <img src="images/blog_2.png" alt>
+                                </a>
+                                <a href="blog-single.html" class="category">Technology</a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="blog-single.html">Using Backlighting to Enhan Your Images</a></h3>
+                                <div class="blog_bottom">
+                                    <p class="author"><a href="blog-single.html">By Filip Justić</a></p>
+                                    <p class="date">21 Aug, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_blog">
+                            <div class="blog_top">
+                                <a href="blog-single.html" class="blog_thumb">
+                                    <img src="images/blog_3.png" alt>
+                                </a>
+                                <a href="blog-single.html" class="category">Travel</a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="blog-single.html">Using Backlighting to Enhan Your Images</a></h3>
+                                <div class="blog_bottom">
+                                    <p class="author"><a href="blog-single.html">By Filip Justić</a></p>
+                                    <p class="date">21 Aug, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Blog Section -->
+
+    <!-- Footer Section -->
+    <section class="footer_aria wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <div class="site_info">
+                        <img src="images/mdigital-white-logo.png" width="50%" alt>
+                        <div class="content">
+                            <p>
+                                Medixa Digital is a credited, Nairobi based, customer
+                                focused Digital Marketing Agency, specializing in helping
+                                businesses optimize the immense power of the internet as
+                                a marketing vehicle to acquire, engage and retain new and
+                                existing customers.
                             </p>
                         </div>
-                        <!-- <a href="/contacts" class="theme-btn btn-style-four">Contact Us</a> -->
-                        <div class="btn-box">
-                            <a href="{!! route('employer-enrollment') !!}" class="theme-btn btn-style-one">Enrollment as an Employer</a>
-                            <a href="{!! route('employee-enrollment') !!}" class="theme-btn btn-style-one">Enrollment as an Employee</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- End Video Section -->
-    
-    <!-- Services Section Two -->
-    <section class="services-section-two" style="background-image:url(images/background/3.png)">
-        <div class="auto-container">
-            <div class="sec-title centered light">
-                <h2>
-                    Salo Hub is home if you:
-                </h2>
-                <div class="separator"></div>
-            </div>
-            <div class="row clearfix">
-                
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU ARE 18 OR OLDER</h3>
-                        <div class="text">The minimun age to use our service is 18.</div>
-                    </div>
-                </div>
-                
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU ARE A KENYAN RESIDENT</h3>
-                        <div class="text">Must be a current resident of the Republic of Kenya.</div>
-                    </div>
-                </div>
-
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU HAVE A BANK ACCOUNT AND MPESA</h3>
-                        <div class="text">You need an active salary bank account and an active mpesa account.</div>
-                    </div>
-                </div>
-
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU ARE HONEST AND TRUSTWORTHY</h3>
-                        <div class="text">You deffinitely have to be a nice person.</div>
-                    </div>
-                </div>
-                
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU HAVE A EMPLOYERS CONTRACT</h3>
-                        <div class="text">Must be a current employee of the company.</div>
-                    </div>
-                </div>
-
-                <div class="services-block-two col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <div class="icon flaticon-tick"></div>
-                        </div>
-                        <h3>YOU HAVE A REGULAR INCOME</h3>
-                        <div class="text">You must have an income every month whether it be benefits or a job.</div>
-                    </div>
-                </div>
-                
-                <!-- <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <span class="icon flaticon-art-and-design"></span>
-                        </div>
-                        <h3>UI Design</h3>
-                        <div class="text">Lorem ipsum dolor sit amet adipelit sed.</div>
-                    </div>
-                </div>
-                
-                <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <span class="icon flaticon-talk"></span>
-                        </div>
-                        <h3><a href="services-1.html">Social Marketing</a></h3>
-                        <div class="text">Lorem ipsum dolor sit amet adipelit sed.</div>
-                    </div>
-                </div> -->
-                
-            </div>
-        </div>
-    </section>
-    <!-- End Services Section Two -->
-    
-    <!-- Featured Section -->
-    <section class="feature-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-                
-                <!-- Featured Column -->
-                <div class="featured-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <h2>Why People <br> Choose Salohub</h2>
-                            <div class="separator"></div>
-                            <div class="text">
-                                We offer a totally new way of borrowing. Come with us and know why people love us from the very first day.
-                            </div>
-                        </div>
-                        <div class="featured-outer">
-                            
-                            <!-- Featured Block -->
-                            <div class="featured-block wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-gift"></span>
-                                    </div>
-                                    <h3><a href="#">Awesome interest!</a></h3>
-                                    <div class="text">
-                                        Only 10% per month                           
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Featured Block -->
-                            <div class="featured-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-computer"></span>
-                                    </div>
-                                    <h3><a href="#">High Salo limits</a></h3>
-                                    <div class="text">
-                                        Get upto KES 50,000
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Featured Block -->
-                            <div class="featured-block wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-trolley-2"></span>
-                                    </div>
-                                    <h3><a href="#">Fast and Secure</a></h3>
-                                    <div class="text">
-                                        Get sorted in 15-30 minutes
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                             
                         </div>
                     </div>
                 </div>
-                
-                <!-- Image Column -->
-                <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <img src="images/resource/service-new.png" alt="" />
-                        </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="site_info">
+                        <h4>Services</h4>
+                        <ul class="list list-unstyled">
+                            <li>
+                                <a href="email-marketing.html">
+                                    Digital Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service.html">
+                                    Web Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lead-generation.html">
+                                    Videography
+                                </a>
+                            </li>
+                            <li>
+                                <a href="youtube-marketing.html">
+                                    SEO and Pay per Click
+                                </a>
+                            </li>
+                            <li>
+                                <a href="social-media-marketing.html">
+                                    Influencer Marketing
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="site_info">
+                        <h4>Contacts</h4>
+                        <b>Office Location:</b><br/>
+                        Senteu Plaza, Galana Rd, Nairobi
+                        <br/><br/>
+                        <b>Call us anytime</b><br/>
+                        +254704734897, +254714019079
+                        <br/><br/>
+                        <b>Email us at:</b><br/>
+                        info@medixa.co.ke
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_bottom text-center">
+                        <p>© 2022 Medixa Digital <i class="fa-solid fa-heart"></i> All rights reserved. Medixa Ventures.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- End Featured Section -->
-    
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
-        <div class="image-layer" style="background-image:url(images/background/14.png)"></div>
-        <div class="auto-container">
-            <div class="offset-lg-6 col-lg-6 col-md-12 col-sm-12">
-                <!-- Sec Title -->
-                <div class="sec-title light">
-                    <h2>What People <br> Say About Salo Hub</h2>
-                    <div class="separator"></div>
-                    <div class="text">
-                        Hear what the customer are saying:               
-                    </div>
-                </div>
-            </div>
-            <div class="inner-container">
-                
-                <div class="single-item-carousel owl-carousel owl-theme">
-                    
-                    <!-- Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="row clearfix">
-                                <!-- Image Column -->
-                                <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="image">
-                                            <img src="images/resource/testimonial-3.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Content Column -->
-                                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="content">
-                                            <div class="text">You are the best. I am proud of your friendly rates.</div>
-                                            <div class="author">Josephat Okonda</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="row clearfix">
-                                <!-- Image Column -->
-                                <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="image">
-                                            <img src="images/resource/testimonial-4.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Content Column -->
-                                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="content">
-                                            <div class="text">Thanks alot for the service. Mumenitoa kwa shimo kabisa.<div>
-                                            <div class="author">Lubia</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
+        <div class="shape">
+            <img data-depth="0.2" src="images/shape.png" alt class="one">
+            <img data-depth="0.2" src="images/shapea_2.png" alt class="two">
         </div>
     </section>
-    <!-- End Testimonial Section -->
-    
-    <!-- Counter Section -->
-    <section class="counter-section">
-        <div class="map-layer" style="background-image:url(images/icons/pattern-3.png)"></div>
-        <div class="auto-container">
-            <!-- Sec Title -->
-            <div class="sec-title">
-                <h2>We Believe <br> in Counting Numbers</h2>
-                <div class="separator"></div>
-                <div class="text">This is what we have achieved over the years.</div>
-            </div>
-            
-            <div class="fact-counter">
-                <div class="row clearfix">
+    <!-- Footer Section -->
 
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner">
-                            <div class="content">
-                                <div class="icon flaticon-calendar-1"></div>
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="1">0</span>+
-                                </div>
-                                <h4 class="counter-title">Years Experience</h4>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner">
-                            <div class="content">
-                                <div class="icon flaticon-target-1"></div>
-                                <div class="count-outer count-box alternate">
-                                    <span class="count-text" data-speed="3000" data-stop="300">0</span>+
-                                </div>
-                                <h4 class="counter-title">Loans Given</h4>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner">
-                            <div class="content">
-                                <div class="icon flaticon-avatar"></div>
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="4000" data-stop="275">0</span>+
-                                </div>
-                                <h4 class="counter-title">Happy Coustomers</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner">
-                            <div class="content">
-                                <div class="icon flaticon-prize-1"></div>
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="1">0</span>+
-                                </div>
-                                <h4 class="counter-title">Award Win</h4>
-                            </div>
-                        </div>
-                    </div>
+    <!-- jQuery Libraary -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper - Js For Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap - jS  -->
+    <script src="js/bootstrap.min.js"></script>
 
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- End Counter Section -->
-    
-@endsection
+    <!-- Waypoints Js For Counter Up -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Counter Up - Js -->
+    <script src="js/jquery.counterup.js"></script>
+    <!-- Magnific Popup -Js -->
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <!-- Wow - Js -->
+    <script src="js/wow.min.js"></script>
+    <!-- Parallax - Js -->
+    <script src="js/parallax.min.js"></script>
+    <!-- Slick-Slidr-js -->
+    <script src="js/slick.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
+
+
+</body></html>

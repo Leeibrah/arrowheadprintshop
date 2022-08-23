@@ -1,9 +1,9 @@
 <?php
 return [
-    'name' => "Salohub Ltd",
-    'title' => "Salohub",
+    'name' => "Tillage Business Solutions",
+    'title' => "Tillage",
     'subtitle' => 'Home of Salary Solutions',
-    'description' => 'Home of Salary Solutions',
+    'description' => 'Audit, Tax Consultancy, Accountancy',
     'author' => 'Lee Ibrahim',
     'page_image' => 'home-bg.jpg',
     'posts_per_page' => 10,

@@ -1,98 +1,52 @@
 <!DOCTYPE html>
+<!--
+    Theme Name: TILLAGE - Audit, Tax Consultancy, Accountancy
+    Description: HTML/CSS 
+    Author: Glory Themes 
+    Designed & Coded by Lee Ibrahim
+    -->
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Salohub :: Home of salary solutions</title>
+    <!-- HEAD -->
+        @include('partials._head')
+    <!-- /. HEAD -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174547718-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <body>
+        <!-- PAGE LOADER -->
+        <div id="pageloader">
+            <img src="images/loader.gif" class="img-responsive" alt="loader" height="128" width="128">
+        </div>
+        <!-- PAGE WRAPPER -->
+        <div class="page-wrapper">
+            
+            <!-- HEADER -->
+            @include('partials._header')
+            <!-- /. HEADER -->
 
-  gtag('config', 'UA-174547718-1');
-</script>
+            @yield('content')
 
+            
+            <!-- FOOTER -->
+            @include('partials._footer')
+            <!-- /. FOOTER -->
 
-<!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-<link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
-<link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
-
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
-
-<body>
-
-<div class="page-wrapper">
-    <!-- Preloader -->
-    <div class="preloader"></div>
-
-    @include('partials._body_header')
-
-    @yield('content')
-    
-    @include('partials._footer')
-    
-</div>
-<!--End pagewrapper-->
-
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-
-
-<script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<!--Revolution Slider-->
-<script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="js/main-slider-script.js"></script>
-
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/script.js"></script>
-
-<!-- contacts -->
-<!-- <script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/validate.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/script.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
-<script src="js/map-script.js"></script> -->
-
-</body>
+        </div>
+        <!-- /. PAGE WRAPPER -->
+        <!-- COLOR PANEL -->
+        <!-- <div class="color-panel"><ul class="panel-icons"><li class="panel-color-list"><a href="#" class="switcher-icon ion-tshirt-outline" data-toggle="tooltip" data-placement="left" title="Theme Skins"></a><ul class="panel-colors"><li><a title="color" class="switcher" style="background: #13599F;"></a></li><li><a title="green" class="switcher" style="background: #4CAF50;"></a></li><li><a title="pink" class="switcher" style="background: #E91E63;"></a></li><li><a title="yellow" class="switcher" style="background: #ECC116;"></a></li><li><a title="brown" class="switcher" style="background: #795548;"></a></li></ul></li><li><a href="#" class="purchase-icon ion-bag" data-toggle="tooltip" data-placement="left" title="Purchase Tradingblock"></a></li></ul></div> -->
+        <!-- /. COLOR PANEL -->
+        <!-- JQUERY -->
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <!-- REVOLUTION JS FILES -->
+        <script type="text/javascript" src="/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="/js/revolution-extension.js"></script>
+        <!-- THEME JS -->
+        <script type="text/javascript" src="/js/theme.js"></script>
+        <!-- CAROUSEL JS -->
+        <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+        <!-- CUSTOM JS -->
+        <script type="text/javascript" src="/js/custom.js"></script>
+    </body>
 </html>

@@ -15,8 +15,9 @@ class BlogController extends Controller
 
     public function index(Request $request)
     {
-        $page_title = "Vinestalk Credit Kenya Limited | Your Credit and Financial Consultancy Partner";
-        $page_description = "Vinestalk :: Home Page";
+
+        $page_title = "Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy";
+        $page_description = "Tillage :: Blog";
         
         $tag = $request->get('tag');
         $data = $this->dispatch(new BlogIndexData($tag));
@@ -38,8 +39,8 @@ class BlogController extends Controller
 
     public function showPost($slug, Request $request)
     {
-        $page_title = "Vinestalk Credit Kenya Limited | Your Credit and Financial Consultancy Partner";
-        $page_description = "Vinestalk :: Blog";
+        $page_title = "Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy";
+        $page_description = "Tillage :: Blog";
 
         // $post = Post::whereSlug($slug)->firstOrFail();
         $post = Post::with('tags')->whereSlug($slug)->firstOrFail();

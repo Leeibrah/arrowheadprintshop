@@ -6,34 +6,25 @@ Route::get( '/',                        ['as' => 'home',                        
 // Route::get( 'home',                  ['as' => 'home',                            'uses' => 'HomeController@index']);
 Route::get( 'welcome',                  ['as' => 'welcome',                         'uses' => 'HomeController@welcome']);
 
-Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
-Route::get( 'app',                      ['as' => 'app',                             'uses' => 'HomeController@app']);
-Route::get( 'how-it-works',             ['as' => 'how-it-works',                    'uses' => 'HomeController@howitworks']);
-Route::get( 'terms',                    ['as' => 'terms',                           'uses' => 'HomeController@termsandconditions']);
-Route::get( 'privacy',                  ['as' => 'privacy',                         'uses' => 'HomeController@privacypolicy']);
+// Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
+// Route::get( 'team',                     ['as' => 'team',                            'uses' => 'HomeController@team']);
 
+// Route::group(['prefix' => 'services'], function() {
+
+//     Route::get('index',                 ['as' => 'services.index',                  'uses' => 'ServiceController@index']);
+//     Route::get('accounting',            ['as' => 'services.accounting',             'uses' => 'ServiceController@accounting']);
+//     Route::get('payroll-bureau',        ['as' => 'services.payrollbureau',          'uses' => 'ServiceController@payrollBureau']);
+//     Route::get('forensic-investigation',['as' => 'services.forensicinvestigation',  'uses' => 'ServiceController@forensicInvestigation']);
+//     Route::get('tax',                   ['as' => 'services.tax',                    'uses' => 'ServiceController@tax']);
+//     Route::get('business-advisory',     ['as' => 'services.businessadvisory',       'uses' => 'ServiceController@businessAdvisory']);
+//     Route::get('audit-assurance',       ['as' => 'services.auditassurance',         'uses' => 'ServiceController@auditAssurance']);
+
+// });
 
 Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
 Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
 
-Route::get( 'enroll',                   ['as' => 'enroll',                          'uses' => 'HomeController@enroll']);
-
-Route::get( 'employer-enrollment',      ['as' => 'employer-enrollment',             'uses' => 'EmployerController@enrollment']);
-Route::post('employer-enrollment',      ['as' => 'employer-enrollment-post',        'uses' => 'EmployerController@postEnrollment']);
-
-Route::get( 'employee-enrollment',      ['as' => 'employee-enrollment',              'uses' => 'EmployeeController@personal']);
-Route::post('employee-enrollment',      ['as' => 'employee-enrollment-post',         'uses' => 'EmployeeController@postPersonal']);
-
-Route::get( 'employment/{id}',          ['as' => 'employment',                      'uses' => 'EmployeeController@employment']);
-Route::post('employment/{id}',          ['as' => 'employment-post',                 'uses' => 'EmployeeController@postEmployment']);
-
-Route::get( 'identification/{id}',      ['as' => 'identification',                  'uses' => 'EmployeeController@identification']);
-Route::post('identification/{id}',      ['as' => 'identification-post',             'uses' => 'EmployeeController@postIdentification']);
-
-Route::get( 'documentation/{id}',       ['as' => 'documentation',                   'uses' => 'EmployeeController@documentation']);
-Route::post('documentation/{id}',       ['as' => 'documentation-post',              'uses' => 'EmployeeController@postDocumentation']);
-
-
+Route::get('notification',              ['as' => 'notification',                    'uses' => 'HomeController@notification']);
 
 
 Route::get('mail', 'HomeController@mail');
@@ -46,21 +37,6 @@ Route::group(['prefix' => 'blog'], function() {
 
 });
 
-// Route::get( 'consulting',                   ['as' => 'consulting',              'uses' => 'HomeController@consulting']);
-    
-// Route::get( 'contacts',                     ['as' => 'contacts',                'uses' => 'HomeController@contacts']);
-    
-// Route::get( 'terms',                        ['as' => 'terms',                   'uses' => 'HomeController@termsandconditions']);
-// Route::get( 'privacy',                      ['as' => 'privacy',                 'uses' => 'HomeController@privacypolicy']);
-
-// Route::get('mail', 'HomeController@mail');
-
-// Route::get( 'sitemap',                      ['as' => 'sitemap',                 'uses' => 'HomeController@generateSitemap']);
-
-// Blog pages
-// get('/blog', function () {
-//     return redirect('/blog');
-// });
 get('blog1', 'BlogController@indexp');
 get('blog1/{slug}', 'BlogController@showPost');
 $router->get('contact', 'ContactController@showForm');
@@ -75,32 +51,14 @@ get('admin', function () {
 $router->group([
     'namespace' => 'Admin',
     'middleware' => 'auth',
-    'prefix'    => 'admin',
 ], function () {
-    resource('post', 'PostController', ['except' => 'show']);
-    resource('tag', 'TagController', ['except' => 'show']);
-
-    resource('employee', 'EmployeeController', ['except' => 'show']);
-    get('employee/{id}', 'EmployeeController@show');
-
-    get('employer', 'EmployerController@index');
-
-    get('upload', 'UploadController@index');
-    post('upload/file', 'UploadController@uploadFile');
-    delete('upload/file', 'UploadController@deleteFile');
-    post('upload/folder', 'UploadController@createFolder');
-    delete('upload/folder', 'UploadController@deleteFolder');
-
-    Route::group(['prefix' => 'reports'], function()
-        {
-            // Reports users routes
-            Route::get( 'employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@getEmployees']);
-            Route::post('employees',            ['as' => 'admin.reports.employees',             'uses' => 'ReportsController@postEmployees']);
-
-            Route::get( 'employers',            ['as' => 'admin.reports.employers',             'uses' => 'ReportsController@getEmployers']);
-            Route::post('employers',            ['as' => 'admin.reports.employers',             'uses' => 'ReportsController@postEmployers']);
-
-        });
+    resource('admin/post', 'PostController', ['except' => 'show']);
+    resource('admin/tag', 'TagController', ['except' => 'show']);
+    get('admin/upload', 'UploadController@index');
+    post('admin/upload/file', 'UploadController@uploadFile');
+    delete('admin/upload/file', 'UploadController@deleteFile');
+    post('admin/upload/folder', 'UploadController@createFolder');
+    delete('admin/upload/folder', 'UploadController@deleteFolder');
 });
 
 // Logging in and out

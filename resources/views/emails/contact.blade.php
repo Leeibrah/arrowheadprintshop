@@ -1,3 +1,5 @@
+Hi Tillage,
+<br/>
 <p>
   You have received a new message from your website contact form.
 </p>
@@ -10,9 +12,10 @@
   <li>Phone: <strong>{{ $phone }}</strong></li>
 </ul>
 <hr>
+Message: 
 <p>
-  @foreach ($messageLines as $messageLine)
-    {{ $messageLine }}<br>
-  @endforeach
+  <strong>
+    {{ $linemessage }}
+  </strong>
 </p>
 <hr>

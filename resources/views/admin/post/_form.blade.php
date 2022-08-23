@@ -19,6 +19,24 @@
       </div>
     </div>
     <div class="form-group">
+      <label for="subtitle" class="col-md-2 control-label">
+        Author
+      </label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" name="author"
+               id="author" value="{{ $author }}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="subtitle" class="col-md-2 control-label">
+        Department
+      </label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" name="department"
+               id="department" value="{{ $department }}">
+      </div>
+    </div>
+    <div class="form-group">
       <label for="page_image" class="col-md-2 control-label">
         Page Image
       </label>

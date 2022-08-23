@@ -1,117 +1,118 @@
-<footer class="main-footer" style="background-image:url(images/background/10.png)">
-    <div class="auto-container">
-        <!--Widgets Section-->
-        <div class="widgets-section">
-            <div class="row clearfix">
-                
-                <!--Column-->
-                <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="row clearfix">
-                    
-                        <!--Footer Column-->
-                        <div class="footer-column col-lg-7 col-md-6 col-sm-12">
-                            <div class="footer-widget about-widget">
-                                <div class="logo">
-                                    <a href="/"><img src="images/footer-logo.png" alt="" /></a>
-                                </div>
-                                <div class="text">
-                                    <p>
-                                        You need to be employed and have a payslip to be able to use Salo Hub.
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!--Footer Column-->
-                        <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                            <div class="footer-widget links-widget">
-                                <h2>Quick Links</h2>
-                                <ul class="footer-list">
-                                    <li><a href="/about">About Us</a></li>
-                                    <li><a href="/how-it-works">How it Works</a></li>
-                                    <li><a href="/contacts">Contact Us</a></li>
-                                    <!-- <li><a href="#">Privacy Policy</a></li> -->
-                                    <li><a href="{!! route('terms') !!}">Terms of Service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
+<!-- FOOTER -->
+<footer class="black-bg typo-white parallax-bg" data-background="/images/bg/footer-bg.jpg">
+    <div class="footer-widget-area animated" data-animation="fadeInUp" data-animation-delay="300">
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!-- WIDGET -->
+                    <div class="widget">
+                        <!-- WIDGET TITLE -->
+                        <h6 class="widget-title">The Company</h6>
+                        <p> Tillage Business Solutions is a Limited liability partnership, with the business trading its guns to possible scaling-up to the East African regions in the near future. </p>
                     </div>
+                    <!-- /. WIDGET -->
                 </div>
-                
-                 <!--Column-->
-                <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="row clearfix">
-                    
-                        <!--Footer Column-->
-                        <!-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="footer-widget gallery-widget">
-                                <h2>Gallery</h2>
-                                <div class="widget-content">
-                                    <div class="images-outer clearfix">
-                                        <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>
-                                        <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-2.jpg" alt=""></a></figure>
-                                        <figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-3.jpg" alt=""></a></figure>
-                                        <figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-4.jpg" alt=""></a></figure>
-                                        <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-5.jpg" alt=""></a></figure>
-                                        <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-3 col-sm-6">
+                    <!-- WIDGET -->
+                    <div class="widget">
+                        <!-- WIDGET TITLE -->
+                        <h6 class="widget-title">Services</h6>
+                        <ul class="widget-menu">
+                            <li>
+                                <a href="{!! route('services.accounting') !!}">Accounting Services</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('services.payrollbureau') !!}">Payroll Bureau Services</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('services.forensicinvestigation') !!}">Forensic and Investigation Services</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('services.tax') !!}">Tax Services</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('services.businessadvisory') !!}">Business Advisory Services</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('services.auditassurance') !!}">Audit & Assurance Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /. WIDGET -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!-- WIDGET -->
+                    <div class="widget">
+                        <!-- WIDGET TITLE -->
+                        <h6 class="widget-title">Quick Links</h6>
+                        <ul class="widget-menu">
+                            <li>
+                                <a href="{!! route('about') !!}">About</a>
+                            </li>
+                            <li>
+                                <a href="{!! route('blog') !!}"">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="/auth/login"">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /. WIDGET -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!-- WIDGET -->
+                    <div class="widget widget-subscribe">
+                        <!-- WIDGET TITLE -->
+                        <h6 class="widget-title">Social Media</h6>
+                        <p>Follow our up to date news and posts on our social media pages.</p>
+                        <!-- <div class="subscribe-form animated" data-animation="fadeInUp" data-animation-delay="300">
+                            <ul class="panel-icons">
+                                <li>
+                                    <a href="#" class="purchase-icon ion-bag"></a>
+                                </li>
+                            </ul>
                         </div> -->
-                        
-                        <!--Footer Column-->
-                        <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="footer-widget info-widget">
-                                <h2>Contact Info</h2>
-                                <ul class="info-list">
-                                    <li>Bishop Magua Centre</li>
-                                    <li>Nairobi, Kenya</li>
-                                    <li>0734 579 329</li>
-                                    <li>info@salohub.com</li>
-                                </ul>
-                            </div>
+                        <div>
+                            <ul class="team-social list-inline text-center">
+                                <!-- <ion-icon name="logo-facebook"></ion-icon> -->
+                                <li><a href="https://www.facebook.com/tillageltd.co.ke/" target="_blank" class="ion-social-facebook"></a></li>
+                                <li><a href="#" class="ion-social-twitter"></a></li>
+                                <li><a href="#" class="ion-social-instagram"></a></li>
+                            </ul>
                         </div>
-
-                        <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="footer-widget info-widget">
-                                <h2>Social Links</h2>
-                            
-                                <!-- Social Links -->
-                                <ul class="social-links">
-                                    <li class="facebook"><a href="https://www.facebook.com/salohub" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li class="instagram"><a href="https://www.instagram.com/salo_hub" target="_blank"><span class="fab fa-instagram"></span></a></li>
-                                    <li class="twitter"><a href="https://www.twitter.com/salo_hub" target="_blank"><span class="fab fa-twitter"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
-                
+            </div>
+        </div>
+        <!-- /. CONTAINER -->
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="footer-bottom-area">
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-logo">
+                    <img class="img-responsive" alt="footer-logo" src="/images/mdigital-white-logo.png" width="130px">
+                </div>
+                <div class="col-md-6 footer-info">
+                    <p>Copyright © 2022 Tillage Business Solutions. All rights reserved.
+                        <!-- <br>Designed by <a href="https://www.leeibrahim.com" target="_blank">Lee Ibrahim</a>. -->
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <div class="auto-container">
-            <div class="row clearfix">
-                
-                <div class="column col-lg-6 col-md-12 col-sm-12">
-                    <div class="copyright"><span class="theme_color">Salo Hub Limited</span> &copy; {!! date("Y") !!}  All Right Reserved</div>
-                </div>
-                <div class="column col-lg-6 col-md-12 col-sm-12">
-                    <ul class="footer-nav">
-                        <li><a href="/auth/login">Login</a></li>
-                        <li><a href="{!! route('terms') !!}">Terms of Service</a></li>
-                        <li><a href="{!! route('privacy') !!}">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
 </footer>
+<!-- /. FOOTER -->

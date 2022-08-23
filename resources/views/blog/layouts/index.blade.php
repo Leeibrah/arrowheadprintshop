@@ -38,6 +38,7 @@
                 {!! join(', ', $post->tagLinks()) !!}
               @endif
             </p>
+            
           </div>
           <hr>
         @endforeach

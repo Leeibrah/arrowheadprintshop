@@ -7,9 +7,10 @@ use Redirect;
 use Setting;
 
 use Flash;
-use \SendGrid\Mail\Mail as Mail;
+use Mail;
+// use \SendGrid\Mail\Mail as Mail;
 
-use App\Employee;
+use App\Post;
 use App\Employer;
 
 class HomeController extends Controller
@@ -27,7 +28,10 @@ class HomeController extends Controller
 
         // $request->flashExcept(['password', 'password_confirmation']);
         $request->session()->reflash();
-        return view('welcome', compact('page_title', 'page_description'));
+        $posts = Post::orderBy('id', 'desc')->take(3)->get();
+
+
+        return view('welcome', compact('page_title', 'page_description', 'posts'));
     }
 
     /**
@@ -40,16 +44,26 @@ class HomeController extends Controller
 
         //$request->flashExcept(['password', 'password_confirmation']);
         $request->session()->reflash();
-        return view('welcome', compact('page_title', 'page_description'));
+        return view('welcome', compact('page_title', 'page_description', 'posts'));
     }
 
 
     public function about()
     {
+
         $page_title = 'About Page';
         $page_description = "This is the about page";
 
         return view('pages.about', compact('page_title', 'page_description'));
+    }
+
+    public function team()
+    {
+
+        $page_title = 'Team Page';
+        $page_description = "This is the team page";
+
+        return view('pages.team', compact('page_title', 'page_description'));
     }
 
     public function howitworks()
@@ -102,91 +116,73 @@ class HomeController extends Controller
         return view('pages.contacts', compact('page_title', 'page_description'));
     }
 
+    public function notification()
+    {
+        $page_title = 'success Page';
+        $page_description = "This is the success page";
+
+        return view('pages.notification', compact('page_title', 'page_description'));
+    }
+
     public function postContacts(Request $request)
     {
 
-        $name = "N/A";
-        if ($request->has('name')) {
-            $fromName = $request['name'];
-        }
-        if ($request->has('email')) {
-            $fromEmail = $request['email'];
-        }
-        if ($request->has('phone')) {
-            $fromPhone = $request['phone'];
-        }
-        if ($request->has('subject')) {
-            $theSubject = $request['subject'];
-        }
-        if ($request->has('message')) {
-            $theMessage = $request['message'];
-        }
+        if($request['answer'] === '99'){
+            $name = "N/A";
+            if ($request->has('name')) {
+                $fromName = $request['name'];
+            }
+            if ($request->has('email')) {
+                $fromEmail = $request['email'];
+            }
+            if ($request->has('phone')) {
+                $fromPhone = $request['phone'];
+            }
+            if ($request->has('subject')) {
+                $theSubject = $request['subject'];
+            }
+            if ($request->has('message')) {
+                $theMessage = $request['message'];
+            }
 
-        $toEmail = env('mail.system_receiver_email');
+            $data = array('email' => $fromEmail, 'phone'  => $fromPhone, 'name' => $fromName, 'subject' => $theSubject, 'linemessage' => $theMessage);
 
-        $data = array('to' => $toEmail, 'from' => $fromEmail, 'phone'  => $fromPhone, 'name' => $fromName, 'subject' => $theSubject, 'message' => $theMessage);
+            // try {
+            //     print $response->statusCode() . "\n";
+            //     print_r($response->headers());
+            //     print $response->body() . "\n";
+            // } catch (Exception $e) {
+            //     echo 'Caught exception: '. $e->getMessage() ."\n";
+            // }
 
-        $email = new \SendGrid\Mail\Mail();
-        $email->setFrom($fromEmail, $fromName);
-        $email->setSubject($theSubject);
-        $email->addTo($toEmail, "SaloHub Info");
-        $email->addContent(
-            "text/html", "
-            <p>Hi Salohub,</p>
-            <p>"
-            .$theMessage.
-            "</p>
-            <p>
-            Kind Regards,
-            <br>
-            "
-            .$fromName.
-            "
-            <br>
-            "
-            .$fromPhone.
-            ""
 
-        );
-        $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-        try {
-            $response = $sendgrid->send($email);
-            print $response->statusCode() . "\n";
-            print_r($response->headers());
-            print $response->body() . "\n";
-        } catch (Exception $e) {
-            echo 'Caught exception: '. $e->getMessage() ."\n";
+            Mail::send('emails.contact', $data, function($message) use ($data) {
+                $message->to('info@tillage.co.ke');
+                $message->subject($data['subject']);
+            });
+
+            
+            // return redirect(route('success'));
+            return view('pages.notification', ['message' => 'Message send Successfully. We will get back to you. Thank You.']);
+
+        }else{
+            return view('pages.notification', ['message' => 'Error: Please go back and fill in the correct answer to the captcha question. Thank You.']);
+            // return redirect(route('notification'))->with('message', 'Message not send.  ');
         }
         
-        // return redirect(route('contacts'))->with('message', 'Message send Successfully. We will get back to you. Thank You.');
-        return Redirect::to('contacts')->with('success', 'Message send to '. $toEmail .' successfully. We will get back to you. Thank You.');
     }
 
     public function mail(){
 
-        $theSubject = "Sending with SendGrid API. Test. You Know.";
+        $data = ['testVar' => 'lee'];
 
-        $email = new \SendGrid\Mail\Mail();
-        $email->setFrom("leeibrah@gmail.com", "Lee Gmail");
-        $email->setSubject("Sending with Twilio SendGrid is Fun");
-        $email->addTo("info@salohub.com", "Lee Ibrahim");
-        $email->addContent(
-            "text/html", "
-            <p>Hi Salohub</p>
-            <br>
-            <p>"
-            .$theSubject.
-            ".</p>");
-        
-        $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-        try {
-            $response = $sendgrid->send($email);
-            print $response->statusCode() . "\n";
-            print_r($response->headers());
-            print $response->body() . "\n";
-        } catch (Exception $e) {
-            echo 'Caught exception: '. $e->getMessage() ."\n";
-        }
+       Mail::send('emails.test', $data, function($message) use ($data) {
+            $message->to('info@tillage.co.ke');
+            $message->subject('E-Mail Example');
+        });
+
+
+        dd('Mail Send Successfully');
     }
 
 }
