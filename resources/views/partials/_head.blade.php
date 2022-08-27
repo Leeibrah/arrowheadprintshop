@@ -1,11 +1,12 @@
 <head>
     <!-- TITLE-->
-    <title>Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy</title>
+    <title>Medixa Digital - Digital Marketing Agency</title>
     <!-- FAV ICON -->
     <meta charset="UTF-8">
-    <meta name="description" content="Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy">
-    <meta name="keywords" content="Tillage, Business, Solutions, Audit, Tax Consultancy, Accountancy, Nairobi, Kenya, Africa">
+    <meta name="description" content="Medixa Digital - Digital Marketing Agency in Nairobi, Kenya">
+    <meta name="keywords" content="Medixa Digital Marketing Agency, Design, Web Design, Web Development, Social Media Marketing, Customer Acquisition, Nairobi, Kenya, Africa">
     <meta name="author" content="Lee Ibrahim">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Latest IE rendering engine & Chrome Frame Meta Tags -->
@@ -14,31 +15,17 @@
           <![endif]-->
     <!-- GOOGLE FONT
         ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <!-- CSS BEGINS 
-        ================================================== -->
-    <!-- BOOTSTRAP CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="/css/revolution/settings.css">
-    <!-- REVOLUTION LAYERS STYLES -->
-    <link rel="stylesheet" type="text/css" href="/css/revolution/layers.css">
-    <!-- REVOLUTION NAVIGATION STYLES -->
-    <link rel="stylesheet" type="text/css" href="/css/revolution/navigation.css">
-    <!-- FONTAWESOME -->
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- ICONS CSS -->
-    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- THEME CSS -->
-    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
-    <!-- STYLE CSS -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/css/responsive.css" rel="stylesheet" type="text/css" />
-    <!-- COLOR SCHEME -->
-    <link href="/css/color-scheme/color.css" id="changeable-colors" rel="stylesheet" />
-    <!-- CSS ENDS
-        ================================================== -->
-
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-b2f911b7-81a6-4229-bf04-3bf122af983d"></div>
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Magnific Popup Css -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slick-Slide-Css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>

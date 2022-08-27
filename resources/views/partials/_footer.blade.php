@@ -1,118 +1,88 @@
-<!-- FOOTER -->
-<footer class="black-bg typo-white parallax-bg" data-background="/images/bg/footer-bg.jpg">
-    <div class="footer-widget-area animated" data-animation="fadeInUp" data-animation-delay="300">
-        <!-- CONTAINER -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <!-- WIDGET -->
-                    <div class="widget">
-                        <!-- WIDGET TITLE -->
-                        <h6 class="widget-title">The Company</h6>
-                        <p> Tillage Business Solutions is a Limited liability partnership, with the business trading its guns to possible scaling-up to the East African regions in the near future. </p>
+<!-- Footer Section -->
+<section class="footer_aria wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container custom_container">
+        <div class="row">
+            <div class="col-lg-6 col-md-4">
+                <div class="site_info">
+                    <img src="images/mdigital-white-logo.png" width="50%" alt>
+                    <div class="content">
+                        <p>
+                            Medixa Digital is a credited, Nairobi based, customer
+                            focused Digital Marketing Agency, specializing in helping
+                            businesses optimize the immense power of the internet as
+                            a marketing vehicle to acquire, engage and retain new and
+                            existing customers.
+                        </p>
                     </div>
-                    <!-- /. WIDGET -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- WIDGET -->
-                    <div class="widget">
-                        <!-- WIDGET TITLE -->
-                        <h6 class="widget-title">Services</h6>
-                        <ul class="widget-menu">
-                            <li>
-                                <a href="{!! route('services.accounting') !!}">Accounting Services</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('services.payrollbureau') !!}">Payroll Bureau Services</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('services.forensicinvestigation') !!}">Forensic and Investigation Services</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('services.tax') !!}">Tax Services</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('services.businessadvisory') !!}">Business Advisory Services</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('services.auditassurance') !!}">Audit & Assurance Services</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /. WIDGET -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- WIDGET -->
-                    <div class="widget">
-                        <!-- WIDGET TITLE -->
-                        <h6 class="widget-title">Quick Links</h6>
-                        <ul class="widget-menu">
-                            <li>
-                                <a href="{!! route('about') !!}">About</a>
-                            </li>
-                            <li>
-                                <a href="{!! route('blog') !!}"">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Sitemap</a>
-                            </li>
-                            <li>
-                                <a href="/auth/login"">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /. WIDGET -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- WIDGET -->
-                    <div class="widget widget-subscribe">
-                        <!-- WIDGET TITLE -->
-                        <h6 class="widget-title">Social Media</h6>
-                        <p>Follow our up to date news and posts on our social media pages.</p>
-                        <!-- <div class="subscribe-form animated" data-animation="fadeInUp" data-animation-delay="300">
-                            <ul class="panel-icons">
-                                <li>
-                                    <a href="#" class="purchase-icon ion-bag"></a>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <div>
-                            <ul class="team-social list-inline text-center">
-                                <!-- <ion-icon name="logo-facebook"></ion-icon> -->
-                                <li><a href="https://www.facebook.com/tillageltd.co.ke/" target="_blank" class="ion-social-facebook"></a></li>
-                                <li><a href="#" class="ion-social-twitter"></a></li>
-                                <li><a href="#" class="ion-social-instagram"></a></li>
-                            </ul>
-                        </div>
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com/medixacare" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/medixacare" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/medixacare" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /. CONTAINER -->
-    </div>
-    <div class="container">
-        <hr>
-    </div>
-    <div class="footer-bottom-area">
-        <!-- CONTAINER -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 footer-logo">
-                    <img class="img-responsive" alt="footer-logo" src="/images/mdigital-white-logo.png" width="130px">
+            <div class="col-lg-3 col-md-4">
+                <div class="site_info">
+                    <h4>Services</h4>
+                    <ul class="list list-unstyled">
+                        <li>
+                            <a href="#">
+                                Digital Marketing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Web Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Videography
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SEO and Pay per Click
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Influencer Marketing
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 footer-info">
-                    <p>Copyright © 2022 Tillage Business Solutions. All rights reserved.
-                        <!-- <br>Designed by <a href="https://www.leeibrahim.com" target="_blank">Lee Ibrahim</a>. -->
-                    </p>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="site_info">
+                    <h4>Contacts</h4>
+                    <b>Office Location:</b><br/>
+                    Senteu Plaza, Galana Rd, Nairobi
+                    <br/><br/>
+                    <b>Call us anytime</b>
+                    <br/>
+                    +254704734897
+                    <br/>
+                    +254714019079
+                    <br/><br/>
+                    <b>Email us at:</b><br/>
+                    info@medixa.co.ke
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_bottom text-center">
+                    <p>© <?php echo date("Y"); ?> Medixa Digital <i class="fa-solid fa-heart"></i> All rights reserved. Medixa Ventures.</p>
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<!-- /. FOOTER -->
+    <div class="shape">
+        <img data-depth="0.2" src="images/shape.png" alt class="one">
+        <img data-depth="0.2" src="images/shapea_2.png" alt class="two">
+    </div>
+</section>
+<!-- Footer Section -->
