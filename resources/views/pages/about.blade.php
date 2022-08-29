@@ -2,207 +2,215 @@
 
 @section('content')
 	
-	<!-- PAGE TITLE WRAPPER-->
-	<div class="page-title-wrapper">
-		<!-- CONTAINER -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="300">
-					<!-- BREADCRUMB -->
-					<ol class="breadcrumb">
-						<li><a href="#">Home</a></li>
-						<li class="active">ABOUT US</li>
-					</ol>
-					<!-- PAGE TITLE -->
-					<h1 class="page-title bottom-line">Who We Are</h1>
-				</div>
-			</div>
-		</div>	<!-- /.CONTAINER -->	
-	</div><!-- /.PAGE TITLE WRAPPER-->
-	
-	<!-- PAGE CONTENT -->
-	<div class="page-content">
-		<!-- CONTAINER -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-12">
-							<!-- TITLE -->
-							
-							<!-- <h6 class="typo-light text-color">								
-								Tillage Business Solutions is a Limited liability partnership, with the business trading its guns to possible scaling-up to the East African regions in the near future.
-							</h6> -->
+	<!-- Breadcrumbs Section -->
+    <section class="breadcrumbs_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About Us</h2>
+                    <span><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> About</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumbs Section -->
 
-							<h4 class="sub-title">Our vision</h4>
-							<p>
-								Our vision is to be regarded as long-term trusted advisers who make a difference to our clients, our teams and our communities by providing high-calibre audit, accounting, 
-								tax and advisory services in a personal and professional way. 
-							</p>
-							<p>
-								Whether serving public sector organizations, owner managed businesses, private companies / individuals and public companies, 
-								indeed our mission is to provide our clients with professional services of the highest quality to help them meet the challengesthey face every day.
-							</p>
-							
-						</div>
+    <!-- Seo Section -->
+    <section class="seo_aria home_2 about">
+        <div class="container custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section_img wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                        <img src="images/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content wow fadeInUp" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="section_title">
+                            <span class="sub_title">Get the best</span>
+                            <h2>We help you achieve your goals <br>
+                                </h2>
+                            <p>
+                            	We are a digital marketing, communication, advertising and creative agency. 
+                            	We create unique short-term digital campaigns as well as long-term strategies for companies 
+                            	whose mandate it is to create a positive impact in society. 
+                            	<br/> <br/>
+                            	We incorporate the latest best practises in social media marketing, marketing strategy, mobile marketing, 
+                            	search engine marketing (SEM), search engine optimization (SEO), website development, content creation 
+                            	and conversion optimization, to help progressive companies achieve their objectives in the most cost-effective way.
+                            </p>
+                        </div>
+                        <a href="{!! route('contacts') !!}" class="min_btn">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seo Section -->
 
-						<div class="col-md-12">
-							
-							<h4 class="sub-title">Our Objective</h4>
-							<p>
-								To consider the future and guide our clients into making the right strategic decisions. 
-							</p>
-							<p>
-								To provide Subcontracting & Outsourcing Services for none core activities in the following areas:-
-							</p>
-							<ul class="icon-list">
-								<li>
-									Accounting & Outsourcing
-								</li>
-								<li>
-									Tax
-								</li>
-								<li>
-									Payroll
-								</li>
-								<li>
-									Audit
-								</li>
-								<li>
-									Advisory
-								</li>
-								<li>
-									Corporate Secretarial
-								</li>
-								<li>
-									Corporate Training
-								</li>
-								<li>
-									System Review and Implementation
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<!-- TITLE -->
-							<h4 class="sub-title">Some facts about us</h4>
-						</div>
-						<div class="col-md-4">
-							<div class="pic-shape">
-								<img class="img-responsive shadow-block" src="images/about/facts.png" alt="about">
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="row">
-								<div class="col-sm-6">
-									<!-- COUNTER WRAPPER -->
-									<div class="counter-wrapper clearfix">
-										<!-- COUNTER NUMBER -->
-										<h3 data-count="1" class="number-counter text-color">2</h3>
-										<!-- COUNTER TITLE -->
-										<h4 class="counter-title">Awards Won</h4>
-										<!-- COUNTER DESC -->
-										<p>Best Financial Inclusion Award</p>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<!-- COUNTER WRAPPER -->
-									<div class="counter-wrapper clearfix">
-										<!-- COUNTER NUMBER -->
-										<h3 data-count="8" class="number-counter text-color">120</h3>
-										<!-- COUNTER TITLE -->
-										<h4 class="counter-title">Satisfied Clients</h4>
-										<!-- COUNTER DESC -->
-										<p>Number of satisfied clients we have worked with.</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6">
-									<!-- COUNTER WRAPPER -->
-									<div class="counter-wrapper clearfix">
-										<!-- COUNTER NUMBER -->
-										<h3 data-count="6" class="number-counter text-color">6</h3>
-										<!-- COUNTER TITLE -->
-										<h4 class="counter-title">Service Packages</h4>
-										<!-- COUNTER DESC -->
-										<p>We currently have 6 service packages for you.</p>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<!-- COUNTER WRAPPER -->
-									<div class="counter-wrapper clearfix">
-										<!-- COUNTER NUMBER -->
-										<h3 data-count="22" class="number-counter text-color">150</h3>
-										<!-- COUNTER TITLE -->
-										<h4 class="counter-title">Projects Completed</h4>
-										<!-- COUNTER DESC -->
-										<p>Number of projects completed since we started.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>	
-					
-				</div>
-				<!-- SIDEBAR -->
-				<div class="sidebar col-md-3">
-					<!-- MENU WIDGET -->
-					@include('partials._about_menu')
-					<!-- /. MENU WIDGET -->
-					
-					<!-- CONTACT WIDGET -->
-					<div class="widget contact-widget">
-						<!-- WIDGET TITLE -->
-						<h6 class="widget-title">Need our help?</h6>
-						<p>Please do not hesitate to get back to us at the time of your convinience. We are on call 24/7.</p>
-						<a href="{!! route('contacts') !!}" class="btn btn-default">Contact us</a>
-					</div><!-- /. WIDGET -->
-					
-					<!-- TESTIMONIAL WIDGET -->
-					<div class="widget testimonial-widget">
-						<!-- TESTI WRAPPER -->
-						<div class="testimonial-wrapper testimonial-md">
-							<!-- TESTI CMT -->
-							<div class="testimonial-cmt grey-bg">
-								<p>
-									Tillage keeps me informed and on track. They explains when I don’t understand. And I love the holistic approach Tillage provides. 
-									They understands my financial goals as a whole, treats me with the utmost respect, and takes our lives and finances seriously.  I know I am in good hands.”
-								</p>
-								<div class="cmt-arrow"></div>
-							</div>
-							<!-- TESTI DETAILS -->
-							<div class="media">
-								<div class="media-left testi-img-block">
-									<a href="#">
-										<!-- IMG -->
-										<img class="media-object img-circle" src="images/about/lee-ibrahim.png" alt="lee-img">
-									</a>
-								</div>
-								<div class="media-body testi-details-block">
-									<!-- NAME -->
-									<p class="testi-name typo-black">Lee Ibrahim</p>
-									<!-- DESC -->
-									<p class="testi-designation">Founder and CEO of <span><a href="https://resavi.com" target="_blank" style="color: #E14343">Resavi.com</a></span></p>
-								</div>
-							</div><!-- /. SERVICES SLIDE -->
-						</div><!-- /. TESTI WRAPPER -->
-					</div><!-- /. TESTIMONIAL WIDGET -->
-					
-					<!-- BROCHURES WIDGET -->
-					<!-- <div class="widget brochures-widget">
-						<h6 class="widget-title">Brochures</h6>
-						<ul>
-							<li><a href="#"><span class="text-color">finance-magazine</span>.pdf<span class="pull-right file-type fa fa-file-pdf-o"></span></a></li>
-							<li><a href="#"><span class="text-color">investment-guide</span>.doc<span class="pull-right file-type fa fa-file-word-o"></span></a></li>
-						</ul>
-					</div> -->
-					<!-- /. BROCHURES WIDGET -->
-					
-				</div><!-- /. SIDEBAR -->
-			</div>		
-		</div>	<!-- /.CONTAINER -->
-	</div><!-- /. PAGE CONTENT -->
+    <!-- Info Section -->
+    <section class="info_box_aria about">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <span class="sub_title">Customers</span>
+                        <h2>Who we work with</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="info_box_items text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <img src="images/icons/companies.svg" alt="">
+                            <div class="content">
+                                <h4>Companies</h4>
+                                <p>
+                                	Each Company has a different set of goals and objectives. 
+                                	We create communication and marketing strategies to help 
+                                	you make the maximum impact in the most efficient and creative way.
+                                </p>
+                                <!-- <a href="service.html" class="btn_2">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <img src="images/icons/institutions.svg" alt="">
+                            <div class="content">
+                                <h4>Institutions</h4>
+                                <p>
+                                	Either private, public or government, institutions have a lot of stakeholders. 
+                                	We help you achieve your communication and marketing objectives with a 
+                                	unique set of blended strategies to cater to all.
+                                </p>
+                                <!-- <a href="service.html" class="btn_2">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <img src="images/icons/startups.svg" alt="">
+                            <div class="content">
+                                <h4>Startups</h4>
+                                <p>
+									We facilitate startups with the ideas they require from wealth of input support, 
+									access and knowledge. We help ease these processes through data-driven people oriented strategies.
+                                </p>
+                                <!-- <a href="service.html" class="btn_2">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape">
+            <img src="/assets/img/shape/info_box_3.png" alt="" class="one_op2">
+        </div>
+    </section>
+    <!-- Info Section -->
+
+
+    <!-- Info Box Section Two -->
+    <section class="info_box_aria two">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <span class="sub_title">Our Services</span>
+                        <h2>Services We Provide</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="info_box_items style_2 text-center">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/communications.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Communication Strategy</h4>
+                                <p>
+									We work hand in hand with organizations like yours to come up with a strategy designed to reach their specific goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/seo.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Web Design & SEO</h4>
+                                <p>
+									We help you build your website and optimize it for user experience (UX) and search engines (SEO).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/envelope.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Email Management</h4>
+                                <p>
+									We manage your email database ensuring your audience gets just the right amount of fresh engaging content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/lock.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Content Creation</h4>
+                                <p>
+									Content creation services include; Graphic Design, Videography, Photography, Podcast Production & Blogging.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/user.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Influencer Marketing</h4>
+                                <p>
+									We bring to you marketing through the very athletes we love and adore in our communities and the sports fraternity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_item">
+                            <div class="icon">
+                                <img src="images/icons/social.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Social Media Management</h4>
+                                <p>
+									We manage your social media channels ensuring your audience gets just the right amount of fresh engaging content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Info Box Section Two -->
 
 @endsection

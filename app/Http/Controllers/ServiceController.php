@@ -28,14 +28,14 @@ class ServiceController extends Controller
         return view('pages.services.accounting', compact('page_title', 'page_description'));
     }
 
-    public function payrollBureau(Request $request)
+    public function emailMarketing(Request $request)
     {
 
-        $page_title = 'Payroll Bureau Service';
-        $page_description = "This is the Payroll Bureau page";
+        $page_title = 'Email Marketing Service';
+        $page_description = "This is the Email Marketing page";
 
 
-        return view('pages.services.payrollbureau', compact('page_title', 'page_description'));
+        return view('pages.services.emailmarketing', compact('page_title', 'page_description'));
     }
 
     public function forensicInvestigation(Request $request)

@@ -3,23 +3,22 @@
 // Application routes...
 
 Route::get( '/',                        ['as' => 'home',                            'uses' => 'HomeController@index']);
-// Route::get( 'home',                  ['as' => 'home',                            'uses' => 'HomeController@index']);
 Route::get( 'welcome',                  ['as' => 'welcome',                         'uses' => 'HomeController@welcome']);
 
-// Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
+Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
 // Route::get( 'team',                     ['as' => 'team',                            'uses' => 'HomeController@team']);
 
-// Route::group(['prefix' => 'services'], function() {
+Route::group(['prefix' => 'services'], function() {
 
-//     Route::get('index',                 ['as' => 'services.index',                  'uses' => 'ServiceController@index']);
-//     Route::get('accounting',            ['as' => 'services.accounting',             'uses' => 'ServiceController@accounting']);
-//     Route::get('payroll-bureau',        ['as' => 'services.payrollbureau',          'uses' => 'ServiceController@payrollBureau']);
-//     Route::get('forensic-investigation',['as' => 'services.forensicinvestigation',  'uses' => 'ServiceController@forensicInvestigation']);
-//     Route::get('tax',                   ['as' => 'services.tax',                    'uses' => 'ServiceController@tax']);
-//     Route::get('business-advisory',     ['as' => 'services.businessadvisory',       'uses' => 'ServiceController@businessAdvisory']);
-//     Route::get('audit-assurance',       ['as' => 'services.auditassurance',         'uses' => 'ServiceController@auditAssurance']);
+    Route::get('index',                 ['as' => 'services.index',                  'uses' => 'ServiceController@index']);
+    Route::get('accounting',            ['as' => 'services.accounting',             'uses' => 'ServiceController@accounting']);
+    Route::get('email-marketing',       ['as' => 'services.emailmarketing',         'uses' => 'ServiceController@emailMarketing']);
+    Route::get('forensic-investigation',['as' => 'services.forensicinvestigation',  'uses' => 'ServiceController@forensicInvestigation']);
+    Route::get('tax',                   ['as' => 'services.tax',                    'uses' => 'ServiceController@tax']);
+    Route::get('business-advisory',     ['as' => 'services.businessadvisory',       'uses' => 'ServiceController@businessAdvisory']);
+    Route::get('audit-assurance',       ['as' => 'services.auditassurance',         'uses' => 'ServiceController@auditAssurance']);
 
-// });
+});
 
 Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
 Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);

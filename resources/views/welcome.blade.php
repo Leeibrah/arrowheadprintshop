@@ -34,7 +34,7 @@
                 <div class="col-lg-12">
                     <div class="section_title text-center wow fadeInUp" data-wow-delay="0.1s">
                         <span class="sub_title">Process</span>
-                        <h2>How we work</h2>
+                        <h2>Strategic Principles</h2>
                     </div>
                 </div>
             </div>
@@ -43,25 +43,25 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="work_item text-center">
                             <img src="fonts/work.svg" alt>
-                            <h6>User Research</h6>
+                            <h6>Research</h6>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="work_item text-center">
                             <img src="fonts/work_2.svg" alt>
-                            <h6>Developed App</h6>
+                            <h6>Ideation</h6>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="work_item text-center">
                             <img src="fonts/work_3.svg" alt>
-                            <h6>Testing Project</h6>
+                            <h6>Implementation & Testing</h6>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="work_item text-center">
                             <img src="fonts/work_4.svg" alt>
-                            <h6>Update Result</h6>
+                            <h6>Deploy to Market</h6>
                         </div>
                     </div>
                 </div>
@@ -152,8 +152,8 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
-                            <span class="counter">8</span><i class="fa-solid fa-plus"></i>
-                            <p>Referrals</p>
+                            <span class="counter">890</span><i class="fa-solid fa-plus"></i>
+                            <p>Coffee Hours</p>
                         </div>
                     </div>
                 </div>

@@ -32,6 +32,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{!! route('services.emailmarketing') !!}">
+                                Email Marketing
+                            </a>
+                        </li>
+                        <li>
                             <a href="#">
                                 Web Design
                             </a>
@@ -61,7 +66,7 @@
                     <b>Office Location:</b><br/>
                     Senteu Plaza, Galana Rd, Nairobi
                     <br/><br/>
-                    <b>Call us anytime</b>
+                    <b>Call us anytime:</b>
                     <br/>
                     +254704734897
                     <br/>

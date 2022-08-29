@@ -2,9 +2,9 @@
 <header class="header_aria">
     <nav class="navbar navbar-expand-lg fixed-top bg-transfarent">
         <div class="container custom_container">
-            <a class="navbar-brand" href="#">
-                <img src="images/mdigital-white-logo.png" width="40%" alt>
-                <img src="images/mdigital-logo.png" width="40%" alt>
+            <a class="navbar-brand" href="{!! route('home') !!}">
+                <img src="/images/mdigital-white-logo.png" width="40%" alt>
+                <img src="/images/mdigital-logo.png" width="40%" alt>
             </a>
             <div class="search d-lg-none">
                 <a class="search-btn" href="javascript:void(0);"><i class="fas fa-search"></i></a>
@@ -21,6 +21,46 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{!! route('home') !!}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{!! route('about') !!}">About Us</a></li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                        Digital Marketing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('services.emailmarketing') !!}">
+                                        Email Marketing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                        Web Design & Development
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                        Videography
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                        SEO & PPC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                        Influencer Marketing
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     <li class="nav-item"><a class="nav-link" href="{!! route('contacts') !!}">Contact</a></li> 
                 </ul>
                 
