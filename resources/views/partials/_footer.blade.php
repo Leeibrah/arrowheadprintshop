@@ -27,8 +27,8 @@
                     <h4>Services</h4>
                     <ul class="list list-unstyled">
                         <li>
-                            <a href="#">
-                                Digital Marketing
+                            <a href="{!! route('services.socialmedia') !!}">
+                                Social Media Management
                             </a>
                         </li>
                         <li>
@@ -37,25 +37,27 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Web Design
+                            <a href="{!! route('services.webdesign') !!}">
+                                Web Design & Development
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Videography
+                            <a href="{!! route('services.contentcreation') !!}">
+                                Content Creation
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                SEO and Pay per Click
+                            <a href="{!! route('services.seo') !!}">
+                                Search Engine Marketing
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{!! route('services.influencermarketing') !!}">
                                 Influencer Marketing
                             </a>
                         </li>
+
+                        
                     </ul>
                 </div>
             </div>

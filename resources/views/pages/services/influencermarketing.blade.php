@@ -63,7 +63,7 @@
                 <div class="col-lg-6">
                     <div class="section_img wow fadeInLeft" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                        <img src="/images/services/email-marketing.png" alt="">
+                        <img src="/images/services/mike.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
