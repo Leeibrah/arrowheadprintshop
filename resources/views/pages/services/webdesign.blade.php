@@ -8,14 +8,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>
-                        Email Marketing
+                        Web Design and Development
                     </h2>
                     <span>
                         <a href="{!! route('home') !!}">
                             Home
                         </a> 
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Email Marketing
+                        <i class="fa-solid fa-chevron-right"></i> Web Design and Development
                     </span>
                 </div>
             </div>
@@ -31,17 +30,23 @@
                     <div class="content wow fadeInUp" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
-                            <span class="sub_title">Email Marketing</span>
+                            <span class="sub_title">
+                                Crafting Websites For Powerful Brands
+                            </span>
                             <br/><br/>
      
                             <p>
-                                Email marketing is a proven content marketing strategy for increasing brand awareness, 
-                                growing website traffic, generating leads and promoting products and services. 
-                                An email marketing service are professionals who know how to get the job done.
+                                Your website is the center of your digital presence. It’s one of the few places on 
+                                the internet where you can deliver your brand’s message free of distortion or distraction. 
+                                Medixa’s web development services are perfect for brands at any stage.
                                 <br/><br/>
-                                Whether you’re looking to overhaul your email marketing program, are in search of a 
-                                marketing automation agency or simply want to maximize the results of your email marketing 
-                                efforts, Medixa Digital is on hand to assist every step of the way.
+                                Our web development team can help you build your brand's website from the ground up. 
+                                We specialize in building websites that tell a unique brand story while meeting the 
+                                expectations of today's most discerning consumers.
+                                <br/><br/>
+                                If your website is already built but doesn't meet expectations, we can develop a case 
+                                study and work with you to improve site architecture, design, and responsiveness as 
+                                this comes under website maintenance. 
                             </p>
                         </div>
                         <a href="{!! route('contacts') !!}" class="min_btn">Contact us</a>
@@ -50,7 +55,7 @@
                 <div class="col-lg-6">
                     <div class="section_img wow fadeInLeft" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                        <img src="/images/services/email.png" alt="">
+                        <img src="/images/services/web-design.png" alt="">
                     </div>
                 </div>
             </div>
@@ -65,7 +70,7 @@
                 <div class="col-lg-6">
                     <div class="section_img wow fadeInLeft" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                        <img src="/images/services/email-marketing.png" alt="">
+                        <img src="/images/services/web-dev.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -73,25 +78,25 @@
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
                             <!-- <span class="sub_title">Our Services</span> -->
-                            <h2>We Provided Best <br>
-                                Email Marketing Services</h2>
+                            <h2>
+                                How we do it
+                            </h2>
                             <div class="service_list">
-                                <h5><span>01.</span>Email campaign tips</h5>
+                                <h5><span>01.</span>Site Architecture</h5>
                                 <p>
-                                    We give you tips on how to write your emails for a better reach when communicating with clients and customers.
+                                    We start with creating a user centric site architecture. This maximises the long term marketing and SEO potential of your website.
                                 </p>
                             </div>
                             <div class="service_list">
-                                <h5><span>02.</span>Email templates</h5>
+                                <h5><span>02.</span>Design & Content</h5>
                                 <p>
-                                    We do email design templates for your email signatures, weekly newsletters and email letter-heads.
+                                    We go into the depths of your business, your brand story, your products/ services and then translate them into compelling content with smart design.
                                 </p>
                             </div>
                             <div class="service_list">
-                                <h5><span>03.</span>Email Marketing System </h5>
+                                <h5><span>03.</span>Development</h5>
                                 <p>
-                                    At Medixa Digital we provide for you an email system which can keep track of all current and past emails. 
-                                    We also customize an email system to what you need.
+                                    To maximise the RoI on your future marketing efforts, we create responsive websites with clean code. It keeps your website fast and improves uptime.
                                 </p>
                             </div>
                         </div>

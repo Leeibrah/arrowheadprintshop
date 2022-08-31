@@ -1,4 +1,4 @@
-<!-- Header Section -->
+
 <header class="header_aria">
     <nav class="navbar navbar-expand-lg fixed-top bg-transfarent">
         <div class="container custom_container">
@@ -6,7 +6,7 @@
                 <img src="/images/mdigital-white-logo.png" width="40%" alt>
                 <img src="/images/mdigital-logo.png" width="40%" alt>
             </a>
-            <div class="search d-lg-none">
+            <!-- <div class="search d-lg-none">
                 <a class="search-btn" href="javascript:void(0);"><i class="fas fa-search"></i></a>
                 <form action="#" method="get" class="search-form">
                     <div class="input-group">
@@ -14,7 +14,7 @@
                         <button type="submit"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </form>
-            </div>
+            </div> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,13 +25,20 @@
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
+                                Services
                             </a>
                             <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i>
                             <ul class="dropdown-menu">
+                                <!--
                                 <li>
-                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                    <a class="dropdown-item" href="{!! route('services.digitalmarketing') !!}">
                                         Digital Marketing
+                                    </a>
+                                </li>
+                                -->
+                                <li>
+                                    <a class="dropdown-item" href="{!! route('services.socialmedia') !!}">
+                                        Social Media Management
                                     </a>
                                 </li>
                                 <li>
@@ -40,22 +47,22 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                    <a class="dropdown-item" href="{!! route('services.webdesign') !!}">
                                         Web Design & Development
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{!! route('home') !!}">
-                                        Videography
+                                    <a class="dropdown-item" href="{!! route('services.contentcreation') !!}">
+                                        Content Creation
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{!! route('home') !!}">
-                                        SEO & PPC
+                                    <a class="dropdown-item" href="{!! route('services.seo') !!}">
+                                        Search Engine Marketing
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{!! route('home') !!}">
+                                    <a class="dropdown-item" href="{!! route('services.influencermarketing') !!}">
                                         Influencer Marketing
                                     </a>
                                 </li>
@@ -68,4 +75,3 @@
         </div>
     </nav>
 </header>
-<!-- Header Section -->

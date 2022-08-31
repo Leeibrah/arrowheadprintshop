@@ -8,14 +8,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>
-                        Email Marketing
+                        Search Engine Marketing
                     </h2>
                     <span>
-                        <a href="{!! route('home') !!}">
-                            Home
-                        </a> 
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Email Marketing
+                        <a href="{!! route('home') !!}">Home</a> 
+                        <i class="fa-solid fa-chevron-right"></i> 
+                        Search Engine Marketing
                     </span>
                 </div>
             </div>
@@ -31,17 +29,17 @@
                     <div class="content wow fadeInUp" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
-                            <span class="sub_title">Email Marketing</span>
+                            <span class="sub_title">
+                                Search Engine Optimization and Pay Per Click
+                            </span>
                             <br/><br/>
      
                             <p>
-                                Email marketing is a proven content marketing strategy for increasing brand awareness, 
-                                growing website traffic, generating leads and promoting products and services. 
-                                An email marketing service are professionals who know how to get the job done.
+                                Target customers exactly when they’re searching for businesses like yours on Google Search, 
+                                Maps & Bing Search. We channelise these high intent searchers to your website and help you 
+                                grow your business with them profitably.
                                 <br/><br/>
-                                Whether you’re looking to overhaul your email marketing program, are in search of a 
-                                marketing automation agency or simply want to maximize the results of your email marketing 
-                                efforts, Medixa Digital is on hand to assist every step of the way.
+                                
                             </p>
                         </div>
                         <a href="{!! route('contacts') !!}" class="min_btn">Contact us</a>
@@ -50,7 +48,7 @@
                 <div class="col-lg-6">
                     <div class="section_img wow fadeInLeft" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                        <img src="/images/services/email.png" alt="">
+                        <img src="/images/services/search.png" alt="">
                     </div>
                 </div>
             </div>
@@ -59,7 +57,7 @@
     <!-- Seo Section -->
 
     <!-- Seo Style Two -->
-    <section class="seo_aria home_2 about style_two">
+    <!-- <section class="seo_aria home_2 about style_two">
         <div class="container custom_container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -72,7 +70,7 @@
                     <div class="content wow fadeInUp" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
-                            <!-- <span class="sub_title">Our Services</span> -->
+                            <span class="sub_title">Our Services</span>
                             <h2>We Provided Best <br>
                                 Email Marketing Services</h2>
                             <div class="service_list">
@@ -99,7 +97,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Seo Style Two -->
 
 

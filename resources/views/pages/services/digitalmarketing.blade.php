@@ -8,14 +8,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>
-                        Email Marketing
+                        Digital Marketing
                     </h2>
                     <span>
-                        <a href="{!! route('home') !!}">
-                            Home
-                        </a> 
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Email Marketing
+                        <a href="{!! route('home') !!}">Home</a> 
+                        <i class="fa-solid fa-chevron-right"></i> 
+                        Digital Marketing
                     </span>
                 </div>
             </div>
@@ -31,17 +29,13 @@
                     <div class="content wow fadeInUp" data-wow-delay="0.1s"
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
-                            <span class="sub_title">Email Marketing</span>
+                            <span class="sub_title">
+                                Digital Marketing
+                            </span>
                             <br/><br/>
      
                             <p>
-                                Email marketing is a proven content marketing strategy for increasing brand awareness, 
-                                growing website traffic, generating leads and promoting products and services. 
-                                An email marketing service are professionals who know how to get the job done.
-                                <br/><br/>
-                                Whether you’re looking to overhaul your email marketing program, are in search of a 
-                                marketing automation agency or simply want to maximize the results of your email marketing 
-                                efforts, Medixa Digital is on hand to assist every step of the way.
+                                Too general: Not a product
                             </p>
                         </div>
                         <a href="{!! route('contacts') !!}" class="min_btn">Contact us</a>

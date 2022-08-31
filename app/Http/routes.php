@@ -10,13 +10,14 @@ Route::get( 'about',                    ['as' => 'about',                       
 
 Route::group(['prefix' => 'services'], function() {
 
-    Route::get('index',                 ['as' => 'services.index',                  'uses' => 'ServiceController@index']);
-    Route::get('accounting',            ['as' => 'services.accounting',             'uses' => 'ServiceController@accounting']);
-    Route::get('email-marketing',       ['as' => 'services.emailmarketing',         'uses' => 'ServiceController@emailMarketing']);
-    Route::get('forensic-investigation',['as' => 'services.forensicinvestigation',  'uses' => 'ServiceController@forensicInvestigation']);
-    Route::get('tax',                   ['as' => 'services.tax',                    'uses' => 'ServiceController@tax']);
-    Route::get('business-advisory',     ['as' => 'services.businessadvisory',       'uses' => 'ServiceController@businessAdvisory']);
-    Route::get('audit-assurance',       ['as' => 'services.auditassurance',         'uses' => 'ServiceController@auditAssurance']);
+    Route::get('index',                     ['as' => 'services.index',                  'uses' => 'ServiceController@index']);
+    Route::get('digital-marketing',         ['as' => 'services.digitalmarketing',       'uses' => 'ServiceController@digitalMarketing']);
+    Route::get('social-media-management',   ['as' => 'services.socialmedia',            'uses' => 'ServiceController@socialMediaManagement']);
+    Route::get('email-marketing',           ['as' => 'services.emailmarketing',         'uses' => 'ServiceController@emailMarketing']);
+    Route::get('web-design-development',    ['as' => 'services.webdesign',              'uses' => 'ServiceController@webDesignDevelopment']);
+    Route::get('content-creation',          ['as' => 'services.contentcreation',        'uses' => 'ServiceController@contentCreation']);
+    Route::get('search-engine-marketing',   ['as' => 'services.seo',                    'uses' => 'ServiceController@searchEngineMarketing']);
+    Route::get('influencer-marketing',      ['as' => 'services.influencermarketing',    'uses' => 'ServiceController@influencerMarketing']);
 
 });
 

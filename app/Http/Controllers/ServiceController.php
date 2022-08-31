@@ -18,14 +18,14 @@ class ServiceController extends Controller
         return view('pages.services.index', compact('page_title', 'page_description'));
     }
 
-    public function accounting(Request $request)
+    public function digitalMarketing(Request $request)
     {
 
-        $page_title = 'Accounting Service';
-        $page_description = "This is the Accounting page";
+        $page_title = 'Digital Marketing Service';
+        $page_description = "This is the Digital Marketing page";
 
 
-        return view('pages.services.accounting', compact('page_title', 'page_description'));
+        return view('pages.services.digitalmarketing', compact('page_title', 'page_description'));
     }
 
     public function emailMarketing(Request $request)
@@ -38,44 +38,54 @@ class ServiceController extends Controller
         return view('pages.services.emailmarketing', compact('page_title', 'page_description'));
     }
 
-    public function forensicInvestigation(Request $request)
+    public function socialMediaManagement(Request $request)
     {
 
-        $page_title = 'Forensic and Investigation Service';
-        $page_description = "This is the Forensic Investigation page";
+        $page_title = 'Social Media Management Service';
+        $page_description = "This is the Social Media Management page";
 
 
-        return view('pages.services.forensicinvestigation', compact('page_title', 'page_description'));
+        return view('pages.services.socialmedia', compact('page_title', 'page_description'));
     }
 
-    public function tax(Request $request)
+    public function webDesignDevelopment(Request $request)
     {
 
-        $page_title = 'Tax Service';
-        $page_description = "This is the tax page";
+        $page_title = 'Web Design and Development Service';
+        $page_description = "This is the Web Design and Development page";
 
 
-        return view('pages.services.tax', compact('page_title', 'page_description'));
+        return view('pages.services.webdesign', compact('page_title', 'page_description'));
     }
 
-    public function businessAdvisory(Request $request)
+    public function searchEngineMarketing(Request $request)
     {
 
-        $page_title = 'Business Advisory Service';
-        $page_description = "This is the Business Advisory page";
+        $page_title = 'search Engine Marketing Service';
+        $page_description = "This is the Search Engine Marketing page";
 
 
-        return view('pages.services.businessadvisory', compact('page_title', 'page_description'));
+        return view('pages.services.seo', compact('page_title', 'page_description'));
     }
 
-    public function auditAssurance(Request $request)
+    public function influencerMarketing(Request $request)
     {
 
-        $page_title = 'Audit and Assurance Service';
-        $page_description = "This is the Audit Assurance page";
+        $page_title = 'Influencer Marketing Service';
+        $page_description = "This is the Influencer Marketing page";
 
 
-        return view('pages.services.auditassurance', compact('page_title', 'page_description'));
+        return view('pages.services.influencermarketing', compact('page_title', 'page_description'));
+    }
+
+    public function contentCreation(Request $request)
+    {
+
+        $page_title = 'Content Creation Service';
+        $page_description = "This is the Content Creation page";
+
+
+        return view('pages.services.contentcreation', compact('page_title', 'page_description'));
     }
 
 }

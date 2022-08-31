@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-4">
                 <div class="site_info">
-                    <img src="images/mdigital-white-logo.png" width="50%" alt>
+                    <img src="/images/mdigital-white-logo.png" width="50%" alt>
                     <div class="content">
                         <p>
                             Medixa Digital is a credited, Nairobi based, customer
@@ -68,9 +68,9 @@
                     <br/><br/>
                     <b>Call us anytime:</b>
                     <br/>
-                    +254704734897
+                    +254 704 734 897
                     <br/>
-                    +254714019079
+                    +254 714 019 079
                     <br/><br/>
                     <b>Email us at:</b><br/>
                     info@medixa.co.ke

@@ -23,8 +23,8 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $page_title = trans('general.text.welcome');
-        $page_description = "This is the welcome page";
+        $page_title = 'Medixa Digital :: Digital Marketing Agency';
+        $page_description = "Medixa Digital Marketing Agency, Design, Web Design, Web Development, Social Media Marketing, Customer Acquisition, Nairobi, Kenya, Africa";
 
         // $request->flashExcept(['password', 'password_confirmation']);
         $request->session()->reflash();
@@ -39,8 +39,8 @@ class HomeController extends Controller
      */
     public function welcome(Request $request)
     {
-        $page_title = trans('general.text.welcome');
-        $page_description = "This is the welcome page";
+        $page_title = 'Digital Marketing Agency';
+        $page_description = "Medixa Digital Marketing Agency, Design, Web Design, Web Development, Social Media Marketing, Customer Acquisition, Nairobi, Kenya, Africa";
 
         //$request->flashExcept(['password', 'password_confirmation']);
         $request->session()->reflash();
@@ -51,8 +51,8 @@ class HomeController extends Controller
     public function about()
     {
 
-        $page_title = 'About Page';
-        $page_description = "This is the about page";
+        $page_title = 'About Us';
+        $page_description = "Medixa Digital Marketing Agency About Us";
 
         return view('pages.about', compact('page_title', 'page_description'));
     }
@@ -84,7 +84,7 @@ class HomeController extends Controller
     
     public function termsandconditions()
     {
-        $page_title = 'Terms and Conditions Page';
+        $page_title = 'Terms and Conditions';
         $page_description = "This is the Terms and Conditions page";
 
         return view('pages.terms', compact('page_title', 'page_description'));
@@ -93,7 +93,7 @@ class HomeController extends Controller
     
     public function privacypolicy()
     {
-        $page_title = 'Privacy Policy Page';
+        $page_title = 'Privacy Policy';
         $page_description = "This is the Privacy Policy page";
 
         return view('pages.privacy', compact('page_title', 'page_description'));
@@ -110,7 +110,7 @@ class HomeController extends Controller
 
     public function contacts()
     {
-        $page_title = 'Contacts Page';
+        $page_title = 'Contacts Us';
         $page_description = "This is the contacts page";
 
         return view('pages.contacts', compact('page_title', 'page_description'));
