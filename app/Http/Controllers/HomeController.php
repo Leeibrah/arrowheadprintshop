@@ -3,6 +3,8 @@
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Response;
 use Redirect;
 use Setting;
 
@@ -114,6 +116,15 @@ class HomeController extends Controller
         $page_description = "This is the contacts page";
 
         return view('pages.contacts', compact('page_title', 'page_description'));
+    }
+
+    public function portfolio()
+    {
+        $file = public_path().DIRECTORY_SEPARATOR.'assets'.DIRECTORY_SEPARATOR.'portfolio'.DIRECTORY_SEPARATOR.'medixa-portfolio.pdf';
+        $file = File::get($file);
+        $response = Response::make($file,200);
+        $response->header('Content-Type', 'application/pdf');
+        return $response;
     }
 
     public function notification()

@@ -20,6 +20,7 @@ Route::group(['prefix' => 'services'], function() {
     Route::get('influencer-marketing',      ['as' => 'services.influencermarketing',    'uses' => 'ServiceController@influencerMarketing']);
 
 });
+Route::get( 'portfolio',                ['as' => 'portfolio',                       'uses' => 'HomeController@portfolio']);
 
 Route::get( 'contacts',                 ['as' => 'contacts',                        'uses' => 'HomeController@contacts']);
 Route::post('contacts',                 ['as' => 'contactsPost',                    'uses' => 'HomeController@postContacts']);
