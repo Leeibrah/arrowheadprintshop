@@ -15,9 +15,9 @@
                         </p>
                     </div>
                     <div class="social_icons">
-                        <a href="https://www.instagram.com/medixacare" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/medixacare" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.twitter.com/medixacare" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/medixadigital" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/medixadigital" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/medixadigital" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         
                     </div>
                 </div>

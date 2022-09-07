@@ -49,6 +49,19 @@
                                     info@medixa.co.ke
                                 </p>
                             </div>
+
+                            <div class="single_info">
+                                <img src="assets/img/icon/contact/contact_3.svg" alt="">
+                                <br/>
+                                <p>
+                                    <b>Social Media Pages:</b><br/>
+                                    <a href="https://www.facebook.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-facebook-f fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.instagram.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.twitter.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                                </p>
+                            </div>
+
+                     
                         </div>
                     </div>
                 </div>
