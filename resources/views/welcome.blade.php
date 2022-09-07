@@ -9,8 +9,9 @@
                 <div class="col-lg-6">
                     <div class="hero_content wow fadeInUp" data-wow-delay="0.1s">
                         <span class=" sub_title">Medixa Digital Marketing Agency</span>
-                        <h1>Build a kick-ass brand & skyrocket your revenue with the leaders in marketing</h1>
-                        <!-- <p>Medixa Digital is a world class performance-driven technology, digital strategy, design and digital marketing firm based in Kenya.</p> -->
+                        <!-- <h1>Build a kick-ass brand & skyrocket your revenue with the leaders in marketing</h1> -->
+                        <h1>Discover your brand full potential and expand your market reach and revenue</h1>
+                        <p>Work with top talent leaders in marketing, world class performance-driven technology, digital strategy and design.</p>
                         <div class="button_aria">
                             <a href="#" class="min_btn">Contact us</a>
                             <!-- <a href="https://www.instagram.com/p/Chfr2FGK-2Z/" class="play_btn"><i class="fa-solid fa-play"></i></a> -->
