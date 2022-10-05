@@ -10,10 +10,12 @@
                     <div class="hero_content wow fadeInUp" data-wow-delay="0.1s">
                         <span class=" sub_title">Medixa Digital Marketing Agency</span>
                         <!-- <h1>Build a kick-ass brand & skyrocket your revenue with the leaders in marketing</h1> -->
-                        <h1>Discover your brand full potential and expand your market reach and revenue</h1>
+                        <h1>Discover your brand full potential & expand your market reach</h1>
                         <p>Work with top talent leaders in marketing, world class performance-driven technology, digital strategy and design.</p>
+                        <br/>
+                        <p>Think you can pull a crowd. Get paid to do so. Join our list of influencers:</p>
                         <div class="button_aria">
-                            <a href="#" class="min_btn">Contact us</a>
+                            <a href="{!! route('influencer-enrollment') !!}" class="min_btn">Influencer Enrollment</a>
                             <!-- <a href="https://www.instagram.com/p/Chfr2FGK-2Z/" class="play_btn"><i class="fa-solid fa-play"></i></a> -->
                         </div>
                     </div>

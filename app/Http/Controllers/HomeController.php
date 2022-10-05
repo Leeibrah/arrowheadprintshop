@@ -110,13 +110,7 @@ class HomeController extends Controller
     }
     
 
-    public function contacts()
-    {
-        $page_title = 'Contacts Us';
-        $page_description = "This is the contacts page";
-
-        return view('pages.contacts', compact('page_title', 'page_description'));
-    }
+    
 
     public function portfolio()
     {
@@ -131,12 +125,144 @@ class HomeController extends Controller
     {
         $page_title = 'success Page';
         $page_description = "This is the success page";
+        $message = "Thank You.";
 
-        return view('pages.notification', compact('page_title', 'page_description'));
+        return view('pages.notification', compact('page_title', 'page_description', 'message'));
+    }
+
+    public function influencer()
+    {
+        $page_title = 'Influencer Enrollment';
+        $page_description = "This is the Influencer Enrollment page";
+
+        return view('pages.influencer', compact('page_title', 'page_description'));
+    }
+    
+    public function postinfluencer(Request $request)
+    {
+
+        $page_title = 'success Page';
+        $page_description = "This is the success page";
+        $message = "Message send Successfully. We will get back to you. Thank You.";
+
+        if($request['answer'] === '99'){
+            // $name = "N/A";
+            if ($request->has('first_name')) {
+                $fromFirstName = $request['first_name'];
+            }
+            if ($request->has('last_name')) {
+                $fromLastName = $request['last_name'];
+            }
+            if ($request->has('phone')) {
+                $fromPhone = $request['phone'];
+            }
+            if ($request->has('email')) {
+                $fromEmail = $request['email'];
+            }
+            
+            if ($request->has('facebook')) {
+                $theFacebook = $request['facebook'];
+            }else{
+                $theFacebook = 'N/A';    
+            }
+            
+            if ($request->has('twitter')) {
+                $theTwitter = $request['twitter'];
+            }else{
+                $theTwitter = 'N/A';
+            }
+            
+            if ($request->has('instagram')) {
+                $theInstagram = $request['instagram'];
+            }else{
+                $theInstagram = 'N/A';    
+            }
+            
+            if ($request->has('tiktok')) {
+                $theTiktok = $request['tiktok'];
+            }else{
+                $theTiktok = 'N/A';    
+            }
+            
+            if ($request->has('youtube')) {
+                $theYoutube = $request['youtube'];
+            }else{
+                $theYoutube = 'N/A';    
+            }
+            
+            if ($request->has('other')) {
+                $theOther = $request['other'];
+            }else{
+                $theOther = 'N/A';    
+            }
+            
+
+            if ($request->has('niche')) {
+                $theNiche = $request['niche'];
+            }
+            if ($request->has('partnership')) {
+                $thePartnership = $request['partnership'];
+            }
+            if ($request->has('availability')) {
+                $theAvailability = $request['availability'];
+            }
+
+            $data = array(
+                'first_name' => $fromFirstName,
+                'last_name' => $fromLastName,
+                'phone'  => $fromPhone,
+                'email' => $fromEmail,   
+                'facebook' => $theFacebook,
+                'twitter' => $theTwitter,
+                'instagram' => $theInstagram,
+                'tiktok' => $theTiktok,
+                'youtube' => $theYoutube, 
+                'other' => $theOther,
+                'niche' => $theNiche,
+                'partnership' => $thePartnership, 
+                'availability' => $theAvailability, 
+            );
+
+            // try {
+            //     print $response->statusCode() . "\n";
+            //     print_r($response->headers());
+            //     print $response->body() . "\n";
+            // } catch (Exception $e) {
+            //     echo 'Caught exception: '. $e->getMessage() ."\n";
+            // }
+
+
+            Mail::send('emails.influencer', $data, function($message) use ($data) {
+                $message->to('info@mdigital.co.ke');
+                $message->subject($data['first_name']." Influencer Signup" );
+            });
+            
+            // return redirect(route('success'));
+            return view('pages.notification', compact('page_title', 'page_description', 'message'));
+
+        }else{
+            // return view('pages.notification', ['message' => 'Error: Please go back and fill in the correct answer to the captcha question. Thank You.']);
+            // return redirect(route('notification'))->with('message', 'Message not send.  ');
+
+            return view('pages.notification', compact('page_title', 'page_description', 'message'));
+        }
+        
+    }
+
+    public function contacts()
+    {
+        $page_title = 'Contacts Us';
+        $page_description = "This is the contacts page";
+
+        return view('pages.contacts', compact('page_title', 'page_description'));
     }
 
     public function postContacts(Request $request)
     {
+
+        $page_title = 'success Page';
+        $page_description = "This is the success page";
+        $message = "Message send Successfully. We will get back to you. Thank You.";
 
         if($request['answer'] === '99'){
             $name = "N/A";
@@ -168,17 +294,18 @@ class HomeController extends Controller
 
 
             Mail::send('emails.contact', $data, function($message) use ($data) {
-                $message->to('info@tillage.co.ke');
+                $message->to('info@mdigital.co.ke');
                 $message->subject($data['subject']);
             });
-
             
             // return redirect(route('success'));
-            return view('pages.notification', ['message' => 'Message send Successfully. We will get back to you. Thank You.']);
+            return view('pages.notification', compact('page_title', 'page_description', 'message'));
 
         }else{
-            return view('pages.notification', ['message' => 'Error: Please go back and fill in the correct answer to the captcha question. Thank You.']);
+            // return view('pages.notification', ['message' => 'Error: Please go back and fill in the correct answer to the captcha question. Thank You.']);
             // return redirect(route('notification'))->with('message', 'Message not send.  ');
+
+            return view('pages.notification', compact('page_title', 'page_description', 'message'));
         }
         
     }
@@ -188,8 +315,8 @@ class HomeController extends Controller
         $data = ['testVar' => 'lee'];
 
        Mail::send('emails.test', $data, function($message) use ($data) {
-            $message->to('info@tillage.co.ke');
-            $message->subject('E-Mail Example');
+            $message->to('info@mdigital.co.ke');
+            $message->subject('Medixa Digital');
         });
 
 

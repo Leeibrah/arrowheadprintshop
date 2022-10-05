@@ -45,8 +45,8 @@ return [
     */
 
     // 'port' => env('MAIL_PORT', 25),
-    'port' => env('MAIL_PORT', 587), //tls
-    // 'port' => env('MAIL_PORT', 465), //ssl
+    // 'port' => env('MAIL_PORT', 587), //tls
+    'port' => env('MAIL_PORT', 465), //ssl
 
     /*
     |--------------------------------------------------------------------------
@@ -60,7 +60,7 @@ return [
     */
 
     // 'from' => ['address' => 'leeibrah@gmail.com', 'name' => 'Lee Ibrahim'],
-    'from' => ['address' => 'nightoutkenya@gmail.com', 'name' => 'Tillage'],
+    'from' => ['address' => 'medixaventures@gmail.com', 'name' => 'Medixa Digital'],
 
     /*
     |--------------------------------------------------------------------------
@@ -74,8 +74,8 @@ return [
     */
 
     // 'encryption' => 'tls',
-    'encryption' => env('MAIL_ENCRYPTION', 'TLS'),
-    // 'encryption' => env('MAIL_ENCRYPTION', 'SSL'),
+    // 'encryption' => env('MAIL_ENCRYPTION', 'TLS'),
+    'encryption' => env('MAIL_ENCRYPTION', 'SSL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_FROM_NAME','nightoutkenya@gmail.com'),
+    'username' => env('MAIL_USERNAME'),
     // 'username' => 'developer@diasporaremit.com',
 
     /*
@@ -102,7 +102,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD', 'desparado'),
+    'password' => env('MAIL_PASSWORD'),
     // 'password' => 'Diaspora2017',
 
     /*

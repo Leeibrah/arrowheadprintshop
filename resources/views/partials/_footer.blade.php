@@ -75,7 +75,7 @@
                     +254 714 019 079
                     <br/><br/>
                     <b>Email us at:</b><br/>
-                    info@medixa.co.ke
+                    info@mdigital.co.ke
                 </div>
             </div>
         </div>

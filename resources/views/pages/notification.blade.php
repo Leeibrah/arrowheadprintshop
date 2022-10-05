@@ -4,25 +4,44 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 @endsection
 
+
+
 @section('content')
-	
-	<section class="grey-bg">
-        <!-- CONTAINER -->
-        <div class="container">
-            <!-- SIDE TITLE -->
+
+    <!-- Breadcrumbs Section -->
+    <section class="breadcrumbs_aria">
+        <div class="container custom_container">
             <div class="row">
-                <div class="col-md-6">
-                    <!-- SECTION TITLE -->
-                    <div class="section-title clearfix animated" data-animation="fadeInUp" data-animation-delay="300">
-                        <h3>{{ $message }}</h3>
+                <div class="col-lg-12">
+                    <h2>Notification Us</h2>
+                    <span><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> Notification</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumbs Section -->
+
+    <section class="seo_aria home_2 about">
+        <div class="container custom_container">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6">
+                    <div class="content wow fadeInUp" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="section_title">
+                            <span class="sub_title">Message Notification</span>
+                            <h2>{{ $message }} <br>
+                                </h2>
+                    
+                        </div>
+                        <a href="{!! route('home') !!}" class="min_btn">Home</a>
                     </div>
                 </div>
-            
             </div>
-            
         </div>
-        <!-- /. CONTAINER -->
     </section>
+	
+
 	
 
 @endsection

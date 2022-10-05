@@ -46,18 +46,19 @@
 
                                 <p>
                                     <b>Email:</b><br/>
-                                    info@medixa.co.ke
+                                    info@mdigital.co.ke
                                 </p>
                             </div>
 
                             <div class="single_info">
                                 <img src="assets/img/icon/contact/contact_3.svg" alt="">
-                                <br/>
+                                <br/><br/><br/><br/><br/><br/>
                                 <p>
-                                    <b>Social Media Pages:</b><br/>
-                                    <a href="https://www.facebook.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-facebook-f fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="https://www.instagram.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="https://www.twitter.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                                    <b>Social Media Pages:</b>
+                                    <br/><br/>
+                                    <a href="https://www.facebook.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.instagram.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.twitter.com/medixadigital" style="color: #fff" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
                                 </p>
                             </div>
 
@@ -76,7 +77,7 @@
                                 </div>
                                 
                                 <div class="col-lg-6">
-                                    <input type="tel" name="phone" class="form-control input" placeholder="Phone">
+                                    <input type="tel" name="phone" class="form-control input" placeholder="Phone Number">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="email" name="email" class="form-control input" placeholder="Email">
@@ -86,8 +87,23 @@
                             <div class="col-lg-12">
                                 <input type="text" name="subject" class="form-control input" placeholder="Subject" required>    
                             </div>
-                            <textarea name="massage" id="massage" class="form-control input textarea">Message</textarea>
-                            <input type="button" value="Submit Now" class="min_btn">
+                            <div class="col-lg-12">
+                                <textarea type="text" name="message" class="form-control input textarea" rows="3" placeholder="Enter your message" required="required"></textarea>
+                            </div>
+                            <!-- <textarea name="message" id="message" class="form-control input textarea">Message</textarea> -->
+                            <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="input-text form-group">
+                                            <label>Enter the characters below:<span class="text-color">*</span></label><br/>
+                                            <img src="images/cap.png" width="30%">
+                                            <input type="text" name="answer" class="input-name form-control" placeholder="Enter characters" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- <input type="button" value="Submit Now" class="min_btn"> -->
+                            <div>
+                                <button class="min_btn" type="submit">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>

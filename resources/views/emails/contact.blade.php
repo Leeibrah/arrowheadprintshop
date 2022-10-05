@@ -1,4 +1,4 @@
-Hi Tillage,
+Hello Medixa Digital,
 <br/>
 <p>
   You have received a new message from your website contact form.

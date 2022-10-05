@@ -42,7 +42,7 @@
                                 
                             </p>
                         </div>
-                        <a href="{!! route('contacts') !!}" class="min_btn">Contact us</a>
+                        <a href="{!! route('influencer-enrollment') !!}" class="min_btn">Join Medixa Digital as an Influencer</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -71,7 +71,7 @@
                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="section_title">
                             <span class="sub_title">Our Process</span>
-                            <h2>Powerful Content + Targeted Influencers = <span style="color: #fe4c1c">Magic!</span></h2>
+                            <h2>Powerful Content + Targeted Influencers = <span style="color: #ab4934">Magic!</span></h2>
                             <div class="service_list">
                                 <h5><span>01.</span>Product Reviews</h5>
                                 <p>
