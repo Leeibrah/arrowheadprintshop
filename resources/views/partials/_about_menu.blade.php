@@ -6,11 +6,7 @@
 				Overview
 			</a>
 		</li>
-		<!-- <li>
-			<a href="{!! route('team') !!}" class="{{ (request()->segment(1) == 'team') ? 'active' : '' }}">
-				Team members
-			</a>
-		</li> -->
+
 	</ul>
 </div>
 <!-- /. MENU WIDGET -->

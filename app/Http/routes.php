@@ -6,7 +6,7 @@ Route::get( '/',                        ['as' => 'home',                        
 Route::get( 'welcome',                  ['as' => 'welcome',                         'uses' => 'HomeController@welcome']);
 
 Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
-// Route::get( 'team',                     ['as' => 'team',                            'uses' => 'HomeController@team']);
+Route::get( 'work',                     ['as' => 'work',                            'uses' => 'HomeController@work']);
 
 Route::group(['prefix' => 'services'], function() {
 
@@ -20,6 +20,9 @@ Route::group(['prefix' => 'services'], function() {
     Route::get('influencer-marketing',      ['as' => 'services.influencermarketing',    'uses' => 'ServiceController@influencerMarketing']);
 
 });
+
+Route::get( 'portfolio',                ['as' => 'portfolio',                       'uses' => 'HomeController@portfolio']);
+
 Route::get( 'portfolio',                ['as' => 'portfolio',                       'uses' => 'HomeController@portfolio']);
 
 Route::get( 'influencer-enrollment',    ['as' => 'influencer-enrollment',           'uses' => 'HomeController@influencer']);

@@ -59,13 +59,13 @@ class HomeController extends Controller
         return view('pages.about', compact('page_title', 'page_description'));
     }
 
-    public function team()
+    public function work()
     {
 
-        $page_title = 'Team Page';
-        $page_description = "This is the team page";
+        $page_title = 'Our Case Studies';
+        $page_description = "This is the work page";
 
-        return view('pages.team', compact('page_title', 'page_description'));
+        return view('pages.work', compact('page_title', 'page_description'));
     }
 
     public function howitworks()

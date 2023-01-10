@@ -68,7 +68,27 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{!! route('portfolio') !!}" target="_blank">Portfolio</a></li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i>
+                        <ul class="dropdown-menu">
+            
+                            <li>
+                                <a class="dropdown-item" href="{!! route('work') !!}">
+                                    Case Studies
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{!! route('portfolio') !!}" target="_blank">
+                                    Design Portfolio
+                                </a>
+                            </li>
+                
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="{!! route('contacts') !!}">Contact Us</a></li> 
                 </ul>
                 
