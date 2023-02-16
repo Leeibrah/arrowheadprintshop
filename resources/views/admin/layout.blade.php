@@ -8,7 +8,7 @@
 
   <title>{{ config('blog.title') }} Dashboard Admin</title>
 
-  <link href="/assets/css/admin.css" rel="stylesheet">
+  <link href="/admin/assets/css/admin.css" rel="stylesheet">
   @yield('styles')
 
   <!--[if lt IE 9]>
