@@ -53,7 +53,7 @@
                                     {!! substr($post->content_raw, 0, 160) !!} ... 
                                 </p>
                                 <div class="post_bottom">
-                                    <a href="blog-single.html" class="learn_btn_two">Read More</a>
+                                    <a href="/blog/{!! $post->slug !!}" class="learn_btn_two">Read More</a>
                                 </div>
                             </div>
                         </article>
