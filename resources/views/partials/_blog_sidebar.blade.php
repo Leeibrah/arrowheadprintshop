@@ -7,15 +7,15 @@
                 @foreach ($posts as $post)
                 <li>
                     <div class="recent_post_item">
-                        <a href="blog-single.html"><img src="assets/img/blog/blog_two/recent_post1.webp"
+                        <a href="/blog/{!! $post->slug !!}"><img src="assets/img/blog/blog_two/recent_post1.webp"
                                 alt=""></a>
                         <div class="recent_post_content">
-                            <a href="blog-single.html">
+                            <a href="/blog/{!! $post->slug !!}">
                                 <h5>
                                     {!! $post->title !!}
                                 </h5>
                             </a>
-                            <a href="blog-single.html" class="post_date">{!! $post->created_at!!}</a>
+                            <a href="/blog/{!! $post->slug !!}" class="post_date">{!! $post->created_at!!}</a>
                         </div>
                     </div>
                 </li>
@@ -26,22 +26,22 @@
             <h3 class="widget_title">Categories</h3>
             <ul class="list-unstyled">
                 <li class="cat-item">
-                    <a href="blog-single.html">Fashion <span>(24)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">Fashion <span>(24)</span></a>
                 </li>
                 <li class="cat-item">
-                    <a href="blog-single.html">Food for thought <span>(24)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">Food for thought <span>(24)</span></a>
                 </li>
                 <li class="cat-item">
-                    <a href="blog-single.html">Gaming <span>(93)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">Gaming <span>(93)</span></a>
                 </li>
                 <li class="cat-item">
-                    <a href="blog-single.html">Uncategorized <span>(04)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">Uncategorized <span>(04)</span></a>
                 </li>
                 <li class="cat-item">
-                    <a href="blog-single.html">SaasLand <span>(24)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">SaasLand <span>(24)</span></a>
                 </li>
                 <li class="cat-item">
-                    <a href="blog-single.html">Project Management <span>(104)</span></a>
+                    <a href="/blog/{!! $post->slug !!}">Project Management <span>(104)</span></a>
                 </li>
             </ul>
         </div> -->
