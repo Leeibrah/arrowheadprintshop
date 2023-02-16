@@ -16,8 +16,8 @@ class BlogController extends Controller
     public function index(Request $request)
     {
 
-        $page_title = "Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy";
-        $page_description = "Tillage :: Blog";
+        $page_title = "Medixa Digital Marketing Agency";
+        $page_description = "MDigital :: Blog";
         
         $tag = $request->get('tag');
         $data = $this->dispatch(new BlogIndexData($tag));
@@ -30,8 +30,8 @@ class BlogController extends Controller
 
     public function showPost($slug, Request $request)
     {
-        $page_title = "Tillage Business Solutions :: Audit, Tax Consultancy, Accountancy";
-        $page_description = "Tillage :: Blog";
+        $page_title = "MDigital :: Medixa Digital Marketing Agency";
+        $page_description = "MDigital :: Blog";
 
         $posts = Post::all();
         $tags = Tag::all();

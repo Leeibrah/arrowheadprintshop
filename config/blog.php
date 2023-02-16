@@ -1,9 +1,11 @@
 <?php
 return [
-    'name' => "Tillage Business Solutions",
-    'title' => "Tillage",
-    'subtitle' => 'Home of Salary Solutions',
-    'description' => 'Audit, Tax Consultancy, Accountancy',
+    'name' => "Medixa Digital",
+    'title' => "MDigital",
+    'subtitle' => 'Medixa Digital Marketing Agency',
+    'description' => 'Design, Web Design, Web Development, 
+    Social Media Marketing, Social Media Management, Search Engine Marketing, Search Engine Optimization, Influencer Marketing,
+    Braning, Packaging, Pay per Click, Videography, Customer Acquisition, Content Creation, Content generation, Nairobi, Kenya, Africa',
     'author' => 'Lee Ibrahim',
     'page_image' => 'home-bg.jpg',
     'posts_per_page' => 10,

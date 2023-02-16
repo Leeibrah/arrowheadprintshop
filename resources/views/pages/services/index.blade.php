@@ -14,7 +14,7 @@
                         <li class="active">Services Grid</li>
                     </ol>
                     <!-- PAGE TITLE -->
-                    <h1 class="page-title bottom-line">List of Tillage Services</h1>
+                    <h1 class="page-title bottom-line">List of Mdigital Services</h1>
                 </div>
             </div>
         </div>  <!-- /.CONTAINER -->    
