@@ -1,3 +1,4 @@
+
 @extends('layouts.pages', [
   'title' => $post->title,
   'meta_description' => $post->meta_description ?: config('blog.description'),
@@ -6,83 +7,60 @@
 
 @section('content')
 
-	<!-- PAGE TITLE WRAPPER-->
-	<div class="page-title-wrapper">
-	    <!-- CONTAINER -->
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="300">
-	                <!-- BREADCRUMB -->
-	                <ol class="breadcrumb">
-	                    <li>
-	                        <a href="#">Home</a>
-	                    </li>
-	                    <li>
-	                        <a href="#">Blog</a>
-	                    </li>
-	                    <li class="active">{!! $post->title !!}</li>
-	                </ol>
-	                <!-- PAGE TITLE -->
-	                <h1 class="page-title bottom-line">
-	                	{!! $post->title !!}
-	                </h1>
-	            </div>
-	        </div>
-	    </div>
-	    <!-- /.CONTAINER -->
-	</div>
-	<!-- /.PAGE TITLE WRAPPER-->
-
-	<!-- PAGE CONTENT -->
-	<div class="page-content">
-	    <!-- CONTAINER -->
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-9">
-	                <!-- ARTICLE -->
-	                <article class="post post-single hv-wrapper">
-	                    <!-- POST THUMB -->
+	<!-- Breadcrumbs Section -->
+    <section class="breadcrumbs_aria">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>{!! $post->title !!}</h2>
+                    <span><a href="{!! route('blog') !!}">Home</a> <i class="fa-solid fa-chevron-right"></i> Blog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumbs Section -->
+    <!-- End medical blog list area -->
+    <section class="medical_blog_details_area sec_pad">
+        <div class="container custom_container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog_single_info">
+                        <!-- <img class="mb_50" src="assets/img/blog/blog_10.png" alt="" width="100%"> -->
+                        <!-- POST THUMB -->
 	                    <div class="post-thumbnail">
-	                        <img src="{!! page_image($post->page_image) !!}" class="img-responsive" alt="post-img">
+	                        <img src="{!! page_image($post->page_image) !!}" class="img-responsive" alt="post-img" width="100%">
 	                    </div>
 	                    <!-- POST DATE -->
-	                    <p class="post-date">
-	                    	{!! $post->published_at->format('F j, Y') !!}
-	                    </p>
-	                    <!-- POST TITLE -->
-	                    <h4 class="post-title">
-	                    	{!! $post->title !!}
-	                    </h4>
-	                    <!-- POST DESC -->
-	                    <div class="post-content clearfix">
-	                        {!! $post->content_html !!}
-	                    </div>
-	                    <!-- READ MORE LINK -->
-	                </article>
-	                <!-- /. ARTICLE -->
+                        <div class="media_blog_content">
+                            {!! $post->content_html !!}
+                            <div class="post_bottom">
+                                <div class="social_icon">
+                                    Share
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://www.facebook.com/"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i
+                                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/"><i
+                                                    class="fa-brands fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                           
+                            </div>
+            
+                        </div>
+                 
+                    </div>
+                </div>
 
-	            	<!-- AUTHOR WRAPPER -->
-							<div class="author-wrapper media">
-														
-								<div class="media-body author-content">
-									<h6>
-										Post by: {!! $post->author !!}
-									</h6>
-									<p>
-										Department: {!! $post->department !!}
-									</p>
-								</div>
-							</div><!-- /. AUTHOR WRAPPER -->
 
-	            </div>
-	            <!-- SIDEBAR -->
-				{{-- @include('partials._blog_sidebar') --}}
-	            <!-- /. SIDEBAR -->
-
-	        </div>
-	    </div>
-	    <!-- /.CONTAINER -->
-	</div>
-	<!-- /. PAGE CONTENT -->
+                <!-- SIDEBAR -->
+                    @include('partials._blog_sidebar')
+                <!-- /. SIDEBAR -->
+            </div>
+        </div>
+    </section>
+    <!-- End medical blog list area -->
 
 @endsection
