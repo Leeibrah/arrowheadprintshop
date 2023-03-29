@@ -7,7 +7,7 @@
   <meta name="description" content="{{ $meta_description }}">
   <meta name="author" content="{{ config('blog.author') }}">
 
-  <title>{{ $page_title }}</title>
+  <title>{{ $page_title }} | Medixa Digital</title>
 
   <link rel="alternate" type="application/rss+xml" href="{{ url('rss') }}"
         title="RSS Feed {{ config('blog.title') }}">

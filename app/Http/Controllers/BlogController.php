@@ -16,8 +16,8 @@ class BlogController extends Controller
     public function index(Request $request)
     {
 
-        $page_title = "Medixa Digital Marketing Agency";
-        $page_description = "MDigital :: Blog";
+        $page_title = "Blog";
+        $page_description = "MDigital Blog";
         
         $tag = $request->get('tag');
         $data = $this->dispatch(new BlogIndexData($tag));
@@ -30,12 +30,16 @@ class BlogController extends Controller
 
     public function showPost($slug, Request $request)
     {
-        $page_title = "MDigital :: Medixa Digital Marketing Agency";
-        $page_description = "MDigital :: Blog";
+        
+        
 
         $posts = Post::all();
         $tags = Tag::all();
         $post = Post::with('tags')->whereSlug($slug)->firstOrFail();
+
+        $page_title = $post->title;
+        $page_description = "MDigital :: Blog";
+
         $tag = $request->get('tag');
         if ($tag) {
             $tag = Tag::whereTag($tag)->firstOrFail();

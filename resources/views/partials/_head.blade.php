@@ -1,14 +1,14 @@
 <head>
     <!-- TITLE-->
     <title>
-        {!! $page_title !!} - Medixa Digital
+        {!! $page_title !!} :: Medixa Digital Marketing Agency
     </title>
     <!-- FAV ICON -->
     <meta charset="UTF-8">
     <meta name="description" content="Medixa Digital - {!! $page_description !!}">
     <meta name="keywords" content="Medixa Digital Marketing Agency, Design, Web Design, Web Development, 
     Social Media Marketing, Social Media Management, Search Engine Marketing, Search Engine Optimization, Influencer Marketing,
-    Braning, Packaging, Pay per Click, Videography, Customer Acquisition, Content Creation, Content generation, Nairobi, Kenya, Africa">
+    Branding, Packaging, Pay per Click, Videography, Customer Acquisition, Content Creation, Content generation, {!! $page_title !!}, in Nairobi, Mombasa, Nakuru, Kisumu, Eldoret, Machakos, Kitui, Kakamega, Kilifi, Kenya">
     <meta name="author" content="Lee Ibrahim">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="shortcut icon" href="/favicon.ico" />

@@ -25,7 +25,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $page_title = 'Medixa Digital :: Digital Marketing Agency';
+        $page_title = 'MDigital';
         $page_description = "Medixa Digital Marketing Agency, Design, Web Design, Web Development, Social Media Marketing, Customer Acquisition, Nairobi, Kenya, Africa";
 
         // $request->flashExcept(['password', 'password_confirmation']);
@@ -41,7 +41,7 @@ class HomeController extends Controller
      */
     public function welcome(Request $request)
     {
-        $page_title = 'Digital Marketing Agency';
+        $page_title = 'MDigital';
         $page_description = "Medixa Digital Marketing Agency, Design, Web Design, Web Development, Social Media Marketing, Customer Acquisition, Nairobi, Kenya, Africa";
 
         //$request->flashExcept(['password', 'password_confirmation']);
