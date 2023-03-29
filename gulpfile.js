@@ -78,7 +78,7 @@ elixir(function(mix) {
         'js/jquery.dataTables.js',
         'js/dataTables.bootstrap.js'
     ],
-    'public/assets/js/admin.js', 'resources/assets');
+    'public/admin/assets/js/admin.js', 'resources/assets');
 
     // Combine blog scripts
     mix.scripts([

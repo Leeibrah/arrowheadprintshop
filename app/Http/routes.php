@@ -2,6 +2,15 @@
 
 // Application routes...
 
+// Logging in and out
+Route::get( '/auth/login',              ['as' => 'login',                               'uses' => 'Auth\AuthController@getLogin']);
+Route::post('/auth/login',              ['as' => 'login',                               'uses' => 'Auth\AuthController@postLogin']);
+Route::get( '/auth/logout',             ['as' => 'logout',                              'uses' => 'Auth\AuthController@getLogout']);
+
+// get('/auth/login', 'Auth\AuthController@getLogin');
+// post('/auth/login', 'Auth\AuthController@postLogin');
+// get('/auth/logout', 'Auth\AuthController@getLogout');
+
 Route::get( '/',                        ['as' => 'home',                            'uses' => 'HomeController@index']);
 Route::get( 'welcome',                  ['as' => 'welcome',                         'uses' => 'HomeController@welcome']);
 
@@ -68,7 +77,3 @@ $router->group([
     delete('admin/upload/folder', 'UploadController@deleteFolder');
 });
 
-// Logging in and out
-get('/auth/login', 'Auth\AuthController@getLogin');
-post('/auth/login', 'Auth\AuthController@postLogin');
-get('/auth/logout', 'Auth\AuthController@getLogout');

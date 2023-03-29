@@ -76,6 +76,8 @@
                     <br/><br/>
                     <b>Email us at:</b><br/>
                     info@mdigital.co.ke
+                    <br/><br/>
+                    <a href="{!! route('login') !!}">Login</a>
                 </div>
             </div>
         </div>

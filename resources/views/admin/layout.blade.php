@@ -30,7 +30,7 @@
       </button>
       <a class="navbar-brand" href="#">MDigital Admin</a>
     </div>
-    <div class="collapse navbar-collapse" id=navbar-menu">
+    <div class="collapse navbar-collapse" id="navbar-menu">
       @include('admin.partials.navbar')
     </div>
   </div>
@@ -38,7 +38,7 @@
 
 @yield('content')
 
-<script src="/assets/js/admin.js"></script>
+<script src="/admin/assets/js/admin.js"></script>
 
 @yield('scripts')
 
