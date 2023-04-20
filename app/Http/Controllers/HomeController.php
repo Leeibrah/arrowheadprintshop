@@ -251,7 +251,7 @@ class HomeController extends Controller
 
     public function contacts()
     {
-        $page_title = 'Contacts Us';
+        $page_title = 'Contact Us';
         $page_description = "This is the contacts page";
 
         return view('pages.contacts', compact('page_title', 'page_description'));
