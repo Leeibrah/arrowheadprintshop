@@ -68,6 +68,15 @@ class HomeController extends Controller
         return view('pages.work', compact('page_title', 'page_description'));
     }
 
+    public function all()
+    {
+
+        $page_title = 'All our work';
+        $page_description = "This is the all works page";
+
+        return view('pages.all', compact('page_title', 'page_description'));
+    }
+
     public function howitworks()
     {
         $page_title = 'How It Works Page';

@@ -75,7 +75,12 @@
                         </a>
                         <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i>
                         <ul class="dropdown-menu">
-            
+                            <li>
+                                <a class="dropdown-item" href="{!! route('all') !!}">
+                                    All Our Work
+                                </a>
+                            </li>
+
                             <li>
                                 <a class="dropdown-item" href="{!! route('work') !!}">
                                     Case Studies
@@ -86,6 +91,7 @@
                                     Design Portfolio
                                 </a>
                             </li>
+                            
                 
                         </ul>
                     </li>

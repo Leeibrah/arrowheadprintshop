@@ -16,6 +16,7 @@ Route::get( 'welcome',                  ['as' => 'welcome',                     
 
 Route::get( 'about',                    ['as' => 'about',                           'uses' => 'HomeController@about']);
 Route::get( 'work',                     ['as' => 'work',                            'uses' => 'HomeController@work']);
+Route::get( 'all',                     ['as' => 'all',                            'uses' => 'HomeController@all']);
 
 Route::group(['prefix' => 'services'], function() {
 
