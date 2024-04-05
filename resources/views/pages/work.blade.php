@@ -23,6 +23,32 @@
                     <div class="blog_main">
                         <article class="blog_post_item zoom_in_effect">
                             <div class="post_media">
+                                <a href="#" target="_blank">
+                                    <img class="zoom_in_img" src="assets/projects/lipaspot-01.png" alt="">
+                                    </a>
+                                <!-- <div class="post_date">
+                                    <span>Mar</span> 2015
+                                </div> -->
+                            </div>
+                            <div class="media_blog_content">
+                                <a href="#" target="_blank">
+                                    <h2 class="blog_title">LIPASPOT</h2>
+                                </a>
+                                <p>
+                                    DESIGN,
+                                    POSTERS,
+                                    PHOTOSHOP,
+                                    ARTWORKS
+                                </p>
+                                <div class="post_bottom">
+                                    <a href="#" class="learn_btn_two"></a>
+                                    <a href="#" class="post_comments" target="_blank"></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog_post_item zoom_in_effect">
+                            <div class="post_media">
                                 <a href="https://www.stawika.co.ke" target="_blank">
                                     <img class="zoom_in_img" src="assets/projects/stawika-01.png" alt="">
                                     </a>

@@ -114,8 +114,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="logo_slider">
+                        
                         <img src="images/logo/landmark-logo.png" alt>
                         <img src="images/logo/medixa-logo.png" alt>
+                        <img src="images/logo/safepay-logo.png" alt>
+                        <img src="images/logo/lipaspot-logo.png" alt>
                         <img src="images/logo/resavi-logo.png" alt>
                         <img src="images/logo/tillage-logo.png" alt>
                         <img src="images/logo/stawika-logo.png" alt>
@@ -123,6 +126,7 @@
                         <img src="images/logo/kombgreen-logo.png" alt>
                         <img src="images/logo/kings-logo.png" alt>
                         <img src="images/logo/mdigital-logo.png" alt>
+                        <img src="images/logo/lamada-logo.png" alt>
                     </div>
                 </div>
             </div>
