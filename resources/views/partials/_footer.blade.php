@@ -70,9 +70,9 @@
                     <br/><br/>
                     <b>Call us anytime:</b>
                     <br/>
-                    +254 704 734 897
-                    <br/>
-                    +254 714 019 079
+                    <!-- +254 704 734 897 -->
+                    <!-- <br/> -->
+                    +254 742 665 110
                     <br/><br/>
                     <b>Email us at:</b><br/>
                     info@mdigital.co.ke
