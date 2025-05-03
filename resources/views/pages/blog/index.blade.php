@@ -28,35 +28,40 @@
     <section class="blog_list_area sec_pad">
         <div class="container custom_container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="blog_main">
+
                         @foreach ($posts as $post)
-                        <article class="blog_post_item zoom_in_effect">
-                            <div class="post_media">
-                        
-                                
-                                    <a href="/blog/{!! $post->slug !!}">
-                                        <img src="/uploads/{!! $post->page_image !!}" alt="Blog">
-                                    </a>
-                                
-                                <div class="post_date">
-                                    <span>
-                                        {!! $post->published_at->format('F j, Y') !!}
-                                    </span>
+                            <div class="team_members text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                <div class="row">
+                                    <div class="blog_post_item  col-lg-3 col-md-6">
+                                        <div class="post_media">
+                                    
+                                            
+                                                <a href="/blog/{!! $post->slug !!}">
+                                                    <img src="/uploads/{!! $post->page_image !!}" alt="Blog">
+                                                </a>
+                                            
+                                            <div class="post_date">
+                                                <span>
+                                                    {!! $post->published_at->format('F j, Y') !!}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="media_blog_content">
+                                            <a href="/blog/{!! $post->slug !!}">
+                                                <b class="blog_title">{!! $post->title !!}</b>
+                                            </a>
+                                            <p>
+                                                {!! substr($post->content_raw, 0, 160) !!} ... 
+                                            </p>
+                                            <div class="post_bottom">
+                                                <a href="/blog/{!! $post->slug !!}" class="learn_btn_two">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media_blog_content">
-                                <a href="/blog/{!! $post->slug !!}">
-                                    <h2 class="blog_title">{!! $post->title !!}</h2>
-                                </a>
-                                <p>
-                                    {!! substr($post->content_raw, 0, 160) !!} ... 
-                                </p>
-                                <div class="post_bottom">
-                                    <a href="/blog/{!! $post->slug !!}" class="learn_btn_two">Read More</a>
-                                </div>
-                            </div>
-                        </article>
                         @endforeach
 
                         <!-- <nav class="navigation pagination" role="navigation">
@@ -70,7 +75,7 @@
                 </div>
                 
                 <!-- SIDEBAR -->
-                    @include('partials._blog_sidebar')
+                    {{-- @include('partials._blog_sidebar') --}}
                 <!-- /. SIDEBAR -->
             </div>
         </div>
