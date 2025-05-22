@@ -37,7 +37,11 @@
                             <div class="single_item">
                                 
                                 <a href="/blog/{!! $post->slug !!}">
-                                    <img src="/uploads/{!! $post->page_image !!}" alt="{!! $post->title !!}">
+                                    <img 
+                                        src="/uploads/{!! $post->page_image !!}" 
+                                        alt="{!! $post->title !!}" 
+                                        style="height: 180px;"
+                                    >
                                 </a>
 
                                 <div class="content">
