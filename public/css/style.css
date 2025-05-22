@@ -256,6 +256,11 @@ body {
   top: 190px;
 }
 
+.container img {
+  width: 100%;
+}
+
+
 .hero_aria.home_4 {
   background-image: url(../images/hero_bg_4_2.png);
   padding-bottom: 50px;
