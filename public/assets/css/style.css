@@ -21511,3 +21511,40 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.straight-line-form {
+  display: flex;
+  gap: 8px; /* space between fields */
+  margin-bottom: 6px; /* small vertical gap between rows */
+}
+
+.straight-line-form input,
+.straight-line-form button {
+  padding: 4px 8px; /* reduced padding for smaller height */
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  height: 28px; /* optional fixed height for consistency */
+  box-sizing: border-box;
+}
+
+.straight-line-form input:focus {
+  border-color: #007bff;
+}
+
+.straight-line-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  height: 28px; /* match input height */
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.straight-line-form button:hover {
+  background-color: #0056b3;
+}

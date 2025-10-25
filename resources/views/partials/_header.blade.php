@@ -89,10 +89,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 d-none d-xl-block">
+                    <div class="col-xl-9 d-none d-xl-block">
                         <div class="tp-header__main-menu">
                             <nav class="tp-main-menu-content">
-                                <ul>
+                                <ul style="padding-left: 5%;">
                                     <li class="has-dropdown">
                                         <li>
                                             <a href="{{ route('home') }}">HOME</a>
@@ -279,10 +279,10 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <div class="tp-header__right-box d-flex align-items-center justify-content-end">
+                    <!-- <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="d-flex align-items-center justify-content-end">
                             <ul class="d-none d-sm-block">
-                                <!-- <li>
+                                <li>
                                     <div class="tp-header__icon-box">
                                         <a href="login.html">
                                             <span>
@@ -321,11 +321,11 @@
                                             </span>
                                         </a>
                                     </div>
-                                </li> -->
+                                </li>
                                 <li>
                                     <div class="tp-header__chat-box d-none d-xxl-block">
                                         <a href="{{ route('contacts') }}">
-                                            Let,s Talk
+                                            Let's Talk
                                             <span>
                                                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +360,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

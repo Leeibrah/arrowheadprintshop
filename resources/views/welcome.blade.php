@@ -174,16 +174,17 @@
                                 </span>
                             </div>
                             <div class="tp-feature__content">
-                                <h4 class="tp-feature__title">Quality Design</h4>
-                                <p>Our online tools make the process as
-                                    simple and clear as possible, and</p>
+                                <h4 class="tp-feature__title">Share with Friends</h4>
+                                <p>
+                                    Share ArrowheadPrintShop with friends and get a discount on your next purchase:
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 mb-30 wow tpfadeUp" data-wow-duration=".9s"
                         data-wow-delay=".5s">
                         <div class="tp-feature__item feature-col-2  d-flex align-items-center">
-                            <div class="tp-feature__icon">
+                            <!-- <div class="tp-feature__icon">
                                 <span>
                                     <svg width="63" height="63" viewBox="0 0 63 63" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -259,11 +260,28 @@
                                         </defs>
                                     </svg>
                                 </span>
-                            </div>
+                            </div> -->
                             <div class="tp-feature__content">
-                                <h4 class="tp-feature__title">Make it mach</h4>
-                                <p>Our online tools make the process as
-                                    simple and clear as possible, and</p>
+                                <h4 class="tp-feature__title">Enter your details:</h4>
+                                <form>
+                                    <div class="straight-line-form">
+                                        <!-- <label for="name">Name:</label> -->
+                                        <input type="text" id="name" name="name" placeholder="Name">
+
+                                        <!-- <label for="email">Email:</label> -->
+                                        <input type="text" id="phone" name="phone" placeholder="Phone">
+                                    </div>
+                                    
+                                    <div class="straight-line-form" style="padding-top: -5%;">
+                                        <!-- <label for="email">Email:</label> -->
+                                        <input type="email" id="email" name="email" placeholder="Email">
+
+                                        <button type="submit">Submit</button>
+                                    </div>
+
+                                  
+                                </form>
+                                <!-- <p>Our online tools make the process as simple and clear as possible, and</p> -->
                             </div>
                         </div>
                     </div>
@@ -306,9 +324,12 @@
                                 </span>
                             </div>
                             <div class="tp-feature__content">
-                                <h4 class="tp-feature__title">absolutely guranteed</h4>
-                                <p>Our online tools make the process as
-                                    simple and clear as possible, and</p>
+                                <h4 class="tp-feature__title">
+                                    Claim Discount
+                                </h4>
+                                <p>
+                                    Share the below generated link with family and friends to claim your discount when it get used.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -333,11 +354,11 @@
                         <div class="tp-about__thumb">
                             <img src="assets/img/about/home-02.png" alt="">
                         </div>
-                        <div class="tp-about__thumb-text-box">
+                        <!-- <div class="tp-about__thumb-text-box">
                             <div class="tp-about__thumb-text">
                                 <span><b>25,000+</b> Customer Worldwide</span>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="tp-about__shape-1 d-none d-xxl-block">
                             <img src="assets/img/about/about-shape1-1.png" alt="">
                         </div>
@@ -386,10 +407,10 @@
                                         </svg>
                                     </span>
                                 </span>
-                                Service Kenya
+                                Service in Kenya
                             </h4>
                             <p>Turn digital images into physical products with
-                                Printes – print locally, scale globally.</p>
+                                Arrowhead – print locally, scale globally.</p>
                         </div>
                         <div
                             class="tp-about__item-box d-flex align-items-center  justify-content-start justify-content-md-between">
@@ -438,11 +459,12 @@
                                 </div>
                                 <div class="tp-about__text">
                                     <h5 class="tp-about__title-sm">Banners Printing</h5>
-                                    <p>Attract relevant users
-                                        using specific hashtags.</p>
+                                    <p>
+                                        Looking to grab attention and make a bold statement? Our high-quality custom banners are the perfect solution for events, sales, grand openings, and more!
+                                    </p>
                                 </div>
                             </div>
-                            <div class="tp-about__item d-flex align-items-start">
+                            <!-- <div class="tp-about__item d-flex align-items-start">
                                 <div class="tp-about__icon">
                                     <span>
                                         <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
@@ -476,7 +498,7 @@
                                     <p>Attract relevant users
                                         using specific hashtags.</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="tp-about__list-box">
                             <ul>
@@ -523,9 +545,9 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="tp-catagori__section-box text-center pb-55">
-                        <span class="tp-section-subtitle">All print catagories</span>
-                        <h3 class="tp-section-title">Explore all <span class="p-relative">
-                                catagories
+                        <span class="tp-section-subtitle">Installation Services</span>
+                        <h3 class="tp-section-title">Types LED Display <span class="p-relative">
+                                Installation
                                 <span class="tp-title-shape">
                                     <svg width="244" height="4" viewBox="0 0 244 4" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -560,6 +582,122 @@
                                                 <div class="tp-catagori__border">
                                                     <div
                                                         class="tp-catagori__item p-relative d-flex align-items-center">
+                                                        <!-- <div class="tp-catagori__item-text">
+                                                            <span>80+ item</span>
+                                                        </div> -->
+                                                        <div class="tp-catagori__thumb">
+                                                            <img src="assets/img/installation/wall.png" alt="">
+                                                            <!-- <div class="tp-catagori__shape">
+                                                                <img src="assets/img/installation/wall.png"
+                                                                    alt="">
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="tp-catagori__text">
+                                                            <h5 class="tp-catagori__title">
+                                                                <a href="#">
+                                                                    Wall Mount Installation
+                                                                </a>
+                                                            </h5>
+                                                            <p>
+                                                                Generally used for indoor and outdoor display.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-2">
+                                                <div class="tp-catagori__border">
+                                                    <div
+                                                        class="tp-catagori__item p-relative d-flex align-items-center">
+                                                        <!-- <div class="tp-catagori__item-text">
+                                                            <span>80+ item</span>
+                                                        </div> -->
+                                                        <div class="tp-catagori__thumb">
+                                                            <img src="assets/img/installation/wrap.png" alt="">
+                                                            <!-- <div class="tp-catagori__shape">
+                                                                <img src="assets/img/catagori/icon-shape-1.png"
+                                                                    alt="">
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="tp-catagori__text">
+                                                            <h5 class="tp-catagori__title">
+                                                                <a href="#">
+                                                                    Column Installation, Pillar-Wrap
+                                                                </a>
+                                                            </h5>
+                                                            <p>
+                                                                Generally used for indoor advertising display, there are a variety of column installation types
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-3">
+                                                <div class="tp-catagori__border">
+                                                    <div
+                                                        class="tp-catagori__item tp-catagori__item-2 p-relative d-flex align-items-center">
+                                                        <!-- <div class="tp-catagori__item-text">
+                                                            <span>80+ sTYLE</span>
+                                                        </div> -->
+                                                        <div class="tp-catagori__thumb">
+                                                            <img src="assets/img/installation/roof.png" alt="">
+                                                            <!-- <div class="tp-catagori__shape">
+                                                                <img src="assets/img/catagori/icon-shape-1.png"
+                                                                    alt="">
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="tp-catagori__text">
+                                                            <h5 class="tp-catagori__title">
+                                                                <a href="#">
+                                                                    Building & Roof Installation
+                                                                </a>
+                                                            </h5>
+                                                            <p>
+                                                                Generally installed with a tilt angle or the module design, this display is mainly for outdoor advertising applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-4">
+                                                <div class="tp-catagori__border">
+                                                    <div
+                                                        class="tp-catagori__item tp-catagori__item-2 p-relative d-flex align-items-center">
+                                                        <!-- <div class="tp-catagori__item-text">
+                                                            <span>80+ sTYLE</span>
+                                                        </div> -->
+                                                        <div class="tp-catagori__thumb">
+                                                            <img src="assets/img/installation/curve.png" alt="">
+                                                            <!-- <div class="tp-catagori__shape">
+                                                                <img src="assets/img/catagori/icon-shape-1.png"
+                                                                    alt="">
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="tp-catagori__text">
+                                                            <h5 class="tp-catagori__title">
+                                                                <a href="#">
+                                                                    Curve Display Installation
+                                                                </a>
+                                                            </h5>
+                                                            <p>
+                                                                The length of the screen could be initially worked out by the perimeter of a circle or curve.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <div class="tp-catagori__catagori-wrap">
+                                    <div class="tp-catagori__catagori-box">
+                                        <div class="row g-0">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-1">
+                                                <div class="tp-catagori__border">
+                                                    <div
+                                                        class="tp-catagori__item p-relative d-flex align-items-center">
                                                         <div class="tp-catagori__item-text">
                                                             <span>80+ item</span>
                                                         </div>
@@ -571,7 +709,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Business
+                                                            <h5 class="tp-catagori__title"><a href="#">Business
                                                                     Cards Design</a>
                                                             </h5>
                                                             <p>Our online tools make the process as
@@ -595,7 +733,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Labels,
+                                                            <h5 class="tp-catagori__title"><a href="#">Labels,
                                                                     Stickers &
                                                                     Package</a></h5>
                                                             <p>Our online tools make the process as
@@ -619,7 +757,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Signs &
+                                                            <h5 class="tp-catagori__title"><a href="#">Signs &
                                                                     Banners</a></h5>
                                                             <p>Our online tools make the process as
                                                                 simple and clear as possible, and</p>
@@ -642,7 +780,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Invitations &
+                                                            <h5 class="tp-catagori__title"><a href="#">Invitations &
                                                                     Stationery</a>
                                                             </h5>
                                                             <p>Our online tools make the process as
@@ -674,7 +812,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Business
+                                                            <h5 class="tp-catagori__title"><a href="#">Business
                                                                     Cards Design</a>
                                                             </h5>
                                                             <p>Our online tools make the process as
@@ -698,7 +836,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Labels,
+                                                            <h5 class="tp-catagori__title"><a href="#">Labels,
                                                                     Stickers &
                                                                     Package</a></h5>
                                                             <p>Our online tools make the process as
@@ -722,7 +860,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Signs &
+                                                            <h5 class="tp-catagori__title"><a href="#">Signs &
                                                                     Banners</a></h5>
                                                             <p>Our online tools make the process as
                                                                 simple and clear as possible, and</p>
@@ -745,7 +883,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Invitations &
+                                                            <h5 class="tp-catagori__title"><a href="#">Invitations &
                                                                     Stationery</a>
                                                             </h5>
                                                             <p>Our online tools make the process as
@@ -757,110 +895,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="tp-catagori__catagori-wrap">
-                                    <div class="tp-catagori__catagori-box">
-                                        <div class="row g-0">
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-1">
-                                                <div class="tp-catagori__border">
-                                                    <div
-                                                        class="tp-catagori__item p-relative d-flex align-items-center">
-                                                        <div class="tp-catagori__item-text">
-                                                            <span>80+ item</span>
-                                                        </div>
-                                                        <div class="tp-catagori__thumb">
-                                                            <img src="assets/img/catagori/icon-1-1.png" alt="">
-                                                            <div class="tp-catagori__shape">
-                                                                <img src="assets/img/catagori/icon-shape-1.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Business
-                                                                    Cards Design</a>
-                                                            </h5>
-                                                            <p>Our online tools make the process as
-                                                                simple and clear as possible, and</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-2">
-                                                <div class="tp-catagori__border">
-                                                    <div
-                                                        class="tp-catagori__item p-relative d-flex align-items-center">
-                                                        <div class="tp-catagori__item-text">
-                                                            <span>80+ item</span>
-                                                        </div>
-                                                        <div class="tp-catagori__thumb">
-                                                            <img src="assets/img/catagori/icon-1-2.png" alt="">
-                                                            <div class="tp-catagori__shape">
-                                                                <img src="assets/img/catagori/icon-shape-1.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Labels,
-                                                                    Stickers &
-                                                                    Package</a></h5>
-                                                            <p>Our online tools make the process as
-                                                                simple and clear as possible, and</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-3">
-                                                <div class="tp-catagori__border">
-                                                    <div
-                                                        class="tp-catagori__item tp-catagori__item-2 p-relative d-flex align-items-center">
-                                                        <div class="tp-catagori__item-text">
-                                                            <span>80+ sTYLE</span>
-                                                        </div>
-                                                        <div class="tp-catagori__thumb">
-                                                            <img src="assets/img/catagori/icon-1-3.png" alt="">
-                                                            <div class="tp-catagori__shape">
-                                                                <img src="assets/img/catagori/icon-shape-1.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Signs &
-                                                                    Banners</a></h5>
-                                                            <p>Our online tools make the process as
-                                                                simple and clear as possible, and</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-catagori-4">
-                                                <div class="tp-catagori__border">
-                                                    <div
-                                                        class="tp-catagori__item tp-catagori__item-2 p-relative d-flex align-items-center">
-                                                        <div class="tp-catagori__item-text">
-                                                            <span>80+ sTYLE</span>
-                                                        </div>
-                                                        <div class="tp-catagori__thumb">
-                                                            <img src="assets/img/catagori/icon-1-4.png" alt="">
-                                                            <div class="tp-catagori__shape">
-                                                                <img src="assets/img/catagori/icon-shape-1.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tp-catagori__text">
-                                                            <h5 class="tp-catagori__title"><a href="shop-details.html">Invitations &
-                                                                    Stationery</a>
-                                                            </h5>
-                                                            <p>Our online tools make the process as
-                                                                simple and clear as possible, and</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -944,12 +979,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-1.jpg" alt="">
+                                            <img src="assets/img/installation/indoor.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Custom Print Design</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Indoor Digital Displays
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -962,7 +999,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                    <a href="service-details.html">
-                                                    Custom Print Design
+                                                    Indoor Digital Displays
                                                     <span class="tp-title-shape">                                                            
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -983,8 +1020,9 @@
                                                     </span>
                                                    </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Our indoor LED Signage solutions are designed to create engaging viewing experiences.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -992,12 +1030,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-2.jpg" alt="">
+                                            <img src="assets/img/installation/outdoor.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Holographic Stickers</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Outdoor Digital Displays
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -1010,7 +1050,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                     <a href="service-details.html">
-                                                        Holographic Stickers
+                                                        Outdoor Digital Displays
                                                     <span class="tp-title-shape">
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1031,8 +1071,9 @@
                                                     </span>
                                                     </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Digital Displays for outdoor spaces offer bright outstanding visibility, quality and large-scale options.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1040,12 +1081,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-3.jpg" alt="">
+                                            <img src="assets/img/installation/transparent.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Waterproof Labels</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Transparent LED Film
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -1058,7 +1101,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                    <a href="service-details.html">
-                                                    Waterproof Labels
+                                                    Transparent LED Film
                                                     <span class="tp-title-shape">
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1079,13 +1122,14 @@
                                                     </span>
                                                    </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Transparent Colour-LED-Film gives virtually any glass surface a pop of colour and functional value. 
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
                                             <img src="assets/img/service/service-1-1.jpg" alt="">
@@ -1180,7 +1224,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1324,8 +1368,8 @@
                     <div class="col-xl-12">
                         <div class="tp-business__section-box pb-45 text-center">
                             <span class="tp-section-subtitle">Available Features</span>
-                            <h3 class="tp-section-title">VistaPrint: Here for small <br>
-                                <span class="p-relative">business since
+                            <h3 class="tp-section-title">Arrow Head Print Shop <br>
+                                <span class="p-relative">Our objectives
                                     <span class="tp-title-shape">
                                         <svg width="244" height="4" viewBox="0 0 244 4" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1343,7 +1387,7 @@
                                             </defs>
                                         </svg>
                                     </span>
-                                </span>1995.
+                                </span>
                             </h3>
                         </div>
                     </div>
@@ -1370,7 +1414,7 @@
                                         </defs>
                                      </svg>
                                 </span>
-                                <h5 class="tp-business__title">Eco-friendly Local <br> Products</h5>
+                                <h5 class="tp-business__title">Building brand <br> fame</h5>
                             </div>
                         </div>
                         <div class="col mb-30">
@@ -1384,7 +1428,7 @@
                                         <path d="M23.9747 32.4737C22.5762 31.8017 20.4062 31 18 31C15.5937 31 13.4237 31.8017 12.0254 32.4737C10.7754 33.0752 10 34.2754 10 35.6055V36.0625C10 37.1309 10.8965 38 12 38H24C25.1035 38 25.9999 37.1309 25.9999 36.0625V35.6055C26 34.2754 25.2246 33.0752 23.9747 32.4737ZM24 36.0001L12 36.0625V35.6055C12 35.0507 12.3418 34.541 12.8926 34.2764C14.1035 33.6944 15.9707 33 18 33C20.0293 33 21.8965 33.6943 23.1074 34.2764C23.6582 34.541 24 35.0507 24 35.6055V36.0001Z" fill="currentcolor"/>
                                     </svg>   
                                 </span>
-                                <h5 class="tp-business__title">500,00+ customisable <br> products</h5>
+                                <h5 class="tp-business__title">Engaging<br> consumers</h5>
                             </div>
                         </div>
                         <div class="col mb-30">
@@ -1406,7 +1450,7 @@
                                         </defs>
                                     </svg>  
                                 </span>
-                                <h5 class="tp-business__title">Starting from 100 <br> Boxes</h5>
+                                <h5 class="tp-business__title">Driving to <br> store</h5>
                             </div>
                         </div>
                         <div class="col mb-30">
@@ -1421,8 +1465,9 @@
                                         <path d="M48.0038 35.1133L43.5913 40.8333H36.4079L31.9996 35.1125C31.8158 34.874 31.7038 34.588 31.6768 34.288C31.6498 33.9881 31.7089 33.6867 31.8471 33.4192L39.1663 19.2675V30.1183C38.3807 30.3211 37.6961 30.8035 37.2408 31.475C36.7854 32.1465 36.5906 32.961 36.6928 33.7658C36.7951 34.5707 37.1873 35.3106 37.7961 35.8469C38.4048 36.3832 39.1883 36.6791 39.9996 36.6791C40.8109 36.6791 41.5944 36.3832 42.2031 35.8469C42.8119 35.3106 43.2041 34.5707 43.3064 33.7658C43.4086 32.961 43.2138 32.1465 42.7584 31.475C42.3031 30.8035 41.6185 30.3211 40.8329 30.1183V19.2675L48.1554 33.4167C48.2945 33.6845 48.3541 33.9865 48.3272 34.2871C48.3003 34.5877 48.1881 34.8744 48.0038 35.1133Z" fill="currentcolor"/>
                                     </svg>
                                 </span>
-                                <h5 class="tp-business__title">Custom brand tools <br>
-                                    for print</h5>
+                                <h5 class="tp-business__title">
+                                    Engagement <br>
+                                    messages</h5>
                             </div>
                         </div>
                         <div class="col mb-30">
@@ -1433,7 +1478,7 @@
                                         <path d="M33.0134 37.3511C30.5842 40.9728 24.688 42.618 20.2492 42.618C15.8105 42.618 9.92524 40.9728 7.49608 37.3511C7.15379 36.8432 6.4692 36.7107 5.96129 37.053C5.45337 37.3953 5.32087 38.0798 5.66316 38.5878C8.56712 42.905 15.0817 44.8373 20.2492 44.8373C25.4167 44.8373 31.9423 42.905 34.8463 38.5878C35.1886 38.0798 35.0561 37.3953 34.5482 37.053C34.0402 36.7107 33.3557 36.8432 33.0134 37.3511Z" fill="currentcolor"/>
                                     </svg>
                                 </span>
-                                <h5 class="tp-business__title">Exclusive team <br> members</h5>
+                                <h5 class="tp-business__title">Professional team <br> members</h5>
                             </div>
                         </div>
                     </div>
@@ -1474,14 +1519,22 @@
                                             <span>01</span>
                                         </div>
                                         <div class="tp-business__content-text">
-                                            <h5 class="tp-business__content-title">First of all have to Add your
-                                                shirt design</h5>
-                                            <p>Lorem ipsum det, cowec tetur duis nec fringi
-                                                det, consec t eturlagix adipiscing eliet,</p>
+                                            <h5 class="tp-business__content-title">
+                                                LED Display Build & Installation
+                                            </h5>
+                                            <p>
+                                                We can provide a complete construction and design service, taking concepts to completion. Working closely with customers we build a strong relationship to ensure that the completed project will not only meet but exceed all expectations.
+                                                <br/>
+                                                <br/>
+                                                Starting with a full site survey from our qualified structural engineer, we then produce detailed structural drawings for customer approval. With all due consideration to all site surroundings and always taking an ecological approach to the local environment, we can then design, install and provide the required technical support for the perfect visual display structure to match or enhance the location.
+                                                <br/>
+                                                <br/>
+                                                Being fully trained on all display systems on the market, we can fully implement and commission not only LED Displays supplied by us, but also those supplied by others.
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <div class="tp-business__content active d-flex align-items-start">
                                         <div class="tp-business__number">
                                             <span>02</span>
@@ -1506,7 +1559,7 @@
                                                 det, consec t eturlagix adipiscing eliet,</p>
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -1530,8 +1583,8 @@
                     <div class="tp-testimonial__left-box z-index">
                         <div class="tp-testimonial__section-box pb-10">
                             <span class="tp-section-subtitle text-white">Valuable Feedback</span>
-                            <h3 class="tp-section-title text-white">High Quality
-                                <span class="p-relative">Printing
+                            <h3 class="tp-section-title text-white">Arrow 
+                                <span class="p-relative">Head
                                     <span class="tp-title-shape">
                                         <svg width="172" height="4" viewBox="0 0 172 4" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1550,12 +1603,13 @@
                                         </svg>
                                     </span>
                                 </span>
-                                Service Kenya
+                                Print Shop
                             </h3>
                         </div>
                         <div class="tp-testimonial__button">
-                            <p>Beautiful, customizable template, with a ton of
-                                blocks to create an amazing website that</p>
+                            <p>
+                                Your One-stop Printshop for your Graphic Design, Printing and Branding solution. Enhancing your Brand Visibility
+                            </p>
                             <div class="d-none d-md-block">
                                 <a class="tp-btn-lg" href="{{ route('contacts') }}">Let’s talk — Send a message
                                     <i>
@@ -1591,8 +1645,8 @@
                                                     <img src="assets/img/testimonial/author-1-1.png" alt="">
                                                 </div>
                                                 <div class="tp-testimonial__author-info">
-                                                    <h5 class="tp-testimonial__author-name">Mathias Herasen</h5>
-                                                    <span>Founder of <b>GamerPay</b></span>
+                                                    <h5 class="tp-testimonial__author-name">John Kamau</h5>
+                                                    <span>Founder of <b>Ushirika Kenya Ltd</b></span>
                                                 </div>
                                             </div>
                                             <div class="tp-testimonial__icon">
@@ -1611,14 +1665,14 @@
                                             </div>
                                         </div>
                                         <div class="tp-testimonial__content">
-                                            <p>“Modern customer service software solution that was
-                                                exactly what we were looking for. From the feature set
-                                                to the pricing model primchat great for us.”</p>
+                                            <p>
+                                                "We have used Arrow Head for several years, the team are second to none always supplying whatever products we require on time and made to the highest quality and at very very competitive prices."
+                                            </p>
                                             <span>“ AMAZING SERVICE “</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <div class="tp-testimonial__item">
                                         <div
                                             class="tp-testimonial__top-box d-flex align-items-center justify-content-between">
@@ -1689,7 +1743,7 @@
                                             <span>“ AMAZING SERVICE “</span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
