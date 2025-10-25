@@ -70,7 +70,7 @@
         </a> -->
 
         <button class="bottom-right-button">
-            <a href="https://wa.me/+254742665110" target="_blank">
+            <a href="https://wa.me/+254722206268" target="_blank">
                 <img src="/assets/img/whatsapp.png" alt="WhatsApp Button" width="30%">
             </a>
         </button>

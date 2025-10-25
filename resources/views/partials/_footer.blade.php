@@ -53,8 +53,8 @@
                             <ul>
                                 <li><a href="{!! route('home') !!}">Home</a></li>
                                 <li><a href="{!! route('about') !!}">Who we Are</a></li>
-                                <li><a href="{!! route('home') !!}">Privacy Policy</a></li>
-                                <li><a href="{!! route('home') !!}">Terms</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms</a></li>
                                 <li><a href="{!! route('contacts') !!}">Contact</a></li>
                             </ul>
                         </div>
