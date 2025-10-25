@@ -236,10 +236,12 @@
                                 </span>
                             </div>
                             <div class="tp-choose-6__content">
-                                <h6 class="tp-choose-6__title">Eco Friendly Products</h6>
-                                <p>Provides quick access laptop
+                                <h6 class="tp-choose-6__title">
+                                    Building brand fame
+                                </h6>
+                                <!-- <p>Provides quick access laptop
                                     while front and accessories
-                                    pockets help keep</p>
+                                    pockets help keep</p> -->
                             </div>
                         </div>
                     </div>
@@ -259,10 +261,12 @@
                                 </span>
                             </div>
                             <div class="tp-choose-6__content">
-                                <h6 class="tp-choose-6__title">Custom Brand Tools</h6>
-                                <p>Provides quick access laptop
+                                <h6 class="tp-choose-6__title">
+                                    Engaging consumers
+                                </h6>
+                                <!-- <p>Provides quick access laptop
                                     while front and accessories
-                                    pockets help keep</p>
+                                    pockets help keep</p> -->
                             </div>
                         </div>
                     </div>
@@ -290,10 +294,12 @@
                                 </span>
                             </div>
                             <div class="tp-choose-6__content">
-                                <h6 class="tp-choose-6__title">Different Catalogue</h6>
-                                <p>Provides quick access laptop
+                                <h6 class="tp-choose-6__title">
+                                    Driving to store
+                                </h6>
+                                <!-- <p>Provides quick access laptop
                                     while front and accessories
-                                    pockets help keep</p>
+                                    pockets help keep</p> -->
                             </div>
                         </div>
                     </div>
@@ -314,10 +320,12 @@
                                 </span>
                             </div>
                             <div class="tp-choose-6__content">
-                                <h6 class="tp-choose-6__title">Quality Print Design</h6>
-                                <p>Provides quick access laptop
+                                <h6 class="tp-choose-6__title">
+                                    Engagement messages
+                                </h6>
+                                <!-- <p>Provides quick access laptop
                                     while front and accessories
-                                    pockets help keep</p>
+                                    pockets help keep</p> -->
                             </div>
                         </div>
                     </div>
@@ -356,7 +364,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 d-none d-md-block">
                     <div class="tp-service__btn text-end">
-                        <a class="tp-main-btn" href="contact.html">Let’s talk — Send a message
+                        <a class="tp-main-btn" href="{{ route('contacts') }}">Let’s talk — Send a message
                             <i>
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -386,12 +394,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-1.jpg" alt="">
+                                            <img src="assets/img/installation/indoor.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Custom Print Design</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Indoor Digital Displays
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -404,7 +414,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                    <a href="service-details.html">
-                                                    Custom Print Design
+                                                    Indoor Digital Displays
                                                     <span class="tp-title-shape">                                                            
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -425,8 +435,9 @@
                                                     </span>
                                                    </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Our indoor LED Signage solutions are designed to create engaging viewing experiences.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -434,12 +445,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-2.jpg" alt="">
+                                            <img src="assets/img/installation/outdoor.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Holographic Stickers</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Outdoor Digital Displays
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -452,7 +465,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                     <a href="service-details.html">
-                                                        Holographic Stickers
+                                                        Outdoor Digital Displays
                                                     <span class="tp-title-shape">
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -473,8 +486,9 @@
                                                     </span>
                                                     </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Digital Displays for outdoor spaces offer bright outstanding visibility, quality and large-scale options.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -482,12 +496,14 @@
                                 <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
-                                            <img src="assets/img/service/service-1-3.jpg" alt="">
+                                            <img src="assets/img/installation/transparent.png" alt="">
                                         </div>
                                         <div class="tp-service__bottom-box">
                                             <div
                                                 class="tp-service__text d-flex align-items-center justify-content-between">
-                                                <h3 class="tp-service__title-sm">Waterproof Labels</h3>
+                                                <h3 class="tp-service__title-sm">
+                                                    Transparent LED Film
+                                                </h3>
                                                 <span class="tp-service__arrow">
                                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -500,7 +516,7 @@
                                             <div class="tp-service__content">
                                                 <h4 class="tp-service__title p-relative">
                                                    <a href="service-details.html">
-                                                    Waterproof Labels
+                                                    Transparent LED Film
                                                     <span class="tp-title-shape">
                                                         <svg width="219" height="2" viewBox="0 0 219 2"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -521,13 +537,14 @@
                                                     </span>
                                                    </a>
                                                 </h4>
-                                                <p>Our company provides a full range of services
-                                                    private houses and cottages since 19 Our </p>
+                                                <p>
+                                                    Transparent Colour-LED-Film gives virtually any glass surface a pop of colour and functional value. 
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <div class="tp-service__item fix p-relative">
                                         <div class="tp-service__thumb">
                                             <img src="assets/img/service/service-1-1.jpg" alt="">
@@ -622,7 +639,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -633,7 +650,7 @@
     <!-- service-area-end -->
 
     <!-- choose-area-start -->
-    <div class="tp-choose-3__area pt-80 pb-120">
+    <!-- <div class="tp-choose-3__area pt-80 pb-120">
         <div class="container custom-container-1">
             <div class="row align-items-end">
                 <div class="col-xl-6 col-lg-6 col-md-12">
@@ -751,7 +768,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- choose-area-end -->
 
 @endsection
