@@ -279,9 +279,9 @@
                             </nav>
                         </div>
                     </div>
-                    <!-- <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="d-flex align-items-center justify-content-end">
-                            <ul class="d-none d-sm-block">
+                            <!-- <ul class="d-none d-sm-block">
                                 <li>
                                     <div class="tp-header__icon-box">
                                         <a href="login.html">
@@ -353,14 +353,14 @@
                                         </a>
                                     </div>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <div class="tp-header-2__bar bar-height d-xl-none">
                                 <button class="tp-menu-bar">
                                     <i class="fa-solid fa-bars"></i>
                                 </button>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
